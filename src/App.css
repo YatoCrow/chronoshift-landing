@@ -1,42 +1,148 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Cinzel', serif;
+  background: url('/LandingBG.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #f5f2eb;
+}
+
+main {
+  padding-top: 100px; /* match the nav height */
+}
+
+body {
+  overflow-y: scroll; /* always show scrollbar, avoids shift */
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  max-width: 100%;
+  z-index: 1000;
+
+  background: rgba(20, 15, 25, 0.5);
+  backdrop-filter: blur(8px);
+  padding: 1rem 2rem;
+  box-shadow: 0 0 18px #ddb89266;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+
+  transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+nav:hover {
+  background: rgba(30, 20, 40, 0.6);
+  box-shadow: 0 0 24px #f2d5a988;
+}
+
+nav a {
+  color: #f5f2eb;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+  color: #fbd89b;
+  transform: scale(1.05);
+}
+
+.container {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: transparent;
+  border-radius: 12px;
+  box-shadow: 0 0 12px #00000066;
+}
+
+/* Hero Section Styling */
+.hero-section {
   text-align: center;
+  margin-top: 100px;
+  padding: 4rem 1rem;
+  margin-bottom: 3rem;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #ddb892;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero-section p {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Themed Buttons */
+.button-link {
+  display: inline-block;
+  background: linear-gradient(to right, #ddb892, #c7a06a);
+  color: #1b1b1b;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background 0.2s ease-in-out;
 }
 
-.card {
-  padding: 2em;
+.button-link:hover {
+  background: linear-gradient(to right, #f2d5a9, #ddb892);
+  color: #000;
 }
 
-.read-the-docs {
-  color: #888;
+/* Button Grid */
+.button-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  color: #bfaea0;
+  background: rgba(15, 10, 20, 0.3);
+  border-top: 1px solid #ddb89233;
+  backdrop-filter: blur(6px);
+}
+
+.footer-links a {
+  color: #ddb892;
+  margin: 0 0.5rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover {
+  color: #f2d5a9;
+}
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 0;
 }
