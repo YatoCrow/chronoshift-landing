@@ -16,10 +16,17 @@ function Home() {
 
       {/* Featured Release */}
       <section className="featured-release">
-        <img src="/chronoshift-banner.webp" alt="Chronoshift Banner" className="feature-image" />
+        <img
+          src="/images/chronoshift-banner.webp"
+          alt="Chronoshift Banner"
+          className="feature-image"
+        />
         <div className="featured-info">
           <h2>Coming July 2025</h2>
-          <p>The first set of Chronoshift launches soon. Explore the lore, build your deck, and shift time itself.</p>
+          <p>
+            The first set of Chronoshift launches soon. Explore the lore, build your deck,
+            and shift time itself.
+          </p>
           <Link to="/factions" className="button-link">Meet the Clans</Link>
         </div>
       </section>
@@ -34,12 +41,18 @@ function Home() {
         <div className="link-tile">
           <h3>Card Gallery</h3>
           <p>Browse the entire Eclipse Dawn set, including tokens and conduits.</p>
-          <Link to="/cards">Browse Cards →</Link>
+          <Link to="/starter-decks">Browse Cards →</Link>
         </div>
         <div className="link-tile">
           <h3>View Tracker</h3>
           <p>Use the Chronoshift digital tracker during your next match.</p>
-          <a href="https://chronoshift-tracker.yatocrowgames.com" target="_blank" rel="noreferrer">Launch Tracker →</a>
+          <a
+            href="https://chronoshift-tracker.yatocrowgames.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Launch Tracker →
+          </a>
         </div>
       </section>
 
