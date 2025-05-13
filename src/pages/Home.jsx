@@ -16,7 +16,7 @@ function Home() {
 
       {/* Featured Release */}
       <section className="featured-release">
-        <img src="/images/chronoshift-banner.webp" alt="Chronoshift Banner" className="feature-image" />
+        <img src="/chronoshift-banner.webp" alt="Chronoshift Banner" className="feature-image" />
         <div className="featured-info">
           <h2>Coming July 2025</h2>
           <p>The first set of Chronoshift launches soon. Explore the lore, build your deck, and shift time itself.</p>
