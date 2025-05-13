@@ -32,7 +32,7 @@ function App() {
         <Link to="/rules" style={linkStyle}>Rules</Link>
         <Link to="/keywords" style={linkStyle}>Keywords</Link>
         <a
-          href="https://chronoshift-tracker.vercel.app"
+          href="https://chronoshift-tracker.yatocrowgames.com"
           target="_blank"
           rel="noreferrer"
           style={linkStyle}
