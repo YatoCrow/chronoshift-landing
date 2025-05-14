@@ -12,3 +12,9 @@ html, body {
   background: linear-gradient(to bottom right, #0e0b10, #1c141f);
   color: #f5f2eb;
 }
+
+.layout-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2.5rem;
+}
