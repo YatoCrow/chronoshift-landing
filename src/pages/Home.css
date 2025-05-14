@@ -20,7 +20,9 @@
 }
 
 .hero-overlay {
-  margin-bottom: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 1rem 0;
 }
 
 .game-title {
@@ -71,6 +73,7 @@
 }
 
 .feature {
+  text-align: center;
   margin-bottom: 2rem;
 }
 
