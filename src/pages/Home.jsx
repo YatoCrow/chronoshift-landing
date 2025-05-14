@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 export default function Home() {
   return (
     <div className="home-container">
+    <div className="layout-inner">
       <section className="hero-section">
         <div className="hero-overlay">
           <h1 className="game-title">Chronoshift</h1>
@@ -31,6 +32,7 @@ export default function Home() {
           <p>Use the built-in Chronoshift Tracker to roll, monitor, and control the battlefield's evolving conditions.</p>
         </div>
       </section>
+      </div>
 
       <footer className="footer">
         <p>© 2025 YatoCrow Games. All rights reserved.</p>
