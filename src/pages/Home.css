@@ -3,8 +3,9 @@
 .home-container {
   font-family: 'Cinzel', serif;
   color: #f4e9ff;
-  background: url('/backgrounds/chronoshift-bg.jpg') no-repeat center center fixed;
+  background: url('/backgrounds/chronoshift-bg.jpg') no-repeat top center;
   background-size: cover;
+  background-attachment: scroll;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
