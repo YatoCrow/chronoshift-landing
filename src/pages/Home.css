@@ -1,15 +1,8 @@
 /* src/pages/Home.css */
 
 .home-container {
-  font-family: 'Cinzel', serif;
-  color: #f4e9ff;
-  background: url('/backgrounds/chronoshift-bg.jpg') no-repeat top center;
+  background: url('/backgrounds/chronoshift-bg.jpg') no-repeat top left;
   background-size: cover;
-  background-attachment: scroll;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .hero-section {
