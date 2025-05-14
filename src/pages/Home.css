@@ -121,4 +121,5 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2.5rem;
+  border: 2px solid lime; /* <— temporary debug */
 }
