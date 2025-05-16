@@ -53,10 +53,13 @@ const factions = [
 ];
 
 export default function Factions() {
-  const [openFaction, setOpenFaction] = useState(null);
+  const [openStates, setOpenStates] = useState({});
 
   const toggleFaction = (key) => {
-    setOpenFaction(openFaction === key ? null : key);
+    setOpenStates((prev) => ({
+      ...prev,
+      [key]: !prev[key]
+    }));
   };
 
   return (
@@ -70,8 +73,7 @@ export default function Factions() {
         {factions.map((f) => (
           <div
             key={f.key}
-            className={`faction-card expandable ${openFaction === f.key ? "open" : ""}`}
-            onClick={() => toggleFaction(f.key)}
+            className={`faction-card expandable ${openStates[f.key] ? "open" : ""}`}
           >
             <img
               src={`/assets/emblems/${f.key}-Emblem.webp`}
@@ -80,7 +82,14 @@ export default function Factions() {
             />
             <h2>{f.name}</h2>
 
-            {openFaction === f.key && (
+            <button
+              className="toggle-button"
+              onClick={() => toggleFaction(f.key)}
+            >
+              {openStates[f.key] ? "Hide Info" : "Show Info"}
+            </button>
+
+            {openStates[f.key] && (
               <div className="faction-details">
                 <p><strong>Description:</strong> {f.description}</p>
                 <p><strong>Gameplay Focus:</strong> {f.focus}</p>
