@@ -1,4 +1,6 @@
 // src/pages/TermsOfUse.jsx
+import "./Legal.css";
+
 export default function TermsOfUse() {
   return (
     <div className="legal-page">
