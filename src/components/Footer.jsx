@@ -8,13 +8,15 @@ function Footer() {
       <div className="footer-content">
 
         <div className="footer-links">
-          <Link to="/">Home</Link>
-          <Link to="/factions">Factions</Link>
-          <Link to="/starter-decks">Starter Decks</Link>
-          <Link to="/rules">Rules</Link>
-          <Link to="/keywords">Keywords</Link>
-          <a href="https://chronoshift-tracker.yatocrowgames.com" target="_blank" rel="noreferrer">Tracker</a>
-        </div>
+  <Link to="/">Home</Link>
+  <Link to="/factions">Factions</Link>
+  <Link to="/starter-decks">Starter Decks</Link>
+  <Link to="/rules">Rules</Link>
+  <Link to="/keywords">Keywords</Link>
+  <a href="https://chronoshift-tracker.yatocrowgames.com" target="_blank" rel="noreferrer">Tracker</a>
+  <Link to="/terms">Terms of Use</Link>
+  <Link to="/privacy">Privacy Policy</Link>
+</div>
 
         <div className="footer-bottom">
           <p>© {new Date().getFullYear()} YatoCrow Games. All rights reserved.</p>
