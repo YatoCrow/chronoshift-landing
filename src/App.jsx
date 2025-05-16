@@ -1,4 +1,4 @@
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Navbar from './components/Navbar';
 
@@ -13,34 +13,7 @@ function App() {
         boxSizing: "border-box",
       }}
     >
-      {/* Nav Bar */}
-      <nav
-        style={{
-          background: "rgba(10, 10, 10, 0.85)",
-          padding: "1rem",
-          borderRadius: "12px",
-          boxShadow: "0 0 12px #00000066",
-          marginBottom: "2rem",
-          display: "flex",
-          justifyContent: "center",
-          flexWrap: "wrap",
-          gap: "1rem",
-        }}
-      >
-        <Link to="/" style={linkStyle}>Home</Link>
-        <Link to="/factions" style={linkStyle}>Factions</Link>
-        <Link to="/starter-decks" style={linkStyle}>Starter Decks</Link>
-        <Link to="/rules" style={linkStyle}>Rules</Link>
-        <Link to="/keywords" style={linkStyle}>Keywords</Link>
-        <a
-          href="https://chronoshift-tracker.yatocrowgames.com"
-          target="_blank"
-          rel="noreferrer"
-          style={linkStyle}
-        >
-          Tracker
-        </a>
-      </nav>
+      <Navbar />
 
       <Routes>
         <Route path="/" element={<Home />} />
@@ -52,12 +25,5 @@ function App() {
     </div>
   );
 }
-
-const linkStyle = {
-  color: "#f5f2eb",
-  textDecoration: "none",
-  fontWeight: "bold",
-  transition: "color 0.2s",
-};
 
 export default App;
