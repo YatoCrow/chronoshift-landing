@@ -1,55 +1,66 @@
-.home-wrapper {
-  padding: 4rem 0;
+/* src/pages/Home.css */
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+  min-height: calc(100vh - 80px);
+  background-color: #0d0d0d;
+  color: #fff;
+}
+
+.hero {
   text-align: center;
-  background-color: #0d0c11;
-  color: #f5f0e6;
-  min-height: 100vh;
-  font-family: 'Cinzel', serif;
+  max-width: 720px;
 }
 
 .hero-logo {
-  max-width: 380px;
-  width: 90%;
-  height: auto;
+  width: 300px;
   margin-bottom: 1.5rem;
 }
 
 .tagline {
-  font-size: 1.4rem;
-  font-style: italic;
+  font-size: 1.5rem;
   margin-bottom: 2rem;
-  color: #d6c3a6;
+  color: #cccccc;
 }
 
 .cta-buttons {
   display: flex;
+  gap: 1.5rem;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1.25rem;
-  margin-bottom: 3rem;
 }
 
-.cta-btn {
-  background: none;
-  border: 2px solid #f5f0e6;
-  color: #f5f0e6;
+.btn-primary,
+.btn-outline {
   padding: 0.75rem 1.5rem;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 6px;
-  transition: all 0.3s ease;
-}
-
-.cta-btn:hover {
-  background-color: #f5f0e6;
-  color: #0d0c11;
-}
-
-.description {
-  max-width: 700px;
-  margin: 0 auto;
   font-size: 1rem;
-  line-height: 1.7;
-  color: #d4c9b6;
-  padding: 0 1.5rem;
+  font-weight: 600;
+  border: 2px solid transparent;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+
+.btn-primary {
+  background-color: #7a5cf0;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #9f80ff;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid #7a5cf0;
+  color: #7a5cf0;
+}
+
+.btn-outline:hover {
+  background-color: #7a5cf0;
+  color: white;
 }
