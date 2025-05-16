@@ -1,0 +1,57 @@
+.starter-page {
+  background-color: #fdfaf4;
+  color: #222;
+  padding: 4rem 1.5rem 2rem;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+.starter-title {
+  font-family: 'Cinzel', serif;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #3c2f23;
+}
+
+.starter-section {
+  margin-bottom: 2.5rem;
+  border-top: 1px solid #e0d9c8;
+  padding-top: 1.5rem;
+}
+
+.starter-toggle {
+  font-family: 'Cinzel', serif;
+  font-size: 1.4rem;
+  background: none;
+  border: none;
+  color: #3c2f23;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  padding: 0.5rem 0;
+  transition: color 0.2s ease;
+}
+
+.starter-toggle:hover {
+  color: #8a6b3c;
+}
+
+.starter-content {
+  text-align: center;
+}
+
+.starter-banner {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.starter-text {
+  font-size: 1rem;
+  max-width: 640px;
+  margin: 0 auto;
+  color: #3a2e24;
+  line-height: 1.6;
+}
