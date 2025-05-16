@@ -53,3 +53,29 @@
   height: 80px;
   margin-bottom: 0.75rem;
 }
+
+.faction-card.expandable {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.faction-card.open {
+  background-color: #fff8eb;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+}
+
+.faction-card.open h2 {
+  color: #3c2f23;
+}
+
+.faction-details {
+  text-align: left;
+  font-size: 0.95rem;
+  margin-top: 1rem;
+  color: #3a2e24;
+}
+
+.faction-details p {
+  margin: 0.3rem 0;
+}
+
