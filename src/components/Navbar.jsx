@@ -1,7 +1,7 @@
 // src/components/Navbar.jsx
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import logo from "../assets/logo.png"; // Use your actual logo file path
+import logo from "../assets/chronoshift-logo.png"; // Use your actual logo file path
 
 function Navbar() {
   return (
