@@ -1,23 +1,12 @@
 /* NAVBAR WRAPPER */
 .navbar-wrapper {
-  background: linear-gradient(to right, #1b141e, #241a2b);
+  background: linear-gradient(to right, #0c0b10, #1b141e);
   padding: 1.2rem 2.5rem;
   border-bottom: 2px solid #5e436d;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
   position: sticky;
   top: 0;
   z-index: 1000;
-}
-
-.navbar-wrapper::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 4px;
-  width: 100%;
-  background: linear-gradient(to right, #443e4e, #ddb892, #372e46);
-  z-index: -1;
 }
 
 /* NAVBAR INNER */
@@ -66,10 +55,4 @@
   background: #ddb892;
   bottom: 0;
   left: 0;
-}
-
-.logo-image {
-  height: 40px;
-  width: auto;
-  display: block;
 }
