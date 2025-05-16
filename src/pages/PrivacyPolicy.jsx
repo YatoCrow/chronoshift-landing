@@ -1,4 +1,6 @@
 // src/pages/PrivacyPolicy.jsx
+import "./Legal.css";
+
 export default function PrivacyPolicy() {
   return (
     <div className="legal-page">
