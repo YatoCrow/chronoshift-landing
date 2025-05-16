@@ -56,7 +56,6 @@
   cursor: pointer;
 }
 
-/* Primary CTA */
 .btn-primary {
   background-color: #f5d8a0;
   color: #0d0d0d;
@@ -68,7 +67,6 @@
   box-shadow: 0 0 10px rgba(245, 216, 160, 0.5);
 }
 
-/* Outline CTA */
 .btn-outline {
   background-color: transparent;
   border: 2px solid #f5d8a0;
@@ -117,7 +115,8 @@
   margin-top: 2rem;
 }
 
-.faction-card {
+/* Scoped only to homepage */
+.home-container .faction-card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -130,12 +129,12 @@
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
 }
 
-.faction-card:hover {
+.home-container .faction-card:hover {
   transform: scale(1.05);
   box-shadow: 0 0 12px rgba(245, 216, 160, 0.25);
 }
 
-.faction-emblem {
+.home-container .faction-emblem {
   width: 80px;
   height: 80px;
   object-fit: contain;
@@ -143,7 +142,7 @@
   filter: drop-shadow(0 0 4px rgba(245, 216, 160, 0.2));
 }
 
-.faction-name {
+.home-container .faction-name {
   color: #f5e4c6;
   font-weight: 600;
   text-align: center;
