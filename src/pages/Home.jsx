@@ -6,7 +6,7 @@ function Home() {
     <div className="home-container">
       <div className="hero">
         <img
-          src="/assets/logo.png"
+          src="../assets/logo.png"
           alt="Chronoshift"
           className="hero-logo"
         />
