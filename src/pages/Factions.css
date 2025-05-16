@@ -79,3 +79,21 @@
   margin: 0.3rem 0;
 }
 
+.toggle-button {
+  margin-top: 0.75rem;
+  background-color: #f5e8ce;
+  border: 1px solid #d2c2a2;
+  padding: 0.45rem 1.1rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  font-family: 'Cinzel', serif;
+  color: #3c2f23;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  transition: all 0.2s ease;
+}
+
+.toggle-button:hover {
+  background-color: #fff3dd;
+  border-color: #baa682;
+}
