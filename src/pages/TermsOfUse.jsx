@@ -4,6 +4,7 @@ import "./Legal.css";
 export default function TermsOfUse() {
   return (
     <div className="legal-page">
+      <div className="legal-page">
       <h1>Terms of Use</h1>
       <p>Last updated: May 2025</p>
 
@@ -41,6 +42,7 @@ export default function TermsOfUse() {
         We reserve the right to update or modify these Terms at any time. Continued use of the
         website after changes are made constitutes acceptance of those changes.
       </p>
+    </div>
     </div>
   );
 }
