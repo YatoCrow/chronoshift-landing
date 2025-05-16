@@ -1,15 +1,16 @@
 import { Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Home from "./pages/Home";
 import TermsOfUse from "./pages/TermsOfUse";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <>
       <Navbar />
-
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/factions" element={<h2>Factions Page</h2>} />
@@ -19,7 +20,6 @@ function App() {
         <Route path="/terms" element={<TermsOfUse />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
       </Routes>
-
       <Footer />
     </>
   );
