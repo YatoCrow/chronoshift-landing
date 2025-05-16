@@ -55,3 +55,40 @@
   color: #3a2e24;
   line-height: 1.6;
 }
+
+.starter-includes {
+  text-align: left;
+  max-width: 720px;
+  margin: 2rem auto 1rem;
+  padding: 1rem 1.25rem;
+  background-color: #fffaf0;
+  border: 1px solid #e4d8c2;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+.starter-includes h3 {
+  font-family: 'Cinzel', serif;
+  color: #3c2f23;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.starter-includes ul {
+  padding-left: 1.25rem;
+  margin-bottom: 1rem;
+  color: #3a2e24;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.starter-includes ul ul {
+  margin-top: 0.3rem;
+}
+
+.starter-product-image {
+  margin-top: 1.5rem;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
