@@ -1,46 +1,26 @@
-// src/pages/Home.jsx
 import './Home.css';
+import logo from '../assets/logo.png';
 import { Link } from 'react-router-dom';
 
 export default function Home() {
   return (
-    <div className="home-container">
-    <div className="layout-inner">
+    <div className="home-wrapper">
       <section className="hero-section">
-        <div className="hero-overlay">
-          <h1 className="game-title">Chronoshift</h1>
-          <p className="subtitle">A Battle Across Shifting Time</p>
-          <div className="cta-buttons">
-            <Link to="/tracker" className="btn">Play Tracker</Link>
-            <Link to="/rules" className="btn">Learn the Game</Link>
-            <Link to="/starter-decks" className="btn">Buy Starter Decks</Link>
-          </div>
+        <img src={logo} alt="Chronoshift Eclipse Dawn" className="hero-logo" />
+        <h2 className="tagline">Command time. Bend fate. Rule your phase.</h2>
+
+        <div className="cta-buttons">
+          <Link to="/faction" className="cta-btn">Explore Factions</Link>
+          <Link to="/tracker" className="cta-btn">Open Tracker</Link>
         </div>
       </section>
 
-      <section className="features-section">
-        <div className="feature">
-          <h2>Enter the Rift</h2>
-          <p>Chronoshift is a competitive fantasy card game where time is unstable and factions rise and fall with the hour. Each match reshapes the battlefield with randomized Time Phases.</p>
-        </div>
-        <div className="feature">
-          <h2>Choose Your Clan</h2>
-          <p>Wield the power of Vampires, Werewolves, Flamekin, Humans, Demons—or the mysterious exiled. Each faction thrives during their favored phase.</p>
-        </div>
-        <div className="feature">
-          <h2>Track Time in Real Time</h2>
-          <p>Use the built-in Chronoshift Tracker to roll, monitor, and control the battlefield's evolving conditions.</p>
-        </div>
+      <section className="description">
+        <p>
+          Chronoshift is a time-bending strategy card game where factions rise and fall with the hour.
+          Battle for dominance as time shifts unpredictably. Align your deck with the phase. Control fate.
+        </p>
       </section>
-      </div>
-
-      <footer className="footer">
-        <p>© 2025 YatoCrow Games. All rights reserved.</p>
-        <div className="footer-links">
-          <Link to="/terms">Terms of Use</Link>
-          <Link to="/privacy">Privacy Policy</Link>
-        </div>
-      </footer>
     </div>
   );
 }

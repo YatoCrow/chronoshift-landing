@@ -1,122 +1,55 @@
-/* src/pages/Home.css */
-
-.home-container {
-  background: url('/backgrounds/chronoshift-bg.jpg') no-repeat top left;
-  background-size: cover;
-}
-
-.hero-section {
-  position: relative;
+.home-wrapper {
+  padding: 4rem 0;
   text-align: center;
-  padding: 6rem 2rem 4rem;
-  background: rgba(10, 4, 16, 0.75);
-  backdrop-filter: blur(4px);
+  background-color: #0d0c11;
+  color: #f5f0e6;
+  min-height: 100vh;
+  font-family: 'Cinzel', serif;
 }
 
-.hero-overlay {
-  text-align: center;
-  margin-bottom: 3rem;
-  padding: 1rem 0;
+.hero-logo {
+  max-width: 380px;
+  width: 90%;
+  height: auto;
+  margin-bottom: 1.5rem;
 }
 
-.game-title {
-  font-size: 4rem;
-  letter-spacing: 0.1em;
-  margin-bottom: 1rem;
-  color: #f6dbff;
-  text-shadow: 0 0 15px #8535c9;
-}
-
-.subtitle {
-  font-size: 1.5rem;
-  color: #d3baf8;
+.tagline {
+  font-size: 1.4rem;
+  font-style: italic;
   margin-bottom: 2rem;
-  text-shadow: 0 0 6px #532e84;
+  color: #d6c3a6;
 }
 
 .cta-buttons {
   display: flex;
-  gap: 1.5rem;
   justify-content: center;
   flex-wrap: wrap;
-}
-
-.btn {
-  background-color: #6c3ab4;
-  color: white;
-  padding: 0.75rem 1.5rem;
-  border: none;
-  border-radius: 0.4rem;
-  font-size: 1rem;
-  text-decoration: none;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  box-shadow: 0 0 10px rgba(131, 53, 201, 0.6);
-}
-
-.btn:hover {
-  background-color: #8535c9;
-  transform: translateY(-2px);
-}
-
-.features-section {
-  background-color: rgba(17, 7, 27, 0.95);
-  padding: 3rem 1.5rem;
-  display: grid;
-  gap: 2rem;
-  text-align: center;
-}
-
-.feature {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.feature h2 {
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
-  color: #e9d3ff;
-  text-shadow: 0 0 5px #6c3ab4;
-}
-
-.feature p {
-  font-size: 1.1rem;
-  color: #cebaff;
-  line-height: 1.6;
-}
-
-.footer {
-  background-color: #120718;
-  padding: 1.5rem;
-  text-align: center;
-  border-top: 1px solid #2e1d3f;
-}
-
-.footer p {
-  margin: 0;
-  font-size: 0.9rem;
-  color: #a38bcf;
-}
-
-.footer-links {
-  margin-top: 0.5rem;
-  display: flex;
-  justify-content: center;
   gap: 1.25rem;
+  margin-bottom: 3rem;
 }
 
-.footer-links a {
-  color: #d2bbff;
+.cta-btn {
+  background: none;
+  border: 2px solid #f5f0e6;
+  color: #f5f0e6;
+  padding: 0.75rem 1.5rem;
   text-decoration: none;
-  font-size: 0.95rem;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: all 0.3s ease;
 }
 
-.footer-links a:hover {
-  text-decoration: underline;
+.cta-btn:hover {
+  background-color: #f5f0e6;
+  color: #0d0c11;
 }
 
-.layout-inner {
-  max-width: 1200px;
+.description {
+  max-width: 700px;
   margin: 0 auto;
-  padding: 0 2.5rem;
-  border: 2px solid lime; /* <— temporary debug */
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #d4c9b6;
+  padding: 0 1.5rem;
 }
