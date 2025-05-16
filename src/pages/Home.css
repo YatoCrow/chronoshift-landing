@@ -1,5 +1,8 @@
-/* src/pages/Home.css */
+/* ------------------------------
+   Chronoshift Home Page Styling
+--------------------------------*/
 
+/* Base Layout */
 .home-container {
   display: flex;
   flex-direction: column;
@@ -8,9 +11,11 @@
   padding: 3rem 1rem;
   min-height: calc(100vh - 80px);
   background-color: #0d0d0d;
+  background-image: radial-gradient(circle at center, rgba(122, 92, 240, 0.15) 0%, transparent 60%);
   color: #fff;
 }
 
+/* Hero Section */
 .hero {
   text-align: center;
   max-width: 720px;
@@ -19,14 +24,18 @@
 .hero-logo {
   width: 300px;
   margin-bottom: 1.5rem;
+  filter: drop-shadow(0 0 8px #7a5cf0aa);
 }
 
 .tagline {
-  font-size: 1.5rem;
+  font-family: 'Cinzel', serif;
+  font-size: 1.6rem;
   margin-bottom: 2rem;
-  color: #cccccc;
+  color: #dddddd;
+  text-shadow: 0 0 4px rgba(122, 92, 240, 0.4);
 }
 
+/* CTA Buttons */
 .cta-buttons {
   display: flex;
   gap: 1.5rem;
@@ -43,17 +52,22 @@
   text-decoration: none;
   transition: all 0.3s ease;
   border-radius: 8px;
+  cursor: pointer;
 }
 
+/* Primary CTA */
 .btn-primary {
   background-color: #7a5cf0;
   color: white;
+  box-shadow: 0 0 8px rgba(122, 92, 240, 0.3);
 }
 
 .btn-primary:hover {
   background-color: #9f80ff;
+  box-shadow: 0 0 12px rgba(122, 92, 240, 0.5);
 }
 
+/* Outline CTA */
 .btn-outline {
   background-color: transparent;
   border: 2px solid #7a5cf0;
@@ -63,10 +77,16 @@
 .btn-outline:hover {
   background-color: #7a5cf0;
   color: white;
+  box-shadow: 0 0 8px rgba(122, 92, 240, 0.5);
 }
 
-/* Add to your existing Home.css */
+.small-btn {
+  margin-top: 1.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
 
+/* Section Styling */
 .home-section {
   padding: 3rem 1rem;
   max-width: 800px;
@@ -78,6 +98,7 @@
   font-size: 2rem;
   margin-bottom: 1rem;
   color: #f5f5f5;
+  font-family: 'Cinzel', serif;
 }
 
 .home-section p {
@@ -86,23 +107,47 @@
   color: #cccccc;
 }
 
-/* Time Phase List */
-.time-phase-list {
+/* Faction Emblem Grid */
+.faction-grid {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1.25rem;
-  margin-top: 1rem;
+  gap: 2rem;
+  margin-top: 2rem;
 }
 
-.time-phase-card {
+.faction-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 140px;
   padding: 1rem;
-  background-color: #1c1c1c;
-  border: 1px solid #333;
   border-radius: 10px;
-  width: 120px;
-  font-weight: 600;
+  background-color: #1a1a1a;
+  border: 1px solid #2c2c2c;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+.faction-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px rgba(122, 92, 240, 0.3);
+}
+
+.faction-emblem {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 0.75rem;
+  filter: drop-shadow(0 0 4px rgba(122, 92, 240, 0.2));
+}
+
+.faction-name {
   color: #eee;
+  font-weight: 600;
+  text-align: center;
+  font-size: 0.95rem;
+  font-family: 'Cinzel', serif;
 }
 
 /* Deck Preview */
@@ -123,50 +168,4 @@
   color: #fff;
   border: 1px solid #333;
   text-align: center;
-}
-
-.small-btn {
-  margin-top: 1.5rem;
-  padding: 0.5rem 1rem;
-  font-size: 0.9rem;
-}
-
-/* Add to Home.css */
-
-.faction-grid {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.faction-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 140px;
-  padding: 1rem;
-  border-radius: 10px;
-  background-color: #1a1a1a;
-  border: 1px solid #333;
-  transition: transform 0.2s ease;
-}
-
-.faction-card:hover {
-  transform: scale(1.05);
-}
-
-.faction-emblem {
-  width: 80px;
-  height: 80px;
-  object-fit: contain;
-  margin-bottom: 0.75rem;
-}
-
-.faction-name {
-  color: #eee;
-  font-weight: 600;
-  text-align: center;
-  font-size: 0.95rem;
 }
