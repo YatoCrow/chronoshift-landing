@@ -1,6 +1,64 @@
+import { useState } from "react";
 import "./Factions.css";
 
+const factions = [
+  {
+    name: "House Noctvaris",
+    key: "HN",
+    description: "Vampiric nobles who thrive at night, draining life and summoning bloodbound allies.",
+    focus: "Sustain, Lifesteal, Token Swarm",
+    curve: "Mid to Late",
+    tempo: "Control / Snowball"
+  },
+  {
+    name: "The Moondrath",
+    key: "TM",
+    description: "A lunar pack of beasts that strike fast and vanish. Masters of Stealth and Full Moon dominance.",
+    focus: "Aggro, Strike First, Stealth",
+    curve: "Low to Mid",
+    tempo: "Aggressive / Tactical"
+  },
+  {
+    name: "Solari Ascendants",
+    key: "SA",
+    description: "Unified human order empowered by the sun. Rely on team buffs and coordination.",
+    focus: "Synergy, Day Buffs, Balanced Tactics",
+    curve: "Midrange",
+    tempo: "Stable / Reactive"
+  },
+  {
+    name: "Scorchborne",
+    key: "SB",
+    description: "Fire-worshipping zealots who embrace pain and unleash volatile power.",
+    focus: "Burn, Fury, Unstable Power",
+    curve: "Low to Mid",
+    tempo: "Explosive / Risk-Reward"
+  },
+  {
+    name: "Umbra’kin",
+    key: "UK",
+    description: "Abyssal demons born of the void. Thrive in recursion and overwhelming presence.",
+    focus: "Deadcall, Graveyard Loops, Big Threats",
+    curve: "Mid to Late",
+    tempo: "Resilient / Inevitable"
+  },
+  {
+    name: "Noctara Sanctum",
+    key: "NS",
+    description: "Exiles from all clans seeking peace in dusk. Masters of restraint, speed, and cunning plays.",
+    focus: "Control, Counterplay, Precision",
+    curve: "Flat",
+    tempo: "Cunning / Defensive"
+  }
+];
+
 export default function Factions() {
+  const [openFaction, setOpenFaction] = useState(null);
+
+  const toggleFaction = (key) => {
+    setOpenFaction(openFaction === key ? null : key);
+  };
+
   return (
     <div className="factions-page">
       <div className="factions-header">
@@ -9,21 +67,27 @@ export default function Factions() {
       </div>
 
       <div className="faction-grid">
-        {[
-          { name: "House Noctvaris", key: "HN" },
-          { name: "The Moondrath", key: "TM" },
-          { name: "Solari Ascendants", key: "SA" },
-          { name: "Scorchborne", key: "SB" },
-          { name: "Umbra’kin", key: "UK" },
-          { name: "Noctara Sanctum", key: "NS" },
-        ].map((faction) => (
-          <div key={faction.key} className="faction-card">
+        {factions.map((f) => (
+          <div
+            key={f.key}
+            className={`faction-card expandable ${openFaction === f.key ? "open" : ""}`}
+            onClick={() => toggleFaction(f.key)}
+          >
             <img
-              src={`/assets/emblems/${faction.key}-Emblem.webp`}
-              alt={`${faction.name} emblem`}
+              src={`/assets/emblems/${f.key}-Emblem.webp`}
+              alt={`${f.name} emblem`}
               className="faction-card-emblem"
             />
-            <h2>{faction.name}</h2>
+            <h2>{f.name}</h2>
+
+            {openFaction === f.key && (
+              <div className="faction-details">
+                <p><strong>Description:</strong> {f.description}</p>
+                <p><strong>Gameplay Focus:</strong> {f.focus}</p>
+                <p><strong>Curve:</strong> {f.curve}</p>
+                <p><strong>Tempo:</strong> {f.tempo}</p>
+              </div>
+            )}
           </div>
         ))}
       </div>
