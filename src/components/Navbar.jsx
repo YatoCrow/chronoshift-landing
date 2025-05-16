@@ -9,7 +9,7 @@ export default function Navbar() {
     <header className="navbar-wrapper">
       <div className="navbar-inner">
         <Link to="/" className="navbar-logo">
-          <img src={logo} alt="Chronoshift Logo" className="logo-image" />
+          <img src={logo} alt="Chronoshift Logo" />
         </Link>
         <nav className="navbar-links">
           <Link to="/factions" className={location.pathname === "/factions" ? "active" : ""}>Factions</Link>
