@@ -1,26 +1,24 @@
-import './Home.css';
-import logo from '../assets/logo.png';
-import { Link } from 'react-router-dom';
+// src/pages/Home.jsx
+import "./Home.css";
 
-export default function Home() {
+function Home() {
   return (
-    <div className="home-wrapper">
-      <section className="hero-section">
-        <img src={logo} alt="Chronoshift Eclipse Dawn" className="hero-logo" />
-        <h2 className="tagline">Command time. Bend fate. Rule your phase.</h2>
+    <div className="home-container">
+      <div className="hero">
+        <img
+          src="/assets/chronoshift-logo.png"
+          alt="Chronoshift"
+          className="hero-logo"
+        />
+        <p className="tagline">Time is fractured. Power shifts. Who will rise?</p>
 
         <div className="cta-buttons">
-          <Link to="/faction" className="cta-btn">Explore Factions</Link>
-          <Link to="/tracker" className="cta-btn">Open Tracker</Link>
+          <a href="/starter-decks" className="btn-primary">View Starter Decks</a>
+          <a href="/factions" className="btn-outline">Explore Factions</a>
         </div>
-      </section>
-
-      <section className="description">
-        <p>
-          Chronoshift is a time-bending strategy card game where factions rise and fall with the hour.
-          Battle for dominance as time shifts unpredictably. Align your deck with the phase. Control fate.
-        </p>
-      </section>
+      </div>
     </div>
   );
 }
+
+export default Home;
