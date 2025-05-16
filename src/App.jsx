@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import TermsOfUse from "./pages/TermsOfUse";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import ScrollToTop from "./components/ScrollToTop";
+import Factions from "./pages/Factions";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/keywords" element={<h2>Keyword Glossary</h2>} />
         <Route path="/terms" element={<TermsOfUse />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
+        <Route path="/factions" element={<Factions />} />
 
         {/* Catch-all 404 route */}
         <Route
