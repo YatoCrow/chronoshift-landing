@@ -1,5 +1,8 @@
 /* src/pages/Factions.css */
 
+/* ------------------------
+   Page Layout & Background
+------------------------- */
 .factions-page {
   background-color: #fdfaf4;
   color: #222;
@@ -8,6 +11,9 @@
   box-sizing: border-box;
 }
 
+/* ------------------------
+   Header Styling
+------------------------- */
 .factions-header {
   text-align: center;
   margin-bottom: 3rem;
@@ -25,6 +31,9 @@
   color: #555;
 }
 
+/* ------------------------
+   Faction Grid & Card Base
+------------------------- */
 .faction-grid {
   display: flex;
   flex-wrap: wrap;
@@ -48,14 +57,11 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
-.faction-card-emblem {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 0.75rem;
-}
-
+/* ------------------------
+   Card State: Expandable / Open
+------------------------- */
 .faction-card.expandable {
-  cursor: pointer;
+  cursor: default;
   transition: all 0.3s ease;
 }
 
@@ -68,19 +74,32 @@
   color: #3c2f23;
 }
 
-.faction-details {
-  text-align: left;
-  font-size: 0.95rem;
-  margin-top: 1rem;
-  color: #3a2e24;
+/* ------------------------
+   Emblem & Code Styling
+------------------------- */
+.faction-card-emblem {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 0.75rem;
 }
 
-.faction-details p {
-  margin: 0.3rem 0;
+.faction-meta {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
 }
 
+.faction-code {
+  font-size: 0.75rem;
+  color: #777;
+}
+
+/* ------------------------
+   Toggle Button Styling
+------------------------- */
 .toggle-button {
-  margin-top: 0.75rem;
   background-color: #f5e8ce;
   border: 1px solid #d2c2a2;
   padding: 0.45rem 1.1rem;
@@ -96,6 +115,20 @@
 .toggle-button:hover {
   background-color: #fff3dd;
   border-color: #baa682;
+}
+
+/* ------------------------
+   Expanded Details Styling
+------------------------- */
+.faction-details {
+  text-align: left;
+  font-size: 0.95rem;
+  margin-top: 1rem;
+  color: #3a2e24;
+}
+
+.faction-details p {
+  margin: 0.3rem 0;
 }
 
 .faction-details strong {
