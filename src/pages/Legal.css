@@ -1,18 +1,23 @@
 /* src/pages/Legal.css */
+
 .legal-page {
-  max-width: 800px;
-  margin: 4rem auto;
-  padding: 0 1rem;
+  background-color: #0d0d0d; /* match Chronoshift base */
+  background-image: radial-gradient(circle at top center, rgba(245, 216, 160, 0.06) 0%, transparent 70%);
   color: #e8dbc3;
+  min-height: 100vh;
+  padding: 4rem 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
   font-size: 1rem;
   line-height: 1.8;
+  font-family: 'Cinzel', serif;
 }
 
 .legal-page h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
   color: #f5d8a0;
-  font-family: 'Cinzel', serif;
+  text-align: center;
 }
 
 .legal-page h2 {
