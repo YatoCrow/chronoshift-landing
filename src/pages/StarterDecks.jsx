@@ -2,26 +2,18 @@ import { useState } from "react";
 import "./StarterDecks.css";
 
 export default function StarterDecks() {
-  const [open, setOpen] = useState({
-    bon: false,
-    rol: false,
-    wod: false,
-  });
-
-  const toggle = (key) => {
-    setOpen((prev) => ({ ...prev, [key]: !prev[key] }));
-  };
+  const [open, setOpen] = useState(false);
 
   return (
     <div className="starter-page">
       <h1 className="starter-title">Starter Kits</h1>
 
-      {/* Bonds of Night */}
+      {/* Bonds of Night – Collapsible */}
       <div className="starter-section">
-        <button className="starter-toggle" onClick={() => toggle("bon")}>
-          Bonds of Night {open.bon ? "▲" : "▼"}
+        <button className="starter-toggle" onClick={() => setOpen(!open)}>
+          Bonds of Night {open ? "▲" : "▼"}
         </button>
-        {open.bon && (
+        {open && (
           <div className="starter-content">
             <img
               src="/assets/bon-panel.webp"
@@ -29,41 +21,34 @@ export default function StarterDecks() {
               className="starter-banner"
             />
             <p className="starter-text">
-              Featuring House Noctvaris and The Moondrath. Darkness unites where blood and fang meet.
+              Featuring House Noctvaris and The Moondrath. A tactical clash of vampiric control and feral aggression,
+              where the night strengthens both blood and fang.
             </p>
-            {/* More content will go here */}
+            {/* Additional content like decklist preview can be added here */}
           </div>
         )}
       </div>
 
-      {/* Rise of Light */}
+      {/* Rise of Light – Static */}
       <div className="starter-section">
-        <button className="starter-toggle" onClick={() => toggle("rol")}>
-          Rise of Light {open.rol ? "▲" : "▼"}
-        </button>
-        {open.rol && (
-          <div className="starter-content">
-            <p className="starter-text">
-              Featuring Solari Ascendants and Scorchborne. Light rises where flame meets faith.
-            </p>
-            {/* Placeholder for banner + content */}
-          </div>
-        )}
+        <h2 className="starter-heading">Rise of Light</h2>
+        <p className="starter-text">
+          Featuring Solari Ascendants and Scorchborne. A radiant blend of order and chaos — expect midrange synergy,
+          fire-fueled aggression, and a showdown of flame and faith.
+          <br /><br />
+          <em>Full kit reveal coming soon.</em>
+        </p>
       </div>
 
-      {/* Whispers of Dusk */}
+      {/* Whispers of Dusk – Static */}
       <div className="starter-section">
-        <button className="starter-toggle" onClick={() => toggle("wod")}>
-          Whispers of Dusk {open.wod ? "▲" : "▼"}
-        </button>
-        {open.wod && (
-          <div className="starter-content">
-            <p className="starter-text">
-              Featuring Umbra’kin and Noctara Sanctum. Secrets stir where dusk forgets the war.
-            </p>
-            {/* Placeholder for banner + content */}
-          </div>
-        )}
+        <h2 className="starter-heading">Whispers of Dusk</h2>
+        <p className="starter-text">
+          Featuring Umbra’kin and Noctara Sanctum. A clash of abyss and exile — expect recursion, counterplay,
+          and cunning late-game dominance forged in shadows.
+          <br /><br />
+          <em>Full kit reveal coming soon.</em>
+        </p>
       </div>
     </div>
   );
