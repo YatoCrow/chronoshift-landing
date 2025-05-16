@@ -130,3 +130,43 @@
   padding: 0.5rem 1rem;
   font-size: 0.9rem;
 }
+
+/* Add to Home.css */
+
+.faction-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.faction-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 140px;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  transition: transform 0.2s ease;
+}
+
+.faction-card:hover {
+  transform: scale(1.05);
+}
+
+.faction-emblem {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 0.75rem;
+}
+
+.faction-name {
+  color: #eee;
+  font-weight: 600;
+  text-align: center;
+  font-size: 0.95rem;
+}
