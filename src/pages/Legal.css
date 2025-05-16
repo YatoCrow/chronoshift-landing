@@ -1,0 +1,22 @@
+/* src/pages/Legal.css */
+.legal-page {
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+  color: #e8dbc3;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.legal-page h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #f5d8a0;
+  font-family: 'Cinzel', serif;
+}
+
+.legal-page h2 {
+  font-size: 1.25rem;
+  margin-top: 2rem;
+  color: #ffe8b3;
+}
