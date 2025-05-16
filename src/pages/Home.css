@@ -1,5 +1,6 @@
 /* ------------------------------
    Chronoshift Home Page Styling
+   Theme: Eclipse Dawn (Gold Glow)
 --------------------------------*/
 
 /* Base Layout */
@@ -11,7 +12,7 @@
   padding: 3rem 1rem;
   min-height: calc(100vh - 80px);
   background-color: #0d0d0d;
-  background-image: radial-gradient(circle at center, rgba(122, 92, 240, 0.15) 0%, transparent 60%);
+  background-image: radial-gradient(circle at center, rgba(245, 216, 160, 0.08) 0%, transparent 60%);
   color: #fff;
 }
 
@@ -24,15 +25,15 @@
 .hero-logo {
   width: 300px;
   margin-bottom: 1.5rem;
-  filter: drop-shadow(0 0 8px #7a5cf0aa);
+  filter: drop-shadow(0 0 6px #f5d8a055);
 }
 
 .tagline {
   font-family: 'Cinzel', serif;
   font-size: 1.6rem;
   margin-bottom: 2rem;
-  color: #dddddd;
-  text-shadow: 0 0 4px rgba(122, 92, 240, 0.4);
+  color: #f0e6d6;
+  text-shadow: 0 0 4px rgba(245, 216, 160, 0.3);
 }
 
 /* CTA Buttons */
@@ -57,27 +58,27 @@
 
 /* Primary CTA */
 .btn-primary {
-  background-color: #7a5cf0;
-  color: white;
-  box-shadow: 0 0 8px rgba(122, 92, 240, 0.3);
+  background-color: #f5d8a0;
+  color: #0d0d0d;
+  box-shadow: 0 0 6px rgba(245, 216, 160, 0.3);
 }
 
 .btn-primary:hover {
-  background-color: #9f80ff;
-  box-shadow: 0 0 12px rgba(122, 92, 240, 0.5);
+  background-color: #ffe7b7;
+  box-shadow: 0 0 10px rgba(245, 216, 160, 0.5);
 }
 
 /* Outline CTA */
 .btn-outline {
   background-color: transparent;
-  border: 2px solid #7a5cf0;
-  color: #7a5cf0;
+  border: 2px solid #f5d8a0;
+  color: #f5d8a0;
 }
 
 .btn-outline:hover {
-  background-color: #7a5cf0;
-  color: white;
-  box-shadow: 0 0 8px rgba(122, 92, 240, 0.5);
+  background-color: #f5d8a0;
+  color: #0d0d0d;
+  box-shadow: 0 0 10px rgba(245, 216, 160, 0.4);
 }
 
 .small-btn {
@@ -97,14 +98,14 @@
 .home-section h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #f5f5f5;
+  color: #f8e7c7;
   font-family: 'Cinzel', serif;
 }
 
 .home-section p {
   font-size: 1.1rem;
   line-height: 1.6;
-  color: #cccccc;
+  color: #e8dbc3;
 }
 
 /* Faction Emblem Grid */
@@ -131,7 +132,7 @@
 
 .faction-card:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 12px rgba(122, 92, 240, 0.3);
+  box-shadow: 0 0 12px rgba(245, 216, 160, 0.25);
 }
 
 .faction-emblem {
@@ -139,11 +140,11 @@
   height: 80px;
   object-fit: contain;
   margin-bottom: 0.75rem;
-  filter: drop-shadow(0 0 4px rgba(122, 92, 240, 0.2));
+  filter: drop-shadow(0 0 4px rgba(245, 216, 160, 0.2));
 }
 
 .faction-name {
-  color: #eee;
+  color: #f5e4c6;
   font-weight: 600;
   text-align: center;
   font-size: 0.95rem;
@@ -165,7 +166,7 @@
   border-radius: 10px;
   width: 160px;
   font-weight: bold;
-  color: #fff;
+  color: #fdf2dc;
   border: 1px solid #333;
   text-align: center;
 }
