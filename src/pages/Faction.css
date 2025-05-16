@@ -1,0 +1,55 @@
+/* src/pages/Factions.css */
+
+.factions-page {
+  background-color: #fdfaf4;
+  color: #222;
+  min-height: 100vh;
+  padding: 4rem 1.5rem 2rem;
+  box-sizing: border-box;
+}
+
+.factions-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.factions-header h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 2.5rem;
+  color: #3c2f23;
+  margin-bottom: 0.5rem;
+}
+
+.factions-header p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.faction-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.faction-card {
+  background-color: #fffdf6;
+  border: 1px solid #e0d9c8;
+  border-radius: 12px;
+  width: 180px;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.faction-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.faction-card-emblem {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 0.75rem;
+}
