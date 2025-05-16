@@ -93,14 +93,12 @@ export default function Factions() {
               className="faction-card-emblem"
             />
             <h2>{f.name}</h2>
-            <small className="faction-code">{f.code}</small>
-
-            <button
-              className="toggle-button"
-              onClick={() => toggleFaction(f.key)}
-            >
-              {openStates[f.key] ? "Hide Info" : "Show Info"}
-            </button>
+<div className="faction-meta">
+  <small className="faction-code">{f.code}</small>
+  <button className="toggle-button" onClick={() => toggleFaction(f.key)}>
+    {openStates[f.key] ? "Hide Info" : "Show Info"}
+  </button>
+</div>
 
             {openStates[f.key] && (
               <div className="faction-details">
