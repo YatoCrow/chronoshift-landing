@@ -64,3 +64,69 @@
   background-color: #7a5cf0;
   color: white;
 }
+
+/* Add to your existing Home.css */
+
+.home-section {
+  padding: 3rem 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.home-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #f5f5f5;
+}
+
+.home-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #cccccc;
+}
+
+/* Time Phase List */
+.time-phase-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.time-phase-card {
+  padding: 1rem;
+  background-color: #1c1c1c;
+  border: 1px solid #333;
+  border-radius: 10px;
+  width: 120px;
+  font-weight: 600;
+  color: #eee;
+}
+
+/* Deck Preview */
+.deck-preview-grid {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.deck-card {
+  background-color: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 160px;
+  font-weight: bold;
+  color: #fff;
+  border: 1px solid #333;
+  text-align: center;
+}
+
+.small-btn {
+  margin-top: 1.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
