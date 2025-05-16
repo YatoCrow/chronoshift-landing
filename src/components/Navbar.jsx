@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
+import logo from "../assets/logo.png"; // Adjust the path based on your project structure
 
 export default function Navbar() {
   const location = useLocation();
@@ -8,7 +9,7 @@ export default function Navbar() {
     <header className="navbar-wrapper">
       <div className="navbar-inner">
         <Link to="/" className="navbar-logo">
-          Chronoshift
+          <img src={logo} alt="Chronoshift Logo" className="logo-image" />
         </Link>
         <nav className="navbar-links">
           <Link to="/factions" className={location.pathname === "/factions" ? "active" : ""}>Factions</Link>
