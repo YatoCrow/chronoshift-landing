@@ -10,8 +10,9 @@ export default function StarterDecks() {
 
       {/* Bonds of Night – Collapsible */}
       <div className="starter-section">
+  <h2 className="starter-heading">Bonds of Night</h2>
   <button className="starter-toggle" onClick={() => setOpen(!open)}>
-    Bonds of Night {open ? "▲" : "▼"}
+    {open ? "▲ Hide" : "▼ Show Contents"}
   </button>
 
   {open && (
@@ -21,40 +22,41 @@ export default function StarterDecks() {
         alt="Bonds of Night"
         className="starter-banner"
       />
+
       <p className="starter-text">
         Featuring House Noctvaris and The Moondrath. A tactical clash of vampiric control and feral aggression,
         where the night strengthens both blood and fang.
       </p>
 
       <div className="starter-includes">
-  <img
-    src="/assets/bon-starterkit-product.webp"
-    alt="Bonds of Night Starter Kit Product Preview"
-    className="starter-product-image"
-  />
+        <img
+          src="/assets/bon-starterkit-product.webp"
+          alt="Bonds of Night Starter Kit Product Preview"
+          className="starter-product-image"
+        />
 
-  <h3>Included in the Starter Kit:</h3>
-  <ul>
-    <li>2 60-card Starter Decks (House Noctvaris and The Moondrath)</li>
-    <li>Each deck includes:
-      <ul>
-        <li>1 Legendary Figure</li>
-        <li>3 Elite Figures</li>
-        <li>Commons, Spells, and Conduits (Resources)</li>
-        <li>5 Bloodshade Tokens (House Noctvaris)</li>
-        <li>6 Fangshade Tokens (The Moondrath)</li>
-      </ul>
-    </li>
-    <li>Beginner’s Grimoire</li>
-    <li>2 Custom D6:
-      <ul>
-        <li>Time Phase Die</li>
-        <li>Timecharge Die</li>
-      </ul>
-    </li>
-    <li>Downloadables (PDF rules, playmat design)</li>
-  </ul>
-</div>
+        <h3>Included in the Starter Kit:</h3>
+        <ul>
+          <li>2 60-card Starter Decks (House Noctvaris and The Moondrath)</li>
+          <li>Each deck includes:
+            <ul>
+              <li>1 Legendary Figure</li>
+              <li>3 Elite Figures</li>
+              <li>Commons, Spells, and Conduits (Resources)</li>
+              <li>5 Bloodshade Tokens (House Noctvaris)</li>
+              <li>6 Fangshade Tokens (The Moondrath)</li>
+            </ul>
+          </li>
+          <li>Beginner’s Grimoire</li>
+          <li>2 Custom D6:
+            <ul>
+              <li>Time Phase Die</li>
+              <li>Timecharge Die</li>
+            </ul>
+          </li>
+          <li>Downloadables (PDF rules, playmat design)</li>
+        </ul>
+      </div>
     </div>
   )}
 </div>
