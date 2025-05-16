@@ -1,35 +1,23 @@
-import { Link, useLocation } from 'react-router-dom';
-import './Navbar.css';
-import logo from '../assets/logo.png';
+import { Link, useLocation } from "react-router-dom";
+import "./Navbar.css";
 
 export default function Navbar() {
   const location = useLocation();
 
-  const navLinks = [
-    { to: '/faction', label: 'Factions' },
-    { to: '/starter-decks', label: 'Starter Decks' },
-    { to: '/rules', label: 'Rules' },
-    { to: '/keywords', label: 'Keywords' },
-    { to: '/tracker', label: 'Tracker' }
-  ];
-
   return (
     <header className="navbar-wrapper">
       <div className="navbar-inner">
-        <Link to="/" className="logo-link">
-          <img src={logo} alt="Chronoshift Logo" className="logo-img" />
+        <Link to="/" className="navbar-logo">
+          Chronoshift
         </Link>
-
-        <nav className="nav-links">
-          {navLinks.map((link) => (
-            <Link
-              key={link.to}
-              to={link.to}
-              className={location.pathname === link.to ? 'active' : ''}
-            >
-              {link.label}
-            </Link>
-          ))}
+        <nav className="navbar-links">
+          <Link to="/factions" className={location.pathname === "/factions" ? "active" : ""}>Factions</Link>
+          <Link to="/starter-decks" className={location.pathname === "/starter-decks" ? "active" : ""}>Starter Decks</Link>
+          <Link to="/rules" className={location.pathname === "/rules" ? "active" : ""}>Rules</Link>
+          <Link to="/keywords" className={location.pathname === "/keywords" ? "active" : ""}>Keywords</Link>
+          <a href="https://chronoshift-tracker.yatocrowgames.com" target="_blank" rel="noreferrer">
+            Tracker
+          </a>
         </nav>
       </div>
     </header>
