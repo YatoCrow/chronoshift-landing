@@ -1,9 +1,8 @@
 /* src/pages/Legal.css */
 
 .legal-page {
-  background-color: #0d0d0d; /* match Chronoshift base */
-  background-image: radial-gradient(circle at top center, rgba(245, 216, 160, 0.06) 0%, transparent 70%);
   color: #e8dbc3;
+  background-color: transparent; /* background handled by body now */
   min-height: 100vh;
   padding: 4rem 1.5rem;
   max-width: 800px;
@@ -11,6 +10,7 @@
   font-size: 1rem;
   line-height: 1.8;
   font-family: 'Cinzel', serif;
+  box-sizing: border-box;
 }
 
 .legal-page h1 {
