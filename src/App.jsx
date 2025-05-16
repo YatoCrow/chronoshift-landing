@@ -11,6 +11,7 @@ function App() {
     <>
       <Navbar />
       <ScrollToTop />
+      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/factions" element={<h2>Factions Page</h2>} />
@@ -19,7 +20,19 @@ function App() {
         <Route path="/keywords" element={<h2>Keyword Glossary</h2>} />
         <Route path="/terms" element={<TermsOfUse />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
+
+        {/* Catch-all 404 route */}
+        <Route
+          path="*"
+          element={
+            <div style={{ padding: "4rem 1rem", textAlign: "center", color: "#e8dbc3", fontFamily: "Cinzel, serif" }}>
+              <h1 style={{ fontSize: "2rem", color: "#f5d8a0" }}>404 – Page Not Found</h1>
+              <p>The page you’re looking for doesn’t exist.</p>
+            </div>
+          }
+        />
       </Routes>
+
       <Footer />
     </>
   );
