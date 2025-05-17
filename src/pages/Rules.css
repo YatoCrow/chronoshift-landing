@@ -3,11 +3,11 @@
 .rules-page {
   background-color: #1a1510;
   color: #e8dbc3;
-  padding: 4rem 1.5rem 2rem;
+  padding: 4rem 2rem 2rem;
   font-family: 'Cinzel', serif;
   line-height: 1.6;
-  max-width: 840px;
-  margin: 0 auto;
+  width: 100%;
+  max-width: none;
   box-sizing: border-box;
 }
 
@@ -20,7 +20,8 @@
 }
 
 .rules-section {
-  margin-bottom: 2.75rem;
+  margin: 0 auto 2.75rem;
+  max-width: 960px;
 }
 
 .rules-section h2 {
