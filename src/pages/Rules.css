@@ -77,3 +77,23 @@
 .rules-anchor-link:hover {
   color: #a78bfa;
 }
+
+.back-to-top {
+  display: block;
+  margin: 3rem auto 1rem;
+  padding: 0.5rem 1.25rem;
+  font-size: 0.9rem;
+  background-color: #eee0c8;
+  color: #3c2f23;
+  border: none;
+  border-radius: 6px;
+  font-family: 'Cinzel', serif;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.back-to-top:hover {
+  background-color: #f5e8d5;
+  color: #2a1e17;
+}
