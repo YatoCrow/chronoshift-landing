@@ -51,3 +51,49 @@
 .keyword-group strong {
   color: #3c2f23;
 }
+
+.keyword-entry {
+  margin-bottom: 1.25rem;
+}
+
+.keyword-entry p {
+  margin: 0.25rem 0 0;
+  line-height: 1.6;
+}
+
+.keyword-tag {
+  display: inline-block;
+  margin-left: 0.4rem;
+  padding: 2px 6px;
+  font-size: 0.75rem;
+  border-radius: 4px;
+  background-color: #e0d9c8;
+  color: #3c2f23;
+  font-family: 'Cinzel', serif;
+}
+
+.tag-trigger {
+  background-color: #dcecfb;
+  color: #205080;
+}
+
+.tag-combat {
+  background-color: #fde3d4;
+  color: #843c14;
+}
+
+.tag-status {
+  background-color: #f7e6ff;
+  color: #702f9c;
+}
+
+.tag-mechanic {
+  background-color: #def5de;
+  color: #2c7330;
+}
+
+.tag-resource {
+  background-color: #fff5cc;
+  color: #8c6c00;
+}
+
