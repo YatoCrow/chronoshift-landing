@@ -29,36 +29,42 @@ export default function StarterDecks() {
       </p>
 
       <div className="starter-includes">
-        <img
-          src="/assets/bon-starterkit-product.webp"
-          alt="Bonds of Night Starter Kit Product Preview"
-          className="starter-product-image"
-        />
+  <img
+    src="/assets/bon-starterkit-product.webp"
+    alt="Bonds of Night Starter Kit Product Preview"
+    className="starter-product-image"
+  />
 
-        <h3>Included in the Starter Kit:</h3>
-        <ul>
-          <li>2 60-card Starter Decks (House Noctvaris and The Moondrath)</li>
-          <li>Each deck includes:
-            <ul>
-              <li>1 Legendary Figure</li>
-              <li>3 Elite Figures</li>
-              <li>Commons, Spells, and Conduits (Resources)</li>
-            </ul>
-          <li>5 Bloodshade Tokens (House Noctvaris)</li>
-          <li>6 Fangshade Tokens (The Moondrath)</li>
-          </li>
-          <li>Beginner’s Grimoire</li>
-          <li>2 Custom D6:
-            <ul>
-              <li>Time Phase Die</li>
-              <li>Timecharge Die</li>
-            </ul>
-          </li>
-          <li>Downloadables (PDF rules, playmat design)</li>
-        </ul>
-      </div>
-    </div>
-  )}
+  <h3>Included in the Starter Kit:</h3>
+  <ul>
+    <li>2 60-card Starter Decks (House Noctvaris and The Moondrath)</li>
+    <li>Each deck includes:
+      <ul>
+        <li>1 Legendary Figure</li>
+        <li>3 Elite Figures</li>
+        <li>Commons, Spells, and Conduits (Resources)</li>
+      </ul>
+    </li>
+    <li>5 Bloodshade Tokens (House Noctvaris)</li>
+    <li>6 Fangshade Tokens (The Moondrath)</li>
+    <li>Beginner’s Grimoire</li>
+    <li>2 Custom D6:
+      <ul>
+        <li>Time Phase Die</li>
+        <li>Timecharge Die</li>
+      </ul>
+    </li>
+    <li>Downloadables (PDF rules, playmat design)</li>
+  </ul>
+
+  <div className="starter-purchase">
+    <p>Purchase link will be available soon at:</p>
+    <img
+      src="/assets/thegamecrafter-logo.webp"
+      alt="The Game Crafter"
+      className="starter-purchase-logo"
+    />
+  </div>
 </div>
 
 
