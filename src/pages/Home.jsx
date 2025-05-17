@@ -19,16 +19,16 @@ function Home() {
       {/* Game Overview */}
       <section className="home-section">
         <h2>What is Chronoshift?</h2>
-        <p className="home-subtagline"><em>Where time isn’t just a setting... it’s your strategy.</em></p>
+        <p className="home-subtagline"><em>Where time is not just a setting. It is your strategy.</em></p>
         <p>
-          Chronoshift is a competitive, time-shifting strategy card game where every turn can alter the flow of battle.
-          Harness the power of factions tied to the ever-changing phases of time, from the eternal night of vampires
-          to the searing heat of fire-worshippers. Each match unfolds with unpredictable tempo, strategic surprises,
-          and a rich world full of lore-driven mechanics.
+          Chronoshift is a competitive strategy card game where time itself changes the battlefield. Each round can alter
+          the phase of time, influencing abilities, resources, and momentum. Players choose a faction attuned to a specific
+          phase like Night, Day, Full Moon, Scorch, or Dusk, and build decks that thrive under those conditions.
         </p>
         <p>
-          Build your deck, shift the timeline, and outplay your opponent with timing, synergy, and tactical flair.
-          Every second counts — especially when time refuses to behave.
+          Every card, ability, and Conduit plays into a greater flow. Whether you prefer steady control, sudden aggression,
+          or clever disruption, Chronoshift rewards strategic planning and bold adaptation. Time will not wait — it will
+          shift. The question is, will you shift with it?
         </p>
       </section>
 
