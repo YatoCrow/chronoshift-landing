@@ -5,8 +5,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  border-bottom: 2px solid #1f1f1f;
-  background-color: #111;
+  background-color: #0d0c0a; /* Rich dark background */
+  border-bottom: 1px solid #2c241b;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -16,6 +17,7 @@
   height: 48px;
   width: auto;
   cursor: pointer;
+  filter: drop-shadow(0 0 2px rgba(245, 216, 160, 0.25));
 }
 
 .navbar-links {
@@ -23,15 +25,16 @@
   gap: 1.5rem;
 }
 
-.navbar-links a,
-.navbar-links Link {
-  color: #fff;
+.navbar-links a {
+  color: #e8dbc3;
   text-decoration: none;
   font-weight: 500;
   font-size: 1rem;
-  transition: color 0.3s;
+  font-family: 'Cinzel', serif;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
 }
 
 .navbar-links a:hover {
-  color: #d0bdf4;
+  color: #f5d8a0;
+  text-shadow: 0 0 4px rgba(245, 216, 160, 0.35);
 }
