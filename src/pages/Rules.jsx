@@ -49,16 +49,20 @@ export default function Rules() {
 
       {/* Timecharge */}
       <section className="rules-section">
-        <h2>Timecharge Mechanic</h2>
-        <p>
-          Timecharge is a special mechanic that allows you to try to shift the Time Phase during your turn. To activate Timecharge, spend <strong>2 clan-specific resources</strong> and roll a six-sided die:
-        </p>
-        <ul>
-          <li><strong>1–2:</strong> Time remains unchanged (resources are spent)</li>
-          <li><strong>3–5:</strong> Time Phase shifts randomly</li>
-          <li><strong>6:</strong> Choose the next Time Phase</li>
-        </ul>
-      </section>
+  <h2>Timecharge Mechanic</h2>
+  <p>
+    Timecharge allows players to attempt to shift the Time Phase during their turn. To activate a Timecharge, spend clan-specific resources and roll a six-sided die.
+  </p>
+  <ul>
+    <li><strong>1–2:</strong> Time remains unchanged (resources are spent)</li>
+    <li><strong>3–5:</strong> Time Phase shifts randomly</li>
+    <li><strong>6:</strong> Choose the next Time Phase</li>
+  </ul>
+  <p>
+    The cost to use Timecharge begins at <strong>2 resources</strong>. Each time you activate Timecharge within the same game, its cost increases by <strong>+1</strong> (e.g., 2 → 3 → 4...).
+    This increase is tracked individually per player.
+  </p>
+</section>
 
       {/* Turn Structure */}
       <section className="rules-section">
