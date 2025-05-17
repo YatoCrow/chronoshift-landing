@@ -35,7 +35,7 @@ export default function PrivacyPolicy() {
 
         <h2>Third-Party Links</h2>
         <p>
-          Our website may link to external resources (e.g., GitHub, Tracker App). We are not responsible
+          Our website may link to external resources (e.g., TheGameCrafter, Tracker App). We are not responsible
           for the content or privacy policies of third-party websites.
         </p>
 
