@@ -1,3 +1,6 @@
+/* ----------------------------
+   Layout & Page Styling
+---------------------------- */
 .keywords-page {
   background-color: #fdfaf4;
   padding: 4rem 1.5rem 2rem;
@@ -25,6 +28,9 @@
   font-family: 'Cinzel', serif;
 }
 
+/* ----------------------------
+   Grouping & Letter Sections
+---------------------------- */
 .keyword-group {
   margin-bottom: 2rem;
 }
@@ -43,7 +49,7 @@
 }
 
 .keyword-group li {
-  margin-bottom: 0.75rem;
+  margin-bottom: 1.25rem;
   font-size: 1rem;
   line-height: 1.6;
 }
@@ -52,6 +58,9 @@
   color: #3c2f23;
 }
 
+/* ----------------------------
+   Keyword Entry & Tag Styling
+---------------------------- */
 .keyword-entry {
   margin-bottom: 1.25rem;
 }
@@ -61,17 +70,28 @@
   line-height: 1.6;
 }
 
-.keyword-tag {
-  display: inline-block;
-  margin-left: 0.4rem;
-  padding: 2px 6px;
-  font-size: 0.75rem;
-  border-radius: 4px;
-  background-color: #e0d9c8;
-  color: #3c2f23;
-  font-family: 'Cinzel', serif;
+.keyword-title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
 }
 
+.keyword-tag {
+  display: inline-block;
+  padding: 2px 6px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  border-radius: 4px;
+  font-family: 'Cinzel', serif;
+  background-color: #e0d9c8;
+  color: #3c2f23;
+}
+
+/* ----------------------------
+   Tag Type Colors
+---------------------------- */
 .tag-trigger {
   background-color: #dcecfb;
   color: #205080;
@@ -97,3 +117,7 @@
   color: #8c6c00;
 }
 
+.tag-subtype {
+  background-color: #e5e5e5;
+  color: #333;
+}
