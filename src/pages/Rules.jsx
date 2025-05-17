@@ -32,11 +32,11 @@ export default function Rules() {
 <section className="rules-section">
   <h2>Resource System: Conduits & Time Alignment</h2>
   <p>
-    Resources in Chronoshift are represented by special cards called <strong>Conduits</strong>. These generate your clan’s faction-specific resource and are essential for playing Figures and Spells. For when and how resources are gained, see the <a href="#turn-structure" className="rules-anchor-link">Turn Structure</a>.
+    Resources in Chronoshift are represented by special cards called <strong>Conduits</strong>. These generate your clan’s faction-specific resource and are essential for playing Figures and Spells.
   </p>
   <ul>
-    <li>Conduits are tapped to gain <strong>1 resource</strong> matching your faction.</li>
-    <li>All tapped Conduits automatically refresh at the start of your turn.</li>
+    <li>Conduits are <strong>channeled</strong> to gain 1 resource matching your faction.</li>
+    <li>All channeled Conduits automatically <strong>recharge</strong> at the start of your turn.</li>
     <li>Resources are used to pay for <strong>Figures</strong> and <strong>Spells</strong>.</li>
   </ul>
 </section>
@@ -91,8 +91,8 @@ export default function Rules() {
   <h2>Turn Structure</h2>
   <ol>
     <li>
-      <strong>Start Phase:</strong> If you are the first player of the round, roll to determine the Time Phase. Then untap all your units and resolve any “start of turn” effects.
-    </li>
+  <strong>Start Phase:</strong> If you are the first player of the round, roll to determine the Time Phase. Then <strong>recharge</strong> all of your Conduits and units, and resolve any “start of turn” effects.
+</li>
     <li>
       <strong>Timecharge Window:</strong> You may attempt one Timecharge after the Start Phase and before drawing a card. This is the only window when Timecharge can be used.
     </li>
