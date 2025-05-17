@@ -18,7 +18,7 @@ function Home() {
 
       {/* Game Overview */}
       <section className="home-section">
-        <h2>What is Chronoshift?</h2>
+        <h2>What is Chronoshift: Eclipse Dawn?</h2>
         <p className="home-subtagline"><em>Where time is not just a setting. It is your strategy.</em></p>
         <p>
           Chronoshift is a competitive strategy card game where time itself changes the battlefield. Each round can alter
