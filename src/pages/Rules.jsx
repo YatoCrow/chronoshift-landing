@@ -50,23 +50,26 @@ export default function Rules() {
       {/* Timecharge */}
       <section className="rules-section">
   <h2>Timecharge Mechanic</h2>
-  <p>
-    Timecharge allows a player to attempt to change the current Time Phase during their turn. To activate Timecharge, you must spend a number of clan-specific resources and roll a six-sided die:
-  </p>
-  <ul>
-    <li><strong>1–2:</strong> Time remains unchanged (resources are spent)</li>
-    <li><strong>3–5:</strong> Time Phase shifts randomly</li>
-    <li><strong>6:</strong> Choose the next Time Phase</li>
-  </ul>
-  <p>
-    The cost to use Timecharge starts at <strong>2 resources</strong> and increases by <strong>+1</strong> each time you use it. This increase is tracked individually per player and caps at a maximum cost of <strong>5 resources</strong>. For example:
-  </p>
-  <ul>
-    <li>1st use: 2 resources</li>
-    <li>2nd use: 3 resources</li>
-    <li>3rd use: 4 resources</li>
-    <li>4th use and beyond: 5 resources</li>
-  </ul>
+<p>
+  Timecharge allows a player to attempt to change the current Time Phase during their turn. To activate Timecharge, you must spend a number of clan-specific resources and roll a six-sided die:
+</p>
+<ul>
+  <li><strong>1–2:</strong> Time remains unchanged (resources are spent)</li>
+  <li><strong>3–5:</strong> Time Phase shifts randomly</li>
+  <li><strong>6:</strong> Choose the next Time Phase</li>
+</ul>
+<p>
+  The cost to use Timecharge starts at <strong>2 resources</strong> and increases by <strong>+1</strong> each time you use it. This increase is tracked individually per player and caps at a maximum cost of <strong>5 resources</strong>. For example:
+</p>
+<ul>
+  <li>1st use: 2 resources</li>
+  <li>2nd use: 3 resources</li>
+  <li>3rd use: 4 resources</li>
+  <li>4th use and beyond: 5 resources</li>
+</ul>
+<p>
+  <strong>When to Timecharge:</strong> Timecharge may only be attempted <strong>after the Start Phase and before the Draw Phase</strong> on your turn. You may only attempt Timecharge once per turn.
+</p>
 </section>
 
 
