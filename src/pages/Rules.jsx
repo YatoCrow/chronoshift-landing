@@ -179,6 +179,19 @@ export default function Rules() {
           <li><strong>Multiplayer Support:</strong> Future expansions will support multiplayer formats and new win conditions.</li>
         </ul>
       </section>
+
+{/* Card Anatomy */}
+      <section className="rules-section">
+  <h2>Card Anatomy</h2>
+  <p>
+    Learn how to read each Chronoshift card at a glance. Below is a breakdown of each section including cost, stats, type, and unique abilities.
+  </p>
+  <img
+    src="/assets/card-anatomy.webp"
+    alt="Card Anatomy Diagram"
+    className="card-anatomy-image"
+  />
+</section>
     </div>
   );
 }
