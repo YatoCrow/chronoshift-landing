@@ -74,8 +74,7 @@ export default function StarterDecks() {
       <div className="starter-section">
         <h2 className="starter-heading">Rise of Light</h2>
         <p className="starter-text">
-          Featuring Solari Ascendants and Scorchborne. A radiant blend of order and chaos — expect midrange synergy,
-          fire-fueled aggression, and a showdown of flame and faith.
+          Featuring Solari Ascendants and Scorchborne. A radiant blend of order and chaos. Expect midrange synergy, fire-fueled aggression, and a showdown of flame and faith.
           <br /><br />
           <em>Full kit reveal coming soon.</em>
         </p>
@@ -85,7 +84,7 @@ export default function StarterDecks() {
       <div className="starter-section">
         <h2 className="starter-heading">Whispers of Dusk</h2>
         <p className="starter-text">
-          Featuring Umbra’kin and Noctara Sanctum. A clash of abyss and exile — expect recursion, counterplay,
+          Featuring Umbra’kin and Noctara Sanctum. A clash of abyss and exile. Expect recursion, counterplay,
           and cunning late-game dominance forged in shadows.
           <br /><br />
           <em>Full kit reveal coming soon.</em>
