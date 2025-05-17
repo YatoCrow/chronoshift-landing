@@ -81,6 +81,9 @@ export default function Rules() {
       <strong>Start Phase:</strong> If you are the first player of the round, roll to determine the Time Phase. Then untap all your units and resolve any “start of turn” effects.
     </li>
     <li>
+      <strong>Timecharge Window:</strong> You may attempt one Timecharge after the Start Phase and before drawing a card. This is the only window when Timecharge can be used.
+    </li>
+    <li>
       <strong>Draw Phase:</strong> Draw 1 card from your draw pile.
     </li>
     <li>
@@ -94,7 +97,7 @@ export default function Rules() {
       </p>
     </li>
     <li>
-      <strong>Main Phase:</strong> Summon figures, cast spells, activate abilities, or declare a Timecharge (if not already used).
+      <strong>Main Phase:</strong> Summon figures, cast spells, and activate abilities.
     </li>
     <li>
       <strong>Combat Phase:</strong> Declare attacks, assign blockers, and resolve combat damage.
