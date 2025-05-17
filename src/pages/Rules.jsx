@@ -32,16 +32,14 @@ export default function Rules() {
 <section className="rules-section">
   <h2>Resource System: Conduits & Time Alignment</h2>
   <p>
-    Resources in Chronoshift are represented by special cards called <strong>Conduits</strong>. These generate your clan’s faction-specific resource and are essential for playing Figures and Spells.
+    Resources in Chronoshift are represented by special cards called <strong>Conduits</strong>. These generate your clan’s faction-specific resource and are essential for playing Figures and Spells. For when and how resources are gained, see the <a href="#turn-structure" className="rules-anchor-link">Turn Structure</a>.
   </p>
   <ul>
-    <li>Play <strong>1 Conduit</strong> per turn during your Resource Phase.</li>
     <li>Conduits are tapped to gain <strong>1 resource</strong> matching your faction.</li>
     <li>All tapped Conduits automatically refresh at the start of your turn.</li>
-    <li>Resources are spent to pay for <strong>Figures</strong>, <strong>Spells</strong>, and activating abilities.</li>
+    <li>Resources are used to pay for <strong>Figures</strong> and <strong>Spells</strong>.</li>
   </ul>
 </section>
-
 
       {/* Time Phase Mechanics */}
       <section className="rules-section">
@@ -89,7 +87,7 @@ export default function Rules() {
 
 
       {/* Turn Structure */}
-      <section className="rules-section">
+     <section className="rules-section" id="turn-structure">
   <h2>Turn Structure</h2>
   <ol>
     <li>
