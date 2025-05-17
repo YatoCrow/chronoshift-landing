@@ -43,9 +43,9 @@ export default function StarterDecks() {
               <li>1 Legendary Figure</li>
               <li>3 Elite Figures</li>
               <li>Commons, Spells, and Conduits (Resources)</li>
-              <li>5 Bloodshade Tokens (House Noctvaris)</li>
-              <li>6 Fangshade Tokens (The Moondrath)</li>
             </ul>
+          <li>5 Bloodshade Tokens (House Noctvaris)</li>
+          <li>6 Fangshade Tokens (The Moondrath)</li>
           </li>
           <li>Beginner’s Grimoire</li>
           <li>2 Custom D6:
