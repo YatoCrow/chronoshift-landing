@@ -75,13 +75,15 @@ export default function Rules() {
         <h2>Turn Structure</h2>
         <ol>
           <li><strong>Start Phase:</strong> If you are the first player of the round, roll to determine the Time Phase. Then untap your cards and draw one card.</li>
-          <li><strong>Resource Phase:</strong> Play one Conduit from your Resource Pile. Then gain:
-            <ul>
-              <li>+1 base resource</li>
-              <li>+1 if the current Time Phase matches your clan</li>
-              <li>+1 if you control the battlefield (more units than your opponent)</li>
-            </ul>
-          </li>
+          <li><strong>Resource Phase:</strong> Play one Conduit/Resource from your Conduit/Resource Pile. Then gain clan-specific resources as follows:
+  <ul>
+    <li>+1 if the current Time Phase matches your clan</li>
+    <li>+1 if you control the battlefield (you have more units than your opponent)</li>
+  </ul>
+  <p>
+    You may gain up to <strong>3 resources per turn</strong> through these conditions.
+  </p>
+</li>
           <li><strong>Main Phase:</strong> Summon figures, cast spells, activate abilities, or use Timecharge.</li>
           <li><strong>Combat Phase:</strong> Declare attacks, assign blockers, and resolve damage.</li>
           <li><strong>End Phase:</strong> Resolve any end-of-turn effects and pass the turn.</li>
