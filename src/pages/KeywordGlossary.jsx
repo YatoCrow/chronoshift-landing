@@ -39,23 +39,20 @@ const keywordData = [
   { term: "Phasebind", def: "An effect that only activates if the Time Phase matches the required condition." }
 ];
 
-function groupByLetter(data) {
-  const groups = { A: [], B: [], C: [], D: [], E: [], F: [], G: [], H: [], I: [], J: [], K: [], L: [], M: [], N: [], O: [], P: [], Q: [], R: [], S: [], T: [], U: [], V: [], W: [], X: [], Y: [], Z: [] };
-  data.forEach(({ term, def }) => {
-    const letter = term.charAt(0).toUpperCase();
-    if (groups[letter]) {
-      groups[letter].push({ term, def });
-    }
-  });
-  return groups;
-}
+const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 
 export default function KeywordGlossary() {
   const [search, setSearch] = useState("");
-  const grouped = groupByLetter(keywordData.filter(({ term, def }) =>
+
+  const filtered = keywordData.filter(({ term, def }) =>
     term.toLowerCase().includes(search.toLowerCase()) ||
     def.toLowerCase().includes(search.toLowerCase())
-  ));
+  );
+
+  const grouped = alphabet.map(letter => {
+    const terms = filtered.filter(k => k.term[0].toUpperCase() === letter);
+    return { letter, terms };
+  });
 
   return (
     <div className="keywords-page">
@@ -68,19 +65,19 @@ export default function KeywordGlossary() {
         className="keywords-search"
       />
 
-      {Object.entries(grouped).map(([letter, entries]) =>
-        entries.length > 0 ? (
-          <div className="keyword-group" key={letter}>
+      {grouped.map(({ letter, terms }) =>
+        terms.length > 0 && (
+          <div key={letter} className="keyword-group">
             <h2 className="keyword-letter">{letter}</h2>
             <ul>
-              {entries.map(({ term, def }) => (
+              {terms.map(({ term, def }) => (
                 <li key={term}>
                   <strong>{term}</strong>: {def}
                 </li>
               ))}
             </ul>
           </div>
-        ) : null
+        )
       )}
     </div>
   );
