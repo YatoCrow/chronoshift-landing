@@ -67,3 +67,13 @@
   border-radius: 10px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
+
+.rules-anchor-link {
+  color: #7a5cf0;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.rules-anchor-link:hover {
+  color: #a78bfa;
+}
