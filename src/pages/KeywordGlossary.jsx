@@ -212,11 +212,21 @@ export default function KeywordGlossary() {
           <div key={letter} className="keyword-group">
             <h2 className="keyword-letter">{letter}</h2>
             <ul>
-              {terms.map(({ term, def }) => (
-                <li key={term}>
-                  <strong>{term}</strong>: {def}
-                </li>
-              ))}
+              {terms.map(({ term, def, tags }) => (
+  <li key={term}>
+    <div className="keyword-entry">
+      <div className="keyword-title">
+        <strong>{term}</strong>
+        {tags && tags.map(tag => (
+          <span key={tag} className={`keyword-tag tag-${tag.toLowerCase()}`}>
+            [{tag}]
+          </span>
+        ))}
+      </div>
+      <p>{def}</p>
+    </div>
+  </li>
+))}
             </ul>
           </div>
         )
