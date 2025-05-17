@@ -9,7 +9,7 @@ export default function StarterDecks() {
       <h1 className="starter-title">Starter Kits</h1>
 
       {/* Bonds of Night – Collapsible */}
-      <div className="starter-section">
+   <div className="starter-section">
   <h2 className="starter-heading">Bonds of Night</h2>
   <button className="starter-toggle" onClick={() => setOpen(!open)}>
     {open ? "▲ Hide" : "▼ Show Contents"}
