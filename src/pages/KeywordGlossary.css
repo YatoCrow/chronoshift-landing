@@ -1,0 +1,53 @@
+.keywords-page {
+  background-color: #fdfaf4;
+  padding: 4rem 1.5rem 2rem;
+  font-family: 'Cinzel', serif;
+  color: #2a1e17;
+  min-height: 100vh;
+}
+
+.keywords-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #3c2f23;
+}
+
+.keywords-search {
+  display: block;
+  margin: 0 auto 2rem;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #c8bca8;
+  border-radius: 6px;
+  width: 100%;
+  max-width: 480px;
+  font-family: 'Cinzel', serif;
+}
+
+.keyword-group {
+  margin-bottom: 2rem;
+}
+
+.keyword-letter {
+  font-size: 1.5rem;
+  color: #7a5c3b;
+  border-bottom: 1px solid #e0d9c8;
+  padding-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.keyword-group ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.keyword-group li {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.keyword-group strong {
+  color: #3c2f23;
+}
