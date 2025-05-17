@@ -123,3 +123,24 @@
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
+
+/* -----------------------------
+   TGC Link
+------------------------------ */
+.starter-purchase {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.starter-purchase p {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+.starter-purchase-logo {
+  max-width: 180px;
+  height: auto;
+  filter: grayscale(20%);
+  opacity: 0.85;
+}
