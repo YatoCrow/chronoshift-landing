@@ -205,6 +205,14 @@ export default function Rules() {
     className="card-anatomy-image"
   />
 </section>
+      
+      {/* Back to Top Button */}
+    <button
+      className="back-to-top"
+      onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+    >
+      ↑ Back to Top
+    </button>
     </div>
   );
 }
