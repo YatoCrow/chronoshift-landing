@@ -20,7 +20,7 @@ function Footer() {
 
         <div className="footer-bottom">
           <p>© {new Date().getFullYear()} YatoCrow Games. All rights reserved.</p>
-          <p><em>Chronoshift™</em> and <em>Eclipse Dawn™</em> are trademarks of YatoCrow Games.</p>
+          <p><em>Chronoshift: Eclipse Dawn™</em> are trademarks of YatoCrow Games.</p>
         </div>
 
       </div>
