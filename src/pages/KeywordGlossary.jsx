@@ -38,11 +38,11 @@ const keywordData = [
     def: "This unit gains stats or abilities after taking damage. Some Enrage effects are temporary, others permanent.",
     tags: ["Status"]
   },
-  {
-    term: "Figures",
-    def: "Also called units. These are your characters on the battlefield. They can attack, defend, use abilities, and be affected by combat and status effects.",
-    tags: ["Resource"]
-  },
+ {
+  term: "Figures",
+  def: "Also called units. These are your characters on the battlefield. They can attack, defend, use abilities, and be affected by combat and status effects.",
+  tags: ["Card Type"]
+},
   {
     term: "Fury",
     def: "This unit gains +1 ATK each time it survives damage, whether in combat or from effects. Fury stacks with each trigger.",
