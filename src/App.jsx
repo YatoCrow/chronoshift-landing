@@ -7,7 +7,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import ScrollToTop from "./components/ScrollToTop";
 import Factions from "./pages/Factions";
 import StarterDecks from "./pages/StarterDecks";
-import KeywordGlossary from "./pages/KeywordGlossary"; // ✅ Import added
+import Rules from "./pages/Rules"; // ✅ Import added
 
 function App() {
   return (
@@ -19,12 +19,11 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/factions" element={<Factions />} />
         <Route path="/starter-decks" element={<StarterDecks />} />
-        <Route path="/rules" element={<h2>Rules Page</h2>} />
-        <Route path="/keywords" element={<KeywordGlossary />} /> {/* ✅ Keyword Glossary component added */}
+        <Route path="/rules" element={<Rules />} /> {/* ✅ Linked properly */}
+        <Route path="/keywords" element={<h2>Keyword Glossary</h2>} />
         <Route path="/terms" element={<TermsOfUse />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
 
-        {/* Catch-all 404 */}
         <Route
           path="*"
           element={
