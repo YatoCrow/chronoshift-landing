@@ -27,7 +27,7 @@ function Home() {
         </p>
         <p>
           Every card, ability, and Conduit plays into a greater flow. Whether you prefer steady control, sudden aggression,
-          or clever disruption, Chronoshift rewards strategic planning and bold adaptation. Time will not wait — it will
+          or clever disruption, Chronoshift rewards strategic planning and bold adaptation. Time will not wait, it will
           shift. The question is, will you shift with it?
         </p>
       </section>
