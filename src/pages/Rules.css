@@ -1,46 +1,59 @@
+/* src/pages/Rules.css */
+
 .rules-page {
-  background-color: #fdfaf4;
+  background-color: #1a1510;
+  color: #e8dbc3;
   padding: 4rem 1.5rem 2rem;
   font-family: 'Cinzel', serif;
-  color: #2a1e17;
   line-height: 1.6;
   max-width: 840px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .rules-title {
   font-size: 2.5rem;
   text-align: center;
-  color: #3c2f23;
-  margin-bottom: 2rem;
+  color: #f5d8a0;
+  margin-bottom: 2.5rem;
+  text-shadow: 0 0 6px rgba(245, 216, 160, 0.2);
 }
 
 .rules-section {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2.75rem;
 }
 
 .rules-section h2 {
   font-size: 1.5rem;
-  color: #7a5c3b;
+  color: #f0cc9b;
+  border-bottom: 1px solid #3a2f24;
   margin-bottom: 0.75rem;
-  border-bottom: 1px solid #e0d9c8;
   padding-bottom: 0.25rem;
+  text-shadow: 0 0 4px rgba(245, 216, 160, 0.08);
 }
 
 .rules-section p,
 .rules-section ul,
 .rules-section ol {
   font-size: 1rem;
-  color: #3c2f23;
+  color: #e6d7c2;
 }
 
 .rules-section ul,
 .rules-section ol {
-  padding-left: 1.25rem;
-  margin-top: 0.5rem;
+  padding-left: 1.5rem;
+  margin-top: 0.75rem;
+}
+
+.rules-section li {
+  margin-bottom: 0.5rem;
 }
 
 .rules-section a {
-  color: #7a5c3b;
+  color: #f5d8a0;
   text-decoration: underline;
+}
+
+.rules-section a:hover {
+  color: #ffe8b2;
 }
