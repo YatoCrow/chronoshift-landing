@@ -1,0 +1,46 @@
+.rules-page {
+  background-color: #fdfaf4;
+  padding: 4rem 1.5rem 2rem;
+  font-family: 'Cinzel', serif;
+  color: #2a1e17;
+  line-height: 1.6;
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+.rules-title {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #3c2f23;
+  margin-bottom: 2rem;
+}
+
+.rules-section {
+  margin-bottom: 2.5rem;
+}
+
+.rules-section h2 {
+  font-size: 1.5rem;
+  color: #7a5c3b;
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid #e0d9c8;
+  padding-bottom: 0.25rem;
+}
+
+.rules-section p,
+.rules-section ul,
+.rules-section ol {
+  font-size: 1rem;
+  color: #3c2f23;
+}
+
+.rules-section ul,
+.rules-section ol {
+  padding-left: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.rules-section a {
+  color: #7a5c3b;
+  text-decoration: underline;
+}
