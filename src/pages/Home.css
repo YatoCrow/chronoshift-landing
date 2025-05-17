@@ -150,6 +150,14 @@
   font-family: 'Cinzel', serif;
 }
 
+.home-subtagline {
+  font-size: 1rem;
+  color: #8a6b3c;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-style: italic;
+}
+
 /* Deck Preview */
 .deck-preview-grid {
   display: flex;
