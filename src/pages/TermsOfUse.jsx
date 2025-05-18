@@ -59,6 +59,11 @@ export default function TermsOfUse() {
           following any changes will indicate your acceptance of the updated Terms. We recommend reviewing this page periodically
           for the latest version.
         </p>
+
+        <p className="footer-note">
+          If you have questions regarding these Terms, please contact us at{" "}
+          <a href="mailto:contact@yatocrowgames.com">contact@yatocrowgames.com</a>.
+        </p>
       </div>
     </div>
   );
