@@ -41,6 +41,11 @@ export default function Rules() {
   </ul>
 </section>
 
+      {/* Conduit Mechanics (Advanced) */}
+<section className="rules-section">
+  <ConduitMechanicsPanel />
+</section>
+      
       {/* Time Phase Mechanics */}
       <section className="rules-section">
         <h2>Time Phase Roll</h2>
