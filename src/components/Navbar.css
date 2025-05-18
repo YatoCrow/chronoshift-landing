@@ -1,5 +1,4 @@
 /* src/components/Navbar.css */
-
 .navbar-wrapper {
   display: flex;
   justify-content: space-between;
@@ -17,7 +16,13 @@
   height: 48px;
   width: auto;
   cursor: pointer;
+  transition: filter 0.3s ease, transform 0.3s ease;
   filter: drop-shadow(0 0 2px rgba(245, 216, 160, 0.25));
+}
+
+.navbar-logo img:hover {
+  filter: drop-shadow(0 0 6px #f5d8a0) drop-shadow(0 0 12px #f5d8a0);
+  transform: scale(1.05);
 }
 
 .navbar-links {
@@ -31,10 +36,13 @@
   font-weight: 500;
   font-size: 1rem;
   font-family: 'Cinzel', serif;
-  transition: color 0.2s ease, text-shadow 0.2s ease;
+  transition: color 0.2s ease, text-shadow 0.2s ease, transform 0.2s ease;
 }
 
 .navbar-links a:hover {
   color: #f5d8a0;
-  text-shadow: 0 0 4px rgba(245, 216, 160, 0.35);
+  text-shadow:
+    0 0 6px rgba(245, 216, 160, 0.5),
+    0 0 12px rgba(245, 216, 160, 0.35);
+  transform: scale(1.03);
 }
