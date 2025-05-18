@@ -1,38 +1,40 @@
 .conduit-panel {
-  border: 1px solid #3c3c3c;
-  background-color: #1c1c1c;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: #1a1a1a;
   border-radius: 8px;
   margin-top: 1rem;
   overflow: hidden;
+  box-shadow: 0 0 8px rgba(97, 218, 251, 0.05);
 }
 
 .panel-toggle {
   width: 100%;
   text-align: left;
   padding: 1rem;
-  background-color: #252525;
-  color: #d8d8d8;
-  font-weight: bold;
+  background-color: #242424;
+  color: #eaeaea;
+  font-weight: 600;
   font-size: 1.1rem;
-  cursor: pointer;
   border: none;
-  outline: none;
+  cursor: pointer;
   transition: background-color 0.2s ease;
 }
 
 .panel-toggle:hover {
-  background-color: #2f2f2f;
+  background-color: #2e2e2e;
 }
 
 .panel-content {
-  padding: 1rem 1.5rem;
+  padding: 1.25rem 1.5rem;
   color: #ccc;
   font-size: 0.95rem;
+  line-height: 1.6;
 }
 
 .panel-content h3 {
   color: #61dafb;
-  margin-top: 1rem;
+  margin-top: 1.25rem;
+  font-size: 1rem;
 }
 
 .panel-content ul {
@@ -45,7 +47,8 @@
   font-style: italic;
   color: #aaa;
   background-color: #111;
-  padding: 0.75rem;
+  padding: 0.75rem 1rem;
   border-left: 4px solid #61dafb;
-  margin-top: 0.5rem;
+  margin-top: 0.75rem;
+  border-radius: 4px;
 }
