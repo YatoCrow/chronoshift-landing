@@ -1,28 +1,20 @@
 /* src/components/Navbar.css */
+
 .navbar-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background-color: #0d0c0a; /* Rich dark background */
-  border-bottom: 1px solid #2c241b;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  background-color: rgba(20, 15, 25, 0.6);
+  backdrop-filter: blur(8px);
+  padding: 1rem 1.5rem;
+  box-shadow: 0 2px 8px #ddb89255;
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
 .navbar-logo img {
-  height: 48px;
-  width: auto;
-  cursor: pointer;
-  transition: filter 0.3s ease, transform 0.3s ease;
-  filter: drop-shadow(0 0 2px rgba(245, 216, 160, 0.25));
-}
-
-.navbar-logo img:hover {
-  filter: drop-shadow(0 0 6px #f5d8a0) drop-shadow(0 0 12px #f5d8a0);
-  transform: scale(1.05);
+  height: 44px;
 }
 
 .navbar-links {
@@ -31,18 +23,60 @@
 }
 
 .navbar-links a {
-  color: #e8dbc3;
+  color: #f5d8a0;
   text-decoration: none;
-  font-weight: 500;
-  font-size: 1rem;
   font-family: 'Cinzel', serif;
-  transition: color 0.2s ease, text-shadow 0.2s ease, transform 0.2s ease;
+  font-size: 1rem;
+  transition: color 0.3s ease;
 }
 
 .navbar-links a:hover {
-  color: #f5d8a0;
-  text-shadow:
-    0 0 6px rgba(245, 216, 160, 0.5),
-    0 0 12px rgba(245, 216, 160, 0.35);
-  transform: scale(1.03);
+  color: #ffe8b2;
+}
+
+/* Burger menu button */
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.burger-bar {
+  width: 24px;
+  height: 3px;
+  background-color: #f5d8a0;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .burger {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 1.5rem;
+    background-color: #1a1510;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
+
+  .navbar-links a {
+    font-size: 1.05rem;
+    padding: 0.5rem 0;
+  }
 }
