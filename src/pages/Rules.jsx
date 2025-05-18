@@ -114,7 +114,7 @@ export default function Rules() {
 
       <CollapsibleRuleSection title="Key Mechanics">
         <ul>
-          <li><strong>Phasebind:</strong> Figures enter the battlefield <em>channeled</em> (rotated) unless summoned during your faction’s favored Time Phase. Some abilities like Ambush bypass this.</li>
+          <li><strong>Phasebind:</strong> Figures enter the battlefield in a <strong>Phasebound</strong> state unless summoned during your faction’s favored Time Phase. A Phasebound unit is rotated sideways and cannot attack or activate abilities until it is recharged on your next turn.</li>
           <li><strong>Timecharge:</strong> Optional mechanic to influence the Time Phase. Requires resources and a die roll.</li>
           <li><strong>Conduit Shift:</strong> Advanced Conduits that flip during your Time Phase and activate conditional effects.</li>
           <li><strong>Channel:</strong> Activating a Conduit to generate 1 resource. The Conduit is rotated sideways to show it has been used this turn.</li>
