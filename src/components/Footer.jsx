@@ -24,6 +24,9 @@ function Footer() {
             <em>Chronoshift™</em> and <em>Eclipse Dawn™</em> are trademarks of YatoCrow Games.<br />
             <em>Chronoshift: Eclipse Dawn™</em> is the title of the first official release.
           </p>
+          <p className="footer-contact">
+            Contact us at <a href="mailto:contact@yatocrowgames.com">contact@yatocrowgames.com</a>
+          </p>
         </div>
 
       </div>
