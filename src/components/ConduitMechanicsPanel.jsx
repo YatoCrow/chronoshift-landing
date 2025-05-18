@@ -54,7 +54,7 @@ export default function ConduitMechanicsPanel() {
           <h3>Example</h3>
           <p className="example">
             <strong>Moonfang Grove – Conduit Shift (Moondrath)</strong><br />
-            <span className="text-gray-400">Shifted Effect:</span> When a Fangshade token is summoned, it gains +1/+0 and Stealth this turn.”<br />
+            <span className="text-gray-400">Shifted Effect:</span> When a Fangshade token is summoned, it gains +1/+0 and Stealth this turn.<br />
             → Activates only after flipping during Full Moon, and only if you summon a Fangshade token.
           </p>
         </div>
