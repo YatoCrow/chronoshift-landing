@@ -1,5 +1,6 @@
 // src/pages/Rules.jsx
 import "./Rules.css";
+import ConduitMechanicsPanel from "../components/ConduitMechanicsPanel";
 
 export default function Rules() {
   return (
