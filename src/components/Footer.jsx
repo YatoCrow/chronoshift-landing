@@ -18,6 +18,15 @@ function Footer() {
           <Link to="/privacy">Privacy Policy</Link>
         </div>
 
+        {/* ✅ Add Logo Here */}
+        <a href="https://yatocrowgames.com" target="_blank" rel="noreferrer">
+          <img
+            src="/yatocrow-logo300.webp"
+            alt="YatoCrow Games Logo"
+            className="footer-logo"
+          />
+        </a>
+
         <div className="footer-bottom">
           <p>© 2025 YatoCrow Games. All rights reserved.</p>
           <p>
