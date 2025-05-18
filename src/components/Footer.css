@@ -7,6 +7,7 @@
   text-align: center;
   font-family: 'Cinzel', serif;
   color: #e0d4b6;
+  position: relative; /* Needed to anchor the absolute logo */
 }
 
 .footer-content {
@@ -60,6 +61,23 @@
   margin: 1rem auto;
   display: block;
   opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.footer-logo:hover {
+  opacity: 1;
+}
+
+.footer-logo-wrapper {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+.footer-logo {
+  height: 72px;
+  width: auto;
+  opacity: 0.9;
   transition: opacity 0.3s ease;
 }
 
