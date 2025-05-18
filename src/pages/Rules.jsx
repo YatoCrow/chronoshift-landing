@@ -25,8 +25,8 @@ export default function Rules() {
         <p>Resources in Chronoshift come from <strong>Conduits</strong> — special cards placed from your separate <strong>Resource Pile</strong>. These do not come from your draw deck and are face-up for strategic play.</p>
         <ul>
           <li><strong>Play 1 Conduit per turn</strong> during your Resource Phase.</li>
-          <li><strong>Channel</strong> a Conduit (turn it sideways) to gain 1 resource of your faction’s type.</li>
-          <li><strong>Recharge</strong> all channeled Conduits at the start of your turn, making them usable again.</li>
+          <li><strong>Channel:</strong> Activating a Conduit to generate 1 resource. The Conduit is rotated sideways to show it has been used this turn.</li>
+          <li><strong>Recharge:</strong> At the start of your turn, all previously used Conduits are restored to their upright position, making them usable again.</li>
           <li>Gain extra resources if the current Time Phase matches your faction or if you control the battlefield (more units than your opponent).</li>
         </ul>
       </CollapsibleRuleSection>
@@ -91,7 +91,7 @@ export default function Rules() {
               <li>+1 resource if you control the battlefield (more units than your opponent)</li>
             </ul>
           </li>
-          <li><strong>Main Phase:</strong> Play Figures, cast Spells, and activate abilities. You may attack if your Figures are untapped.</li>
+          <li><strong>Main Phase:</strong> Play Figures, cast Spells, and activate abilities. You may attack if your Figures are ready.</li>
           <li><strong>Combat Phase:</strong> Declare attackers and blockers, resolve combat damage, and trigger any related effects.</li>
           <li><strong>End Phase:</strong> Finalize end-of-turn effects and pass the turn to your opponent.</li>
         </ol>
@@ -114,11 +114,11 @@ export default function Rules() {
 
       <CollapsibleRuleSection title="Key Mechanics">
         <ul>
-          <li><strong>Phasebind:</strong> Figures enter the battlefield <em>tapped</em> unless summoned during your faction’s favored Time Phase. Some abilities like Ambush bypass this.</li>
+          <li><strong>Phasebind:</strong> Figures enter the battlefield <em>channeled</em> (rotated) unless summoned during your faction’s favored Time Phase. Some abilities like Ambush bypass this.</li>
           <li><strong>Timecharge:</strong> Optional mechanic to influence the Time Phase. Requires resources and a die roll.</li>
           <li><strong>Conduit Shift:</strong> Advanced Conduits that flip during your Time Phase and activate conditional effects.</li>
-          <li><strong>Channel: Activating a Conduit to generate 1 resource. The Conduit is rotated sideways to show it has been used this turn.</li>
-          <li><strong>Recharge:</strong> Recharge: At the start of your turn, all previously used Conduits and Figures are restored to their upright position, making them usable again.</li>
+          <li><strong>Channel:</strong> Activating a Conduit to generate 1 resource. The Conduit is rotated sideways to show it has been used this turn.</li>
+          <li><strong>Recharge:</strong> At the start of your turn, all previously used Conduits and Figures are restored to their upright position, making them usable again.</li>
           <li><strong>Reveal (Flip):</strong> Some Figures remain hidden until they attack or are targeted. Trigger “On Reveal” effects when they flip.</li>
           <li><strong>LIFO Stack:</strong> Effects resolve in reverse order. Last effect in is the first to resolve. Only Bursts and Dispels may be played in response.</li>
         </ul>
