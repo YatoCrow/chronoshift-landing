@@ -9,46 +9,62 @@ export default function PrivacyPolicy() {
         <p>Last updated: May 2025</p>
 
         <p>
-          This Privacy Policy explains how YatoCrow Games ("we", "us", or "our") collects, uses,
-          and protects your information when you visit the Chronoshift website and related services.
-          We respect your privacy and are committed to protecting your personal data.
+          This Privacy Policy outlines how YatoCrow Games ("we," "us," or "our") collects, uses,
+          and safeguards data when you access the Chronoshift website and related services. We are
+          committed to protecting user privacy and ensuring transparency in how information is handled.
         </p>
 
         <h2>Information We Collect</h2>
         <p>
-          We may collect basic analytics through tools like Vercel or Google Analytics, such as browser
-          type, IP address, pages visited, and general location. We do not collect personal identifiers
-          such as name, email, or payment info unless explicitly submitted by you.
+          We may collect limited, non-personal data through third-party services such as Vercel or Google Analytics.
+          This may include device type, IP address, browser version, pages visited, and general location (e.g., country or region).
+          We do not collect or store personally identifiable information such as names, email addresses, or payment details
+          unless you voluntarily submit them through a contact or support channel.
         </p>
 
-        <h2>How We Use Your Information</h2>
+        <h2>Use of Collected Data</h2>
         <p>
-          Collected data is used to improve the Chronoshift website experience, monitor traffic trends,
-          and identify technical issues. We do not sell or share your data with third parties.
+          The data we collect is used solely for operational purposes. This includes improving site performance,
+          tracking traffic patterns, and resolving technical issues. Collected data is not sold, traded, or transferred
+          to third parties outside of our infrastructure.
         </p>
 
-        <h2>Cookies</h2>
+        <h2>Cookies and Tracking</h2>
         <p>
-          The site may use essential cookies for performance and experience. You may disable cookies
-          via your browser settings, but some features may not work as intended.
+          Our site may use essential cookies to support core functionality and user experience. These cookies do not collect
+          personal information and are not used for advertising or behavioral tracking. You may disable cookies through
+          your browser settings, but this may affect site performance or access to certain features.
         </p>
 
-        <h2>Third-Party Links</h2>
+        <h2>Third-Party Links and Services</h2>
         <p>
-          Our website may link to external resources (e.g., TheGameCrafter, Tracker App). We are not responsible
-          for the content or privacy policies of third-party websites.
+          The website may link to third-party services such as TheGameCrafter or external platforms like the Chronoshift Tracker App.
+          We are not responsible for the content, security, or privacy practices of external websites. Please review their policies
+          separately if you choose to interact with them.
         </p>
 
         <h2>Data Security</h2>
         <p>
-          All data is stored securely via modern web infrastructure. While we take reasonable precautions,
-          no method of transmission over the internet is 100% secure.
+          We use modern hosting infrastructure and security protocols to protect data. However, no online transmission is
+          guaranteed to be fully secure. While we take reasonable precautions, users share information at their own risk.
         </p>
 
-        <h2>Contact</h2>
+        <h2>Children's Privacy</h2>
         <p>
-          For questions about this policy or data usage, contact us via the official YatoCrow Games
-          communication channel (coming soon).
+          This site is not directed at children under the age of 13. We do not knowingly collect information from minors.
+          If we learn that a user under 13 has submitted personal information, we will promptly delete it from our records.
+        </p>
+
+        <h2>Your Rights and Contact</h2>
+        <p>
+          If you have any questions or concerns about how your data is handled, you may contact YatoCrow Games
+          via our official communication channels. Details will be posted once our contact infrastructure is finalized.
+        </p>
+
+        <h2>Changes to This Policy</h2>
+        <p>
+          We reserve the right to update this Privacy Policy at any time. Continued use of the website after a revision
+          will signify your acceptance of the current version. We recommend checking this page periodically for updates.
         </p>
       </div>
     </div>
