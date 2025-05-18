@@ -1,224 +1,162 @@
-// src/pages/Rules.jsx
+import CollapsibleRuleSection from "../components/CollapsibleRuleSection";
 import "./Rules.css";
-import ConduitMechanicsPanel from "../components/ConduitMechanicsPanel";
 
 export default function Rules() {
   return (
     <div className="rules-page">
       <h1 className="rules-title">Chronoshift: Official Rules</h1>
 
-      {/* Overview */}
-      <section className="rules-section">
-        <h2>Overview</h2>
-        <p>
-          Chronoshift is a strategic card game where the battlefield evolves with shifting Time Phases. Players choose a faction, build a deck, and use figures, spells, and resources to reduce their opponent’s HP from 30 to 0.
-        </p>
-        <p>
-          Each faction thrives during a specific Time Phase and draws strength from unique mechanics. The game is dynamic, tactical, and rewards careful planning, timing, and deck synergy.
-        </p>
-      </section>
+      <CollapsibleRuleSection title="Game Overview">
+        <p>Chronoshift is a strategic card game where the battlefield evolves with shifting Time Phases. Players choose a faction, build a deck, and use figures, spells, and resources to reduce their opponent’s HP from 30 to 0.</p>
+        <p>Each faction thrives during a specific Time Phase and draws strength from unique mechanics. The game is dynamic, tactical, and rewards careful planning, timing, and deck synergy.</p>
+      </CollapsibleRuleSection>
 
-      {/* Core Concepts */}
-      <section className="rules-section">
-        <h2>Core Concepts</h2>
+      <CollapsibleRuleSection title="Core Concepts">
         <ul>
-          <li><strong>Time Phase System:</strong> A global state that changes every round. Time Phases affect card abilities and resource gain. The five phases are: Night, Full Moon, Day, Scorch, and Dusk.</li>
-          <li><strong>Resource System:</strong> Each player plays 1 Conduit per turn from their Resource Pile. Some Conduits can shift to activate additional effects.</li>
-          <li><strong>Faction Alignment:</strong> All cards and resources in your deck must belong to your chosen faction.</li>
+          <li><strong>Time Phase System:</strong> Global state that changes every round. Affects card abilities and resource gain.</li>
+          <li><strong>Resource System:</strong> Each player plays 1 Conduit per turn. Some Conduits can shift during Time Phases.</li>
+          <li><strong>Faction Alignment:</strong> All cards in your deck must belong to your chosen faction.</li>
           <li><strong>Victory Condition:</strong> Reduce your opponent’s HP from 30 to 0.</li>
         </ul>
-      </section>
+      </CollapsibleRuleSection>
 
-{/* Resource System */}
-<section className="rules-section">
-  <h2>Resource System: Conduits & Time Alignment</h2>
-  <p>
-    Resources in Chronoshift are represented by special cards called <strong>Conduits</strong>. These generate your clan’s faction-specific resource and are essential for playing Figures and Spells.
-  </p>
-  <ul>
-    <li>Conduits are <strong>channeled</strong> to gain 1 resource matching your faction.</li>
-    <li>All channeled Conduits automatically <strong>recharge</strong> at the start of your turn.</li>
-    <li>Resources are used to pay for <strong>Figures</strong> and <strong>Spells</strong>.</li>
-  </ul>
-</section>
-
-      {/* Conduit Mechanics (Advanced) */}
-<section className="rules-section">
-  <ConduitMechanicsPanel />
-</section>
-      
-      {/* Time Phase Mechanics */}
-      <section className="rules-section">
-        <h2>Time Phase Roll</h2>
-        <p>
-          At the start of each round (the beginning of the first player’s turn), roll a six-sided die:
-        </p>
+      <CollapsibleRuleSection title="Resource System">
+        <p>Resources are represented by special cards called <strong>Conduits</strong>. These generate your faction’s resource type.</p>
         <ul>
-          <li><strong>1</strong> → Night</li>
-          <li><strong>2</strong> → Full Moon</li>
-          <li><strong>3</strong> → Day</li>
-          <li><strong>4</strong> → Scorch</li>
-          <li><strong>5</strong> → Dusk</li>
-          <li><strong>6</strong> → Retain the current Time Phase</li>
+          <li>Conduits are <strong>channeled</strong> to gain 1 resource.</li>
+          <li>Channeled Conduits <strong>recharge</strong> at the start of your turn.</li>
+          <li>Resources are used to play <strong>Figures</strong> and <strong>Spells</strong>.</li>
         </ul>
-        <p>
-          This mechanic introduces unpredictability and strategic timing based on faction alignment.
-        </p>
-      </section>
+      </CollapsibleRuleSection>
 
-      {/* Timecharge */}
-      <section className="rules-section">
-  <h2>Timecharge Mechanic</h2>
-<p>
-  Timecharge allows a player to attempt to change the current Time Phase during their turn. To activate Timecharge, you must spend a number of clan-specific resources and roll a six-sided die:
-</p>
-<ul>
-  <li><strong>1–2:</strong> Time remains unchanged (resources are spent)</li>
-  <li><strong>3–5:</strong> Time Phase shifts randomly</li>
-  <li><strong>6:</strong> Choose the next Time Phase</li>
-</ul>
-<p>
-  The cost to use Timecharge starts at <strong>2 resources</strong> and increases by <strong>+1</strong> each time you use it. This increase is tracked individually per player and caps at a maximum cost of <strong>5 resources</strong>. For example:
-</p>
-<ul>
-  <li>1st use: 2 resources</li>
-  <li>2nd use: 3 resources</li>
-  <li>3rd use: 4 resources</li>
-  <li>4th use and beyond: 5 resources</li>
-</ul>
-<p>
-  <strong>When to Timecharge:</strong> Timecharge may only be attempted <strong>after the Start Phase and before the Draw Phase</strong> on your turn. You may only attempt Timecharge once per turn.
-</p>
-</section>
-
-
-      {/* Turn Structure */}
-     <section className="rules-section" id="turn-structure">
-  <h2>Turn Structure</h2>
-  <ol>
-    <li>
-  <strong>Start Phase:</strong> If you are the first player of the round, roll to determine the Time Phase. Then <strong>recharge</strong> all of your Conduits and units, and resolve any “start of turn” effects.
-</li>
-    <li>
-      <strong>Timecharge Window:</strong> You may attempt one Timecharge after the Start Phase and before drawing a card. This is the only window when Timecharge can be used.
-    </li>
-    <li>
-      <strong>Draw Phase:</strong> Draw 1 card from your draw pile.
-    </li>
-    <li>
-      <strong>Resource Phase:</strong> Play one Conduit/Resource from your Conduit/Resource Pile. Then gain clan-specific resources as follows:
-      <ul>
-        <li>+1 if the current Time Phase matches your clan</li>
-        <li>+1 if you control the battlefield (you have more units than your opponent)</li>
-      </ul>
-      <p>
-        You may gain up to <strong>3 resources per turn</strong> through these conditions.
-      </p>
-    </li>
-    <li>
-      <strong>Main Phase:</strong> Summon figures, cast spells, and activate abilities.
-    </li>
-    <li>
-      <strong>Combat Phase:</strong> Declare attacks, assign blockers, and resolve combat damage.
-    </li>
-    <li>
-      <strong>End Phase:</strong> Resolve any end-of-turn effects and pass the turn.
-    </li>
-  </ol>
-</section>
-
-
-      {/* Card Types */}
-      <section className="rules-section">
-        <h2>Card Types</h2>
+      <CollapsibleRuleSection title="Conduit Mechanics (Advanced)">
+        <p><strong>Conduits</strong> are the lifeblood of your strategy — the resources you rely on to play Figures and Spells. Some can <em>shift</em> during your faction’s favored Time Phase.</p>
+        <h3>Conduit Types</h3>
         <ul>
-          <li><strong>Figures:</strong> Units that occupy the battlefield. Figures have ATK/HP stats, can attack, block, or activate abilities.</li>
-          <li><strong>Spells:</strong> Cards that trigger powerful effects. Types include:
+          <li><strong>Basic Conduits:</strong> Generate 1 resource. Played from your Resource Pile.</li>
+          <li><strong>Conduit Shift Cards:</strong> Flip during your faction’s Time Phase and activate powerful conditional effects.</li>
+        </ul>
+        <h3>Conduit Shift Rules</h3>
+        <ul>
+          <li>Maximum 3 Conduit Shift cards per deck.</li>
+          <li>Played like normal Conduits. Flip during Start Phase if Time Phase matches your faction.</li>
+          <li>Shifted effects activate if their condition is met and last until the card is exiled or replaced.</li>
+        </ul>
+        <h3>Example</h3>
+        <p><strong>Moonfang Grove (Moondrath)</strong> – Shifted Effect: “Beasts you summon gain +1/+0.”</p>
+      </CollapsibleRuleSection>
+
+      <CollapsibleRuleSection title="Time Phase Roll">
+        <p>At the start of each round, roll a six-sided die:</p>
+        <ul>
+          <li>1 → Night</li>
+          <li>2 → Full Moon</li>
+          <li>3 → Day</li>
+          <li>4 → Scorch</li>
+          <li>5 → Dusk</li>
+          <li>6 → Retain current Time Phase</li>
+        </ul>
+        <p>Time Phases affect card timing and faction abilities.</p>
+      </CollapsibleRuleSection>
+
+      <CollapsibleRuleSection title="Timecharge Mechanic">
+        <p>Spend resources to attempt to change the current Time Phase. Roll a die:</p>
+        <ul>
+          <li>1–2: No change</li>
+          <li>3–5: Random Time Phase</li>
+          <li>6: Choose Time Phase</li>
+        </ul>
+        <p>Cost starts at 2 resources and increases per use (up to 5). May only be used once per turn after Start Phase and before Draw Phase.</p>
+      </CollapsibleRuleSection>
+
+      <CollapsibleRuleSection title="Turn Structure">
+        <ol>
+          <li><strong>Start Phase:</strong> Recharge, resolve start effects, roll for Time Phase.</li>
+          <li><strong>Timecharge Window:</strong> Optional use of Timecharge.</li>
+          <li><strong>Draw Phase:</strong> Draw 1 card.</li>
+          <li><strong>Resource Phase:</strong> Play 1 Conduit, gain additional resources if conditions met.</li>
+          <li><strong>Main Phase:</strong> Play Figures, Spells, and abilities.</li>
+          <li><strong>Combat Phase:</strong> Declare attacks and blockers.</li>
+          <li><strong>End Phase:</strong> Resolve end-of-turn effects.</li>
+        </ol>
+      </CollapsibleRuleSection>
+
+      <CollapsibleRuleSection title="Card Types & Spell Subtypes">
+        <ul>
+          <li><strong>Figures:</strong> Units with ATK/HP that can attack, block, and use abilities.</li>
+          <li><strong>Spells:</strong> Effects with subtypes:
             <ul>
-              <li><strong>Sorcery:</strong> Only playable during your main phase.</li>
-              <li><strong>Instant:</strong> Can be played at any time, including your opponent’s turn.</li>
-              <li><strong>Counter:</strong> Can only be played in response to a spell or figure.</li>
+              <li><strong>Spell – Rite:</strong> Play only during Main Phase.</li>
+              <li><strong>Spell – Burst:</strong> Play any time.</li>
+              <li><strong>Spell – Dispel:</strong> Counter a spell or figure.</li>
             </ul>
           </li>
-          <li><strong>Conduits:</strong> Resource cards placed into your Resource Pile. Each turn, you may play one Conduit. Some are <strong>Conduit Shift</strong> cards, which flip during your faction’s favored Time Phase to grant bonus effects.</li>
-          <li><strong>Tokens:</strong> Summoned units created by card effects. Tokens are not part of your deck or hand and are drawn from a separate Token Pile.</li>
+          <li><strong>Conduits:</strong> Resource cards. Some can Shift during Time Phase.</li>
+          <li><strong>Tokens:</strong> Summoned units not in your deck or hand. Drawn from Token Pile.</li>
         </ul>
-      </section>
+      </CollapsibleRuleSection>
 
-      {/* Mechanics */}
-      <section className="rules-section">
-        <h2>Key Mechanics</h2>
+      <CollapsibleRuleSection title="Key Mechanics">
         <ul>
-          <li><strong>Phasebind:</strong> Figures enter the battlefield tapped unless summoned during their clan’s favored Time Phase. This rule represents temporal restriction. Abilities like Ambush can bypass this.</li>
-          <li><strong>Timecharge:</strong> A mechanic allowing strategic Time Phase manipulation by spending 2 resources and rolling a die.</li>
-          <li><strong>Conduit Shift:</strong> Some Conduits may be flipped during your faction’s Time Phase to activate a Shifted Effect. Shifted effects persist until the Conduit is removed or exiled.</li>
-          <li><strong>Tapping:</strong> Figures tap when they attack or use abilities. Tapped units cannot attack or block again until untapped on your next Start Phase.</li>
-          <li><strong>Reveal (Flip):</strong> Figures with Shadowstep remain hidden until they attack or are targeted, triggering “On Reveal” effects.</li>
-          <li><strong>LIFO (Last In, First Out):</strong> When multiple effects are triggered, they resolve in reverse order — the most recent one resolves first. Spells and abilities form a stack. Only Instants and Counters may be played in response to other effects.</li>
+          <li><strong>Phasebind:</strong> Figures enter tapped unless summoned during your faction’s Time Phase.</li>
+          <li><strong>Timecharge:</strong> Strategic attempt to change Time Phase.</li>
+          <li><strong>Conduit Shift:</strong> Flip special Conduits to activate conditional bonuses.</li>
+          <li><strong>Channel:</strong> Tap to generate resources.</li>
+          <li><strong>Reveal (Flip):</strong> Triggers when a hidden unit attacks or is targeted.</li>
+          <li><strong>LIFO Stack:</strong> Effects resolve Last In, First Out. Bursts and Dispels can be used in response.</li>
         </ul>
-      </section>
+      </CollapsibleRuleSection>
 
-      {/* Game Zones */}
-      <section className="rules-section">
-        <h2>Game Zones</h2>
+      <CollapsibleRuleSection title="Game Zones">
         <ul>
-          <li><strong>Draw Pile:</strong> Your main deck of 60+ cards.</li>
-          <li><strong>Hand:</strong> Hidden cards in your possession, drawn each turn.</li>
-          <li><strong>Resource Pile:</strong> A separate face-up pile of Conduits. You may play 1 Conduit per turn from here.</li>
-          <li><strong>Battlefield:</strong> The main combat zone where Figures and Tokens are summoned.</li>
-          <li><strong>Graveyard:</strong> Discarded or destroyed cards. Some effects interact with this zone.</li>
-          <li><strong>Exile Zone:</strong> Cards removed from the game permanently.</li>
-          <li><strong>Token Pile:</strong> A separate zone for your available tokens (e.g., Bloodshade, Fangshade). Tokens are not drawn into your hand or included in your deck list.</li>
+          <li><strong>Draw Pile:</strong> Your main deck.</li>
+          <li><strong>Hand:</strong> Hidden cards you draw.</li>
+          <li><strong>Resource Pile:</strong> Separate Conduit pile (1 per turn).</li>
+          <li><strong>Battlefield:</strong> Zone for Figures and Tokens.</li>
+          <li><strong>Graveyard:</strong> Destroyed/discarded cards.</li>
+          <li><strong>Exile Zone:</strong> Permanently removed cards.</li>
+          <li><strong>Token Pile:</strong> Summoned token cards only.</li>
         </ul>
-      </section>
+      </CollapsibleRuleSection>
 
-      {/* Deck Construction */}
-      <section className="rules-section">
-        <h2>Deck Construction</h2>
+      <CollapsibleRuleSection title="Deck Construction">
         <ul>
-          <li><strong>Starter Decks:</strong> Pre-built 60-card decks for each faction, with 1 Legendary, 3 Elite, 46 Commons/Spells/Conduits, plus a small number of tokens.</li>
-          <li><strong>Constructed Format:</strong> Build your own deck with 60 or more cards. All cards must belong to a single faction.</li>
-          <li><strong>Card Limits:</strong> 
+          <li><strong>Starter Decks:</strong> 60 cards + tokens. Includes 1 Legendary, 3 Elite.</li>
+          <li><strong>Constructed:</strong> 60+ cards, all same faction.</li>
+          <li><strong>Card Limits:</strong>
             <ul>
-              <li>Maximum 1 copy of any Legendary card</li>
-              <li>Maximum 2 copies of any Elite card</li>
-              <li>Maximum 3 copies of any other non-resource card</li>
-              <li>Up to 3 Conduit Shift cards allowed per deck</li>
+              <li>1x Legendary</li>
+              <li>2x Elite</li>
+              <li>3x all others</li>
+              <li>Up to 3 Conduit Shift cards</li>
             </ul>
           </li>
         </ul>
-      </section>
+      </CollapsibleRuleSection>
 
-      {/* Advanced Play */}
-      <section className="rules-section">
-        <h2>Advanced Play</h2>
+      <CollapsibleRuleSection title="Advanced Play">
         <ul>
-          <li><strong>Keyword Glossary:</strong> Visit the <a href="/keywords">Keyword Glossary</a> for full definitions of combat abilities and status effects.</li>
-          <li><strong>Stack Resolution:</strong> Effects resolve using LIFO — the most recent effect resolves first.</li>
-          <li><strong>Multiplayer Support:</strong> Future expansions will support multiplayer formats and new win conditions.</li>
+          <li><strong>Keyword Glossary:</strong> See the <a href="/keywords">Keyword Glossary</a> for status and combat effects.</li>
+          <li><strong>Stack Resolution:</strong> Uses LIFO stack order.</li>
+          <li><strong>Multiplayer:</strong> Support coming in future expansions.</li>
         </ul>
-      </section>
+      </CollapsibleRuleSection>
 
-{/* Card Anatomy */}
-      <section className="rules-section">
-  <h2>Card Anatomy</h2>
-  <p>
-    Learn how to read each Chronoshift card at a glance. Below is a breakdown of each section including cost, stats, type, and unique abilities.
-  </p>
-  <img
-    src="/assets/card-anatomy.webp"
-    alt="Card Anatomy Diagram"
-    className="card-anatomy-image"
-  />
-</section>
-      
-      {/* Back to Top Button */}
-    <button
-      className="back-to-top"
-      onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-    >
-      ↑ Back to Top
-    </button>
+      <CollapsibleRuleSection title="Card Anatomy">
+        <p>Learn how to read a card at a glance. See diagram below:</p>
+        <img
+          src="/assets/card-anatomy.webp"
+          alt="Card Anatomy Diagram"
+          className="card-anatomy-image"
+        />
+      </CollapsibleRuleSection>
+
+      <button
+        className="back-to-top"
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+      >
+        ↑ Back to Top
+      </button>
     </div>
   );
 }
