@@ -1,36 +1,44 @@
 /* src/pages/Rules.css */
 
 .rules-page {
-  background-color: #1a1510;
+  background: linear-gradient(to bottom, #1a1510 0%, #12100e 100%);
   color: #e8dbc3;
   padding: 4rem 2rem 2rem;
   font-family: 'Cinzel', serif;
-  line-height: 1.6;
-  width: 100%;
-  max-width: none;
+  line-height: 1.65;
   box-sizing: border-box;
+  max-width: 100%;
 }
 
 .rules-title {
-  font-size: 2.5rem;
+  font-size: 2.75rem;
   text-align: center;
   color: #f5d8a0;
-  margin-bottom: 2.5rem;
-  text-shadow: 0 0 6px rgba(245, 216, 160, 0.2);
+  margin-bottom: 2.75rem;
+  text-shadow: 0 0 6px rgba(245, 216, 160, 0.25), 0 0 12px rgba(245, 216, 160, 0.1);
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid rgba(245, 216, 160, 0.15);
+  padding-bottom: 0.5rem;
 }
 
 .rules-section {
-  margin: 0 auto 2.75rem;
+  margin: 0 auto 3rem;
   max-width: 960px;
+  padding: 1.25rem 1.5rem;
+  background-color: rgba(255, 248, 240, 0.03);
+  border: 1px solid rgba(245, 216, 160, 0.07);
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
 }
 
 .rules-section h2 {
-  font-size: 1.5rem;
+  font-size: 1.65rem;
   color: #f0cc9b;
-  border-bottom: 1px solid #3a2f24;
-  margin-bottom: 0.75rem;
-  padding-bottom: 0.25rem;
-  text-shadow: 0 0 4px rgba(245, 216, 160, 0.08);
+  margin-bottom: 0.85rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid rgba(245, 216, 160, 0.1);
+  text-shadow: 0 0 4px rgba(245, 216, 160, 0.1);
+  position: relative;
 }
 
 .rules-section p,
@@ -53,6 +61,7 @@
 .rules-section a {
   color: #f5d8a0;
   text-decoration: underline;
+  font-weight: 500;
 }
 
 .rules-section a:hover {
