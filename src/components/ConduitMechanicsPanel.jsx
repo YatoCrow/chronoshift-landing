@@ -18,7 +18,7 @@ export default function ConduitMechanicsPanel() {
             uses unique Conduits, some are capable of <em>shifting</em> with time itself.
           </p>
 
-          <h3>⚙️ Conduit Types</h3>
+          <h3>Conduit Types</h3>
           <ul>
             <li>
               <strong>Basic Conduits:</strong> Played face-up from your Resource Pile,
@@ -30,7 +30,7 @@ export default function ConduitMechanicsPanel() {
             </li>
           </ul>
 
-          <h3>🌀 Conduit Shift Rules</h3>
+          <h3>Conduit Shift Rules</h3>
           <ul>
             <li>
               You may include <strong>up to 3 Conduit Shift cards</strong> in your deck.
@@ -45,17 +45,17 @@ export default function ConduitMechanicsPanel() {
             </li>
           </ul>
 
-          <h3>🧠 Tactical Depth</h3>
+          <h3>Tactical Depth</h3>
           <p>
             Conduit Shift rewards <strong>timing</strong> and <strong>synergy</strong>.
             Use <em>Timecharge</em> to align phases and unlock maximum potential.
           </p>
 
-          <h3>📘 Example</h3>
+          <h3>Example</h3>
           <p className="example">
             <strong>Moonfang Grove – Conduit Shift (Moondrath)</strong><br />
-            <span className="text-gray-400">Shifted Effect:</span> “Beasts you summon gain +1/+0.”<br />
-            → Activates only after flipping during Full Moon, and only if you summon Beasts.
+            <span className="text-gray-400">Shifted Effect:</span> When a Fangshade token is summoned, it gains +1/+0 and Stealth this turn.”<br />
+            → Activates only after flipping during Full Moon, and only if you summon a Fangshade token.
           </p>
         </div>
       )}
