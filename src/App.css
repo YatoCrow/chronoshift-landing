@@ -152,3 +152,34 @@ nav a:hover {
   margin: 0 auto;
   padding: 0 2.5rem;
 }
+
+@media (max-width: 768px) {
+  main {
+    padding-top: 80px;
+  }
+
+  .hero-section {
+    padding: 2.5rem 1rem;
+  }
+
+  .hero-section h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-section p {
+    font-size: 1.05rem;
+  }
+
+  .button-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .layout-inner {
+    padding: 0 1rem;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+}
