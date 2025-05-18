@@ -7,7 +7,7 @@ export default function Rules() {
       <h1 className="rules-title">Chronoshift: Official Rules</h1>
 
       <CollapsibleRuleSection title="Game Overview">
-        <p><strong>Chronoshift</strong> is a strategic, time-shifting fantasy card game. Players command powerful factions tied to different phases of time — Night, Full Moon, Day, Scorch, and Dusk — and seek to reduce their opponent’s HP from <strong>30 to 0</strong>.</p>
+        <p><strong>Chronoshift: Eclipse Dawn</strong> is a strategic, time-shifting fantasy card game. Players command powerful factions, each aligned with a unique phase of time: Night, Full Moon, Day, Scorch, or Dusk, and seek to reduce their opponent’s HP from <strong>30 to 0</strong>.</p>
         <p>Each faction thrives during its preferred Time Phase, using unique cards, resource strategies, and abilities that become stronger when the timeline is in their favor. Gameplay evolves round by round as the Time Phase changes unpredictably.</p>
         <p>Master timing, manage your resources wisely, and outplay your opponent by building a synergistic deck and adapting to the ever-shifting battlefield.</p>
       </CollapsibleRuleSection>
