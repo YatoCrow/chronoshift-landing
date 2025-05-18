@@ -9,62 +9,65 @@ export default function PrivacyPolicy() {
         <p>Last updated: May 2025</p>
 
         <p>
-          This Privacy Policy outlines how YatoCrow Games ("we," "us," or "our") collects, uses,
-          and safeguards data when you access the Chronoshift website and related services. We are
-          committed to protecting user privacy and ensuring transparency in how information is handled.
+          This Privacy Policy explains how YatoCrow Games ("we," "us," or "our") collects, uses,
+          and protects information when you access the Chronoshift website and its related services.
+          We are committed to ensuring transparency and safeguarding your privacy.
         </p>
 
         <h2>Information We Collect</h2>
         <p>
-          We may collect limited, non-personal data through third-party services such as Vercel or Google Analytics.
-          This may include device type, IP address, browser version, pages visited, and general location (e.g., country or region).
-          We do not collect or store personally identifiable information such as names, email addresses, or payment details
-          unless you voluntarily submit them through a contact or support channel.
+          We may collect limited, non-personal information through third-party analytics services such as Vercel or Google Analytics.
+          This includes data such as IP address, browser type, device details, visited pages, and general geographic region (e.g., country).
+          We do not collect or store personally identifiable information (such as names or emails) unless voluntarily provided by you through direct contact.
         </p>
 
-        <h2>Use of Collected Data</h2>
+        <h2>How We Use This Information</h2>
         <p>
-          The data we collect is used solely for operational purposes. This includes improving site performance,
-          tracking traffic patterns, and resolving technical issues. Collected data is not sold, traded, or transferred
-          to third parties outside of our infrastructure.
+          The data collected is used solely to improve the functionality and performance of our website,
+          monitor technical issues, and better understand how users engage with our content.
+          We do not share, sell, or transfer your data to third parties beyond these analytics services.
         </p>
 
-        <h2>Cookies and Tracking</h2>
+        <h2>Cookies</h2>
         <p>
-          Our site may use essential cookies to support core functionality and user experience. These cookies do not collect
-          personal information and are not used for advertising or behavioral tracking. You may disable cookies through
-          your browser settings, but this may affect site performance or access to certain features.
+          Our site may use basic, essential cookies to support navigation and functionality.
+          These cookies do not collect personal information and are not used for tracking or advertising purposes.
+          You can disable cookies through your browser settings, but doing so may affect your experience on the site.
         </p>
 
-        <h2>Third-Party Links and Services</h2>
+        <h2>Third-Party Links</h2>
         <p>
-          The website may link to third-party services such as TheGameCrafter or external platforms like the Chronoshift Tracker App.
-          We are not responsible for the content, security, or privacy practices of external websites. Please review their policies
-          separately if you choose to interact with them.
+          This website may link to third-party services such as TheGameCrafter or the Chronoshift Tracker App.
+          We are not responsible for the content, privacy policies, or practices of those external platforms.
+          We recommend reviewing their terms if you interact with them.
         </p>
 
         <h2>Data Security</h2>
         <p>
-          We use modern hosting infrastructure and security protocols to protect data. However, no online transmission is
-          guaranteed to be fully secure. While we take reasonable precautions, users share information at their own risk.
+          We use secure hosting infrastructure and reasonable security measures to protect site data.
+          However, no online transmission is guaranteed to be completely secure.
+          Users interact with our site at their own discretion and risk.
         </p>
 
-        <h2>Children's Privacy</h2>
+        <h2>Children’s Privacy</h2>
         <p>
-          This site is not directed at children under the age of 13. We do not knowingly collect information from minors.
-          If we learn that a user under 13 has submitted personal information, we will promptly delete it from our records.
+          This website is not intended for children under the age of 13.
+          We do not knowingly collect information from minors.
+          If we learn that we have unintentionally collected personal data from a child under 13,
+          we will delete it promptly.
         </p>
 
         <h2>Your Rights and Contact</h2>
         <p>
-          If you have any questions or concerns about how your data is handled, you may contact YatoCrow Games
-          via our official communication channels. Details will be posted once our contact infrastructure is finalized.
+          If you have any questions or concerns about this Privacy Policy or your data,
+          please contact us at <a href="mailto:contact@yatocrowgames.com">contact@yatocrowgames.com</a>.
         </p>
 
         <h2>Changes to This Policy</h2>
         <p>
-          We reserve the right to update this Privacy Policy at any time. Continued use of the website after a revision
-          will signify your acceptance of the current version. We recommend checking this page periodically for updates.
+          We may update this Privacy Policy periodically to reflect changes in our practices or legal obligations.
+          Continued use of the site indicates your acceptance of the current version.
+          We encourage you to revisit this page regularly.
         </p>
       </div>
     </div>
