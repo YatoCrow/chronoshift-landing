@@ -32,3 +32,13 @@
   margin-top: 2rem;
   color: #ffe8b3;
 }
+
+.legal-page a {
+  color: #f5d8a0;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.legal-page a:hover {
+  color: #ffe8b0;
+}
