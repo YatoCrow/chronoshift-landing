@@ -1,54 +1,32 @@
-.conduit-panel {
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background-color: #1a1a1a;
-  border-radius: 8px;
-  margin-top: 1rem;
+// src/components/CollapsibleRuleSection.css
+.collapsible-rule-section {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background-color: #181818;
+  margin-bottom: 1rem;
+  border-radius: 6px;
   overflow: hidden;
-  box-shadow: 0 0 8px rgba(97, 218, 251, 0.05);
 }
 
-.panel-toggle {
+.collapsible-header {
   width: 100%;
-  text-align: left;
   padding: 1rem;
-  background-color: #242424;
-  color: #eaeaea;
-  font-weight: 600;
+  background: #202020;
+  color: #f0f0f0;
   font-size: 1.1rem;
+  font-weight: 600;
+  text-align: left;
   border: none;
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  transition: background 0.2s ease;
 }
 
-.panel-toggle:hover {
-  background-color: #2e2e2e;
+.collapsible-header:hover {
+  background: #2a2a2a;
 }
 
-.panel-content {
-  padding: 1.25rem 1.5rem;
+.collapsible-body {
+  padding: 1rem 1.25rem;
   color: #ccc;
   font-size: 0.95rem;
   line-height: 1.6;
-}
-
-.panel-content h3 {
-  color: #61dafb;
-  margin-top: 1.25rem;
-  font-size: 1rem;
-}
-
-.panel-content ul {
-  list-style-type: disc;
-  padding-left: 1.5rem;
-  margin-top: 0.5rem;
-}
-
-.panel-content .example {
-  font-style: italic;
-  color: #aaa;
-  background-color: #111;
-  padding: 0.75rem 1rem;
-  border-left: 4px solid #61dafb;
-  margin-top: 0.75rem;
-  border-radius: 4px;
 }
