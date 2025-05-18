@@ -1,0 +1,51 @@
+.conduit-panel {
+  border: 1px solid #3c3c3c;
+  background-color: #1c1c1c;
+  border-radius: 8px;
+  margin-top: 1rem;
+  overflow: hidden;
+}
+
+.panel-toggle {
+  width: 100%;
+  text-align: left;
+  padding: 1rem;
+  background-color: #252525;
+  color: #d8d8d8;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: background-color 0.2s ease;
+}
+
+.panel-toggle:hover {
+  background-color: #2f2f2f;
+}
+
+.panel-content {
+  padding: 1rem 1.5rem;
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+.panel-content h3 {
+  color: #61dafb;
+  margin-top: 1rem;
+}
+
+.panel-content ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.panel-content .example {
+  font-style: italic;
+  color: #aaa;
+  background-color: #111;
+  padding: 0.75rem;
+  border-left: 4px solid #61dafb;
+  margin-top: 0.5rem;
+}
