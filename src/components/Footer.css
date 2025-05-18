@@ -84,3 +84,16 @@
 .footer-logo:hover {
   opacity: 1;
 }
+
+.footer-logo {
+  height: 72px;
+  width: auto;
+  opacity: 0.9;
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 0 0 transparent);
+}
+
+.footer-logo:hover {
+  opacity: 1;
+  filter: drop-shadow(0 0 6px #f5d8a0) drop-shadow(0 0 12px #f5d8a0);
+}
