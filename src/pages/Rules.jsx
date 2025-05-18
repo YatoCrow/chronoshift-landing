@@ -117,8 +117,8 @@ export default function Rules() {
           <li><strong>Phasebind:</strong> Figures enter the battlefield <em>tapped</em> unless summoned during your faction’s favored Time Phase. Some abilities like Ambush bypass this.</li>
           <li><strong>Timecharge:</strong> Optional mechanic to influence the Time Phase. Requires resources and a die roll.</li>
           <li><strong>Conduit Shift:</strong> Advanced Conduits that flip during your Time Phase and activate conditional effects.</li>
-          <li><strong>Channel:</strong> Tapping a Conduit to gain 1 resource.</li>
-          <li><strong>Recharge:</strong> Untapping a Conduit at the beginning of your turn, making it usable again.</li>
+          <li><strong>Channel: Activating a Conduit to generate 1 resource. The Conduit is rotated sideways to show it has been used this turn.</li>
+          <li><strong>Recharge:</strong> Recharge: At the start of your turn, all previously used Conduits and Figures are restored to their upright position, making them usable again.</li>
           <li><strong>Reveal (Flip):</strong> Some Figures remain hidden until they attack or are targeted. Trigger “On Reveal” effects when they flip.</li>
           <li><strong>LIFO Stack:</strong> Effects resolve in reverse order. Last effect in is the first to resolve. Only Bursts and Dispels may be played in response.</li>
         </ul>
