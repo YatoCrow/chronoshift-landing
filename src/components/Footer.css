@@ -38,3 +38,19 @@
   margin: 0.25rem 0;
   line-height: 1.4;
 }
+
+.footer-contact {
+  font-size: 0.85rem;
+  color: #bfae8e;
+  margin-top: 0.75rem;
+}
+
+.footer-contact a {
+  color: #f5d8a0;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-contact a:hover {
+  color: #fff0d2;
+}
