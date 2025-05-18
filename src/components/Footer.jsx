@@ -19,13 +19,15 @@ function Footer() {
         </div>
 
         {/* ✅ Add Logo Here */}
-        <a href="https://yatocrowgames.com" target="_blank" rel="noreferrer">
-          <img
-            src="/yatocrow-logo300.webp"
-            alt="YatoCrow Games Logo"
-            className="footer-logo"
-          />
-        </a>
+        <div className="footer-logo-wrapper">
+  <a href="https://yatocrowgames.com" target="_blank" rel="noreferrer">
+    <img
+      src="/yatocrow-logo300.webp"
+      alt="YatoCrow Games Logo"
+      className="footer-logo"
+    />
+  </a>
+</div>
 
         <div className="footer-bottom">
           <p>© 2025 YatoCrow Games. All rights reserved.</p>
