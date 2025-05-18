@@ -10,7 +10,7 @@ const keywordData = [
   { term: "Decay", def: "A unit affected by Decay receives -1/-1 at the start of its controller’s turn. This status continues each turn until the unit dies or the effect is removed. Decay effects can stack over time.", tags: ["Status"] },
   { term: "Drain", def: "When this card deals damage, you heal for half the amount (rounded down). Drain effects apply to both figure attacks and spell damage.", tags: ["Combat"] },
   { term: "Enrage", def: "Enrage triggers after a unit takes damage, granting it bonus stats or effects. It encourages aggressive trades and self-damage tactics.", tags: ["Status"] },
-  { term: "Figures", def: "Figures are units that occupy the battlefield. They can attack, block, and activate abilities. Each Figure belongs to a faction and may have keywords like Shadowstep or Deadcall.", tags: ["Card Type"] },
+  { term: "Figures", def: "Figures are units that occupy the battlefield. They can attack, block, and activate abilities. Each Figure belongs to a faction and may have keywords like Shadowstep or Deadcall.", tags: ["Card-Type"] },
   { term: "Fury", def: "A unit with Fury gains +1 ATK each time it survives damage. These buffs are permanent unless the unit dies or is silenced.", tags: ["Status"] },
   { term: "Heal", def: "Heal effects restore HP to a unit or player. Healing cannot exceed a unit's maximum health unless specified.", tags: ["Combat"] },
   { term: "Infiltrate", def: "Infiltrate triggers when this unit deals direct damage to the opposing player. Often paired with Stealth or evasion-based strategies.", tags: ["Trigger"] },
@@ -78,7 +78,7 @@ export default function KeywordGlossary() {
               <div className="keyword-term-line">
                 <strong className="keyword-term">{term.toUpperCase()}</strong>
                 {tags && tags.map(tag => (
-                  <span key={tag} className={`keyword-tag tag-${tag.toLowerCase()}`}>
+                  <span key={tag} className={`keyword-tag tag-${tag.toLowerCase().replace(/ /g, "-")}`}>
                     [{tag}]
                   </span>
                 ))}
