@@ -54,3 +54,15 @@
 .footer-contact a:hover {
   color: #fff0d2;
 }
+
+.footer-logo {
+  height: 40px;
+  margin: 1rem auto;
+  display: block;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.footer-logo:hover {
+  opacity: 1;
+}
