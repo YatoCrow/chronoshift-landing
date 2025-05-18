@@ -1,9 +1,9 @@
-// src/pages/KeywordGlossary.jsx
 import { useState } from "react";
 import "./KeywordGlossary.css";
 
 const keywordData = [
   { term: "Burn", def: "Burn effects deal direct damage to units or players without entering combat. These effects often bypass abilities like Stealth and are useful for finishing weakened enemies.", tags: ["Combat"] },
+  { term: "Channel", def: "Activating a Conduit to generate 1 resource. The Conduit is rotated sideways to show it has been used this turn.", tags: ["Mechanic"] },
   { term: "Conduits", def: "Conduits are your core resource cards. Played from your resource pile, each Conduit generates your clan’s energy each turn. Some Conduits include passive effects, while others interact with specific Time Phases.", tags: ["Resource"] },
   { term: "Conduit Shift", def: "Conduit Shift cards are special Conduits that flip during your clan’s favored Time Phase. When flipped (shifted face down), they activate a Shifted Effect that enhances gameplay. Only 3 Conduit Shifts are allowed per deck.", tags: ["Mechanic", "Resource"] },
   { term: "Deadcall", def: "Deadcall abilities trigger when a figure is summoned from your discard pile. These effects enable graveyard synergy and can be used to revive momentum in late-game scenarios.", tags: ["Trigger"] },
@@ -19,9 +19,11 @@ const keywordData = [
   { term: "On Play", def: "Triggers when a card (Figure or Spell) is played from your hand. These effects resolve as the card enters the battlefield.", tags: ["Trigger"] },
   { term: "On Reveal (Flip)", def: "Triggers when a unit with Shadowstep is revealed, either by attacking or being targeted by a spell or ability.", tags: ["Trigger"] },
   { term: "Pack Tactics", def: "Triggers if another allied unit has attacked this turn. It rewards swarming or coordinated assault strategies.", tags: ["Combat"] },
-  { term: "Phasebind", def: "All Figures enter the battlefield channeled unless they are summoned during their clan’s favored Time Phase. This can be bypassed by abilities such as Ambush or others that override Phasebind.", tags: ["Mechanic"] },
+  { term: "Phasebind", def: "All Figures enter the battlefield in a Phasebound state unless summoned during their clan’s favored Time Phase. This restriction can be bypassed by abilities such as Ambush or effects that override Phasebind.", tags: ["Mechanic"] },
+  { term: "Phasebound", def: "A Phasebound unit enters the battlefield rotated sideways and cannot attack, block, or activate abilities. It recharges and becomes usable at the beginning of your next turn.", tags: ["Status"] },
   { term: "Phaseblend", def: "Allows this unit to act as though the current Time Phase matches its clan’s. This can unlock phase-restricted effects or bypass Phasebind.", tags: ["Status"] },
   { term: "Recursion", def: "Refers to effects that return cards from your discard pile or exile zone to hand, deck, or battlefield. Often central to long-game strategies.", tags: ["Mechanic"] },
+  { term: "Recharge", def: "At the start of your turn, all previously used Conduits and Figures return to their upright position and are ready to be used again.", tags: ["Mechanic"] },
   { term: "Resolve", def: "Triggers when two or more allied units activate abilities in the same turn. It represents synchronized momentum between allies.", tags: ["Trigger"] },
   { term: "Sacrifice", def: "You must destroy one of your own units or discard a card to activate this effect. Sacrifice is often used in dark-themed factions for power gain.", tags: ["Mechanic"] },
   { term: "Shadowstep", def: "This unit enters the battlefield hidden and cannot be blocked or targeted. It is revealed when it attacks or becomes the target of a spell or effect.", tags: ["Status"] },
@@ -32,8 +34,6 @@ const keywordData = [
   { term: "Stealth", def: "This unit cannot be targeted by spells or abilities until it attacks or is revealed. Stealth allows units to evade effects until they act.", tags: ["Status"] },
   { term: "Strike First", def: "This unit deals its combat damage before its opponent in battle. If it defeats the enemy in one strike, it avoids taking return damage.", tags: ["Combat"] },
   { term: "Summon", def: "Creates a token or additional unit and places it onto the battlefield. Summon effects often trigger other abilities.", tags: ["Mechanic"] },
-  { term: "Channel", def: "To use a Conduit, turn it sideways to indicate it has been used. This action generates 1 resource matching your clan. Only Conduits that are not already channeled may be used.", tags: ["Mechanic"] },
-  { term: "Recharge", def: "At the beginning of your turn during the Start Phase, all your previously channeled Conduits and units automatically return to their ready state (upright).", tags: ["Mechanic"] },
   { term: "Time Phase", def: "A rotating global phase that changes each round. The five Time Phases are Night, Full Moon, Day, Scorch, and Dusk. Each faction thrives during its favored Time Phase.", tags: ["Mechanic"] },
   { term: "Timecharge", def: "A mechanic where you spend 2 resources to roll a die and attempt to alter the Time Phase. On a high result, you may choose the new Time Phase.", tags: ["Mechanic"] },
   { term: "Unstable", def: "This unit self-destructs at the end of the turn if it attacked. Unstable units hit hard but are short-lived.", tags: ["Status"] },
@@ -41,7 +41,6 @@ const keywordData = [
   { term: "Wither", def: "Damage dealt by this unit reduces the target’s ATK instead of HP. This weakens powerful threats without killing them outright.", tags: ["Status"] }
 ];
 
-// Group keywords alphabetically
 const groupByLetter = (entries) => {
   const groups = {};
   entries.forEach(entry => {
