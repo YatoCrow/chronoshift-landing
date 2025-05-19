@@ -22,7 +22,7 @@ export default function Rules() {
       </CollapsibleRuleSection>
 
       <CollapsibleRuleSection title="Resource System">
-        <p>Resources in Chronoshift come from <strong>Conduits</strong> — special cards placed from your separate <strong>Resource Pile</strong>. These do not come from your draw deck and are face-up for strategic play.</p>
+        <p>Resources in Chronoshift come from <strong>Conduits</strong> which are special cards placed from your separate <strong>Resource Pile</strong>. These do not come from your draw deck and are face-up for strategic play.</p>
         <ul>
           <li><strong>Play 1 Conduit per turn</strong> during your Resource Phase.</li>
           <li><strong>Channel:</strong> Activating a Conduit to generate 1 resource. The Conduit is rotated sideways to show it has been used this turn.</li>
@@ -32,7 +32,7 @@ export default function Rules() {
       </CollapsibleRuleSection>
 
       <CollapsibleRuleSection title="Conduit Mechanics (Advanced)">
-        <p><strong>Conduits</strong> are not just fuel — they are attuned to time. Some advanced Conduits, called <strong>Conduit Shift cards</strong>, can flip when time favors your faction, granting bonus effects that trigger when conditions are met.</p>
+        <p><strong>Conduits</strong> are not just fuel; they are attuned to time. Some advanced Conduits, called <strong>Conduit Shift cards</strong>, can flip when time favors your faction, granting bonus effects that trigger when conditions are met.</p>
 
         <h3>Conduit Types</h3>
         <ul>
@@ -103,7 +103,7 @@ export default function Rules() {
           <li><strong>Spells:</strong> One-time use effects. Three subtypes exist:
             <ul>
               <li><strong>Spell – Rite:</strong> Can only be played during your Main Phase.</li>
-              <li><strong>Spell – Burst:</strong> Can be played at any time — even during your opponent’s turn or combat.</li>
+              <li><strong>Spell – Burst:</strong> Can be played at any time, including during your opponent’s turn or combat.</li>
               <li><strong>Spell – Dispel:</strong> Counter a Spell or Figure as it is played. Used in response.</li>
             </ul>
           </li>
