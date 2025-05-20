@@ -32,29 +32,55 @@ function Home() {
         </p>
       </section>
 
-      {/* Faction Emblem Grid */}
-      <section className="home-section">
-        <h2>Meet the Factions</h2>
-        <div className="faction-grid">
-          {[
-            { name: "House Noctvaris", file: "HN-Emblem.webp" },
-            { name: "The Moondrath", file: "TM-Emblem.webp" },
-            { name: "Solari Ascendants", file: "SA-Emblem.webp" },
-            { name: "Scorchborne", file: "SB-Emblem.webp" },
-            { name: "Umbra’kin", file: "UK-Emblem.webp" },
-            { name: "Noctara Sanctum", file: "NS-Emblem.webp" },
-          ].map((faction) => (
-            <div className="faction-card" key={faction.name}>
-              <img
-                src={`/assets/emblems/${faction.file}`}
-                alt={`${faction.name} Emblem`}
-                className="faction-emblem"
-              />
-              <span className="faction-name">{faction.name}</span>
-            </div>
-          ))}
-        </div>
-      </section>
+     {/* Faction Emblem Grid */}
+<section className="home-section">
+  <h2>Meet the Factions</h2>
+  <div className="faction-grid">
+    {[
+      { name: "House Noctvaris", file: "HN-Emblem.webp" },
+      { name: "The Moondrath", file: "TM-Emblem.webp" },
+      { name: "Solari Ascendants", file: "SA-Emblem.webp" },
+      { name: "Scorchborne", file: "SB-Emblem.webp" },
+      { name: "Umbra’kin", file: "UK-Emblem.webp" },
+      { name: "Noctara Sanctum", file: "NS-Emblem.webp" },
+    ].map((faction) => (
+      <div className="faction-card" key={faction.name}>
+        <img
+          src={`/assets/emblems/${faction.file}`}
+          alt={`${faction.name} Emblem`}
+          className="faction-emblem"
+        />
+        <span className="faction-name">{faction.name}</span>
+      </div>
+    ))}
+  </div>
+</section>
+
+{/* Time Phase Emblem Grid */}
+<section className="home-section timephase-section">
+  <h2 className="section-title">Time Phases of Chronoshift</h2>
+  <p className="section-subtagline">
+    Each round begins with a roll of fate. The Time Phase changes the battlefield and empowers aligned factions.
+  </p>
+  <div className="timephase-grid">
+    {[
+      { name: "Night", file: "night.webp" },
+      { name: "Full Moon", file: "fullmoon.webp" },
+      { name: "Day", file: "day.webp" },
+      { name: "Scorch", file: "scorch.webp" },
+      { name: "Dusk", file: "dusk.webp" },
+    ].map((phase) => (
+      <div className="timephase-item" key={phase.name}>
+        <img
+          src={`/assets/timephases/${phase.file}`}
+          alt={`${phase.name} Phase`}
+        />
+        <p>{phase.name}</p>
+      </div>
+    ))}
+  </div>
+</section>
+
 
     </div>
   );
