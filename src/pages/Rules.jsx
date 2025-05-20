@@ -85,19 +85,48 @@ export default function Rules() {
 </CollapsibleRuleSection>
 
       <CollapsibleRuleSection title="Timecharge Mechanic">
-        <p><strong>Timecharge</strong> is a high-risk, high-reward mechanic that allows a player to attempt to manipulate the current Time Phase during their turn.</p>
-        <ul>
-          <li><strong>Cost:</strong> Spend 2 resources to activate. Each additional use in the same game increases the cost by +1 (max 5).</li>
-          <li><strong>Roll a die:</strong>
-            <ul>
-              <li>1–2: Time remains unchanged (resources still spent)</li>
-              <li>3–5: Time Phase shifts randomly</li>
-              <li>6: You choose the next Time Phase</li>
-            </ul>
-          </li>
-          <li><strong>Timing:</strong> May only be used once per turn, after the Start Phase and before the Draw Phase.</li>
-        </ul>
-      </CollapsibleRuleSection>
+  <p>
+    <strong>Timecharge</strong> is a high-risk, high-reward mechanic that allows a player to attempt to manipulate the current Time Phase during their turn.
+  </p>
+
+  <div className="timecharge-grid">
+    {[
+      {
+        roll: "1–2",
+        label: "Fail: Time Resists",
+        file: "fail.webp",
+        desc: "The timeline resists your attempt. Time remains unchanged, but resources are still spent.",
+      },
+      {
+        roll: "3–5",
+        label: "Partial Shift: Chaos Stirs",
+        file: "random.webp",
+        desc: "Time shifts, but not by your will. A random Time Phase is chosen instead.",
+      },
+      {
+        roll: "6",
+        label: "Success: Choose the Phase",
+        file: "success.webp",
+        desc: "Your control is perfect. You choose the new Time Phase.",
+      },
+    ].map((result) => (
+      <div className="timecharge-item" key={result.roll}>
+        <img
+          src={`/assets/timecharge/${result.file}`}
+          alt={`${result.label} Icon`}
+          className="timecharge-icon"
+        />
+        <p><strong>{result.roll}</strong> → {result.label}</p>
+        <p className="timecharge-desc">{result.desc}</p>
+      </div>
+    ))}
+  </div>
+
+  <ul>
+    <li><strong>Cost:</strong> Spend 2 resources to activate. Each additional use in the same game increases the cost by +1 (max 5).</li>
+    <li><strong>Timing:</strong> May only be used once per turn, after the Start Phase and before the Draw Phase.</li>
+  </ul>
+</CollapsibleRuleSection>
 
       <CollapsibleRuleSection title="Turn Structure">
         <ol>
