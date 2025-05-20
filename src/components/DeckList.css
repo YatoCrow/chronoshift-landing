@@ -52,27 +52,22 @@
 .decklist-entry {
   margin-bottom: 0.5rem;
   font-size: 1rem;
-  color: #e8dbc3;
-}
-
-.decklist-entry:hover .card-name {
-  color: #e2b86c;
-  text-shadow: 0 0 4px rgba(255, 238, 185, 0.2);
+  color: #dec9a8;
 }
 
 .card-quantity {
   font-weight: bold;
-  color: #f0cc9b;
+  color: #d6b980;
 }
 
 .card-name {
   font-weight: 600;
-  color: #cfa257; /* rich antique gold */
+  color: #c79645; /* Darker antique gold */
 }
 
-..card-subtype {
+.card-subtype {
   font-style: italic;
-  color: #a58f75; /* parchment-matching faded brown-gray */
+  color: #927d63; /* Dark parchment-gray */
 }
 
 .card-rarity {
@@ -81,9 +76,13 @@
 }
 
 .rarity-legendary {
-  color: #ffd93b; /* Gold */
+  color: #ffd93b;
 }
 
 .rarity-elite {
-  color: #bfa8f5; /* Muted lavender */
+  color: #bca2f0;
+}
+
+.rarity-common {
+  color: #b4a189;
 }
