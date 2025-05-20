@@ -177,3 +177,67 @@
   border: 1px solid #333;
   text-align: center;
 }
+
+/* Time Phase Section */
+.timephase-section {
+  padding: 3rem 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.timephase-section .section-title {
+  font-size: 2rem;
+  color: #f8e7c7;
+  margin-bottom: 1rem;
+  font-family: 'Cinzel', serif;
+}
+
+.timephase-section .section-subtagline {
+  font-size: 1.1rem;
+  color: #e8dbc3;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.timephase-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.timephase-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+  padding: 1rem;
+  background-color: #1a1a1a;
+  border: 1px solid #2c2c2c;
+  border-radius: 10px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timephase-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px rgba(245, 216, 160, 0.25);
+}
+
+.timephase-item img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+  filter: drop-shadow(0 0 4px rgba(245, 216, 160, 0.2));
+}
+
+.timephase-item p {
+  font-size: 0.95rem;
+  color: #f5e4c6;
+  font-weight: 600;
+  font-family: 'Cinzel', serif;
+  margin: 0;
+}
