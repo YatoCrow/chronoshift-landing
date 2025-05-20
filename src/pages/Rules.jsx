@@ -53,17 +53,36 @@ export default function Rules() {
       </CollapsibleRuleSection>
 
       <CollapsibleRuleSection title="Time Phase Roll">
-        <p>At the beginning of each round (the first player's turn), roll a six-sided die to determine the current Time Phase:</p>
-        <ul>
-          <li><strong>1</strong> → Night</li>
-          <li><strong>2</strong> → Full Moon</li>
-          <li><strong>3</strong> → Day</li>
-          <li><strong>4</strong> → Scorch</li>
-          <li><strong>5</strong> → Dusk</li>
-          <li><strong>6</strong> → Retain the current Time Phase</li>
-        </ul>
-        <p>This roll affects the tempo of the game and activates cards or abilities tied to that phase. Plan your deck and turns around the shifting timeline.</p>
-      </CollapsibleRuleSection>
+  <p>
+    At the beginning of each round (the first player's turn), roll a six-sided die to determine the current Time Phase:
+  </p>
+
+  <div className="phase-roll-grid">
+    {[
+      { number: 1, name: "Night", file: "night.webp" },
+      { number: 2, name: "Full Moon", file: "fullmoon.webp" },
+      { number: 3, name: "Day", file: "day.webp" },
+      { number: 4, name: "Scorch", file: "scorch.webp" },
+      { number: 5, name: "Dusk", file: "dusk.webp" },
+      { number: 6, name: "Retain", file: "retain.webp" }, // Optional icon
+    ].map((phase) => (
+      <div className="phase-roll-item" key={phase.number}>
+        <img
+          src={`/assets/timephases/${phase.file}`}
+          alt={`${phase.name} Emblem`}
+          className="phase-roll-icon"
+        />
+        <p>
+          <strong>{phase.number}</strong> → {phase.name}
+        </p>
+      </div>
+    ))}
+  </div>
+
+  <p>
+    The current Time Phase affects card abilities, resource gain, and faction advantages. Plan your turns around the shifting timeline.
+  </p>
+</CollapsibleRuleSection>
 
       <CollapsibleRuleSection title="Timecharge Mechanic">
         <p><strong>Timecharge</strong> is a high-risk, high-reward mechanic that allows a player to attempt to manipulate the current Time Phase during their turn.</p>
