@@ -1,0 +1,62 @@
+.decklist-wrapper {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background-color: #1a1510;
+  border: 1px solid rgba(245, 216, 160, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(245, 216, 160, 0.05);
+  color: #e8dbc3;
+  font-family: 'Cinzel', serif;
+}
+
+.decklist-title {
+  font-size: 1.6rem;
+  color: #f5d8a0;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.decklist-heading {
+  font-size: 1.2rem;
+  color: #f0cc9b;
+  margin: 1rem 0 0.5rem;
+  border-left: 3px solid rgba(245, 216, 160, 0.25);
+  padding-left: 0.5rem;
+}
+
+.decklist-items {
+  list-style: none;
+  padding-left: 1.25rem;
+}
+
+.decklist-entry {
+  margin-bottom: 0.35rem;
+  font-size: 0.95rem;
+  color: #e6d7c2;
+}
+
+.card-quantity {
+  font-weight: bold;
+  color: #f0cc9b;
+}
+
+.card-name {
+  font-weight: 600;
+}
+
+.card-subtype {
+  font-style: italic;
+  color: #c6b6a2;
+}
+
+.card-rarity {
+  font-weight: bold;
+}
+
+.rarity-legendary {
+  color: #ffd700;
+}
+
+.rarity-elite {
+  color: #c7b2ff;
+}
