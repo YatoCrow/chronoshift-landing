@@ -1,0 +1,347 @@
+{
+  "bonds-of-night": {
+    "House Noctvaris": {
+      "Figures": [
+        {
+          "name": "Maevra, the Hollow-Voiced",
+          "count": 1,
+          "rarity": "Legendary",
+          "subtype": "Vampire Oracle"
+        },
+        {
+          "name": "Crimson Revenant",
+          "count": 2,
+          "rarity": "Elite",
+          "subtype": "Vampire Wraith"
+        },
+        {
+          "name": "Mistress of the Abyss",
+          "count": 2,
+          "rarity": "Elite",
+          "subtype": "Vampire Noble"
+        },
+        {
+          "name": "Echo of the Depths",
+          "count": 2,
+          "rarity": "Elite",
+          "subtype": "Wraith"
+        },
+        {
+          "name": "Crimson Acolyte",
+          "count": 3,
+          "subtype": "Vampire Thrall"
+        },
+        {
+          "name": "Ebonfang Familiar",
+          "count": 3,
+          "subtype": "Vampire Beast"
+        },
+        {
+          "name": "Bloodcall Initiate",
+          "count": 3,
+          "subtype": "Vampire Cultist"
+        },
+        {
+          "name": "Sanguine Scholar",
+          "count": 2,
+          "subtype": "Vampire Scholar"
+        },
+        {
+          "name": "Cloakbound Assassin",
+          "count": 3,
+          "subtype": "Human Assassin"
+        }
+      ],
+      "Spells": [
+        {
+          "name": "Crimson Rebirth",
+          "count": 2,
+          "subtype": "Rite"
+        },
+        {
+          "name": "Bloodwell Surge",
+          "count": 2,
+          "subtype": "Rite"
+        },
+        {
+          "name": "Feast of Shadows",
+          "count": 1,
+          "subtype": "Rite"
+        },
+        {
+          "name": "Whispers from the Crimson Veil",
+          "count": 1,
+          "subtype": "Rite"
+        },
+        {
+          "name": "Bloodshade Covenant",
+          "count": 1,
+          "subtype": "Rite"
+        },
+        {
+          "name": "Blood Sigil Unbound",
+          "count": 1,
+          "subtype": "Rite"
+        },
+        {
+          "name": "Vein Severance",
+          "count": 1,
+          "subtype": "Burst"
+        },
+        {
+          "name": "Dark Recovery",
+          "count": 1,
+          "subtype": "Burst"
+        },
+        {
+          "name": "Abyssal Snare",
+          "count": 1,
+          "subtype": "Burst"
+        },
+        {
+          "name": "Twilight Leeching",
+          "count": 1,
+          "subtype": "Burst"
+        },
+        {
+          "name": "Chalice of the Hollow Moon",
+          "count": 1,
+          "subtype": "Rite"
+        },
+        {
+          "name": "Crimson Denial",
+          "count": 1,
+          "subtype": "Dispel"
+        },
+        {
+          "name": "Essence of Eclipse",
+          "count": 1,
+          "subtype": "Dispel"
+        }
+      ],
+      "Conduits": [
+        {
+          "name": "Bloodwell of Noctvaris",
+          "count": 6,
+          "subtype": "Conduit"
+        },
+        {
+          "name": "Crimson Sigil",
+          "count": 4,
+          "subtype": "Conduit"
+        },
+        {
+          "name": "Obsidian Reliquary",
+          "count": 4,
+          "subtype": "Conduit"
+        },
+        {
+          "name": "Veinroot Grove",
+          "count": 3,
+          "subtype": "Conduit"
+        },
+        {
+          "name": "Cathedral of the Hollow Moon",
+          "count": 4,
+          "subtype": "Conduit"
+        },
+        {
+          "name": "Crimson Sigil",
+          "count": 1,
+          "subtype": "Conduit Shift"
+        },
+        {
+          "name": "Obsidian Reliquary",
+          "count": 1,
+          "subtype": "Conduit Shift"
+        },
+        {
+          "name": "Veinroot Grove",
+          "count": 1,
+          "subtype": "Conduit Shift"
+        }
+      ],
+      "Tokens": [
+        {
+          "name": "Bloodshade",
+          "count": 5,
+          "subtype": "Shade"
+        }
+      ]
+    },
+    "The Moondrath": {
+      "Figures": [
+        {
+          "name": "Vaerik, Alpha of the Eclipse",
+          "count": 1,
+          "rarity": "Legendary",
+          "subtype": "Lycan Alpha"
+        },
+        {
+          "name": "Moonclaw Stalker",
+          "count": 2,
+          "rarity": "Elite",
+          "subtype": "Werewolf"
+        },
+        {
+          "name": "Howlfang Vanguard",
+          "count": 2,
+          "rarity": "Elite",
+          "subtype": "Werewolf"
+        },
+        {
+          "name": "Nightshade Prowler",
+          "count": 2,
+          "rarity": "Elite",
+          "subtype": "Lycan Beast"
+        },
+        {
+          "name": "Paleclaw Cub",
+          "count": 3,
+          "subtype": "Beastling"
+        },
+        {
+          "name": "Lurking Howler",
+          "count": 3,
+          "subtype": "Werewolf"
+        },
+        {
+          "name": "Moonveil Huntress",
+          "count": 3,
+          "subtype": "Lycan"
+        },
+        {
+          "name": "Twilight Skirmisher",
+          "count": 2,
+          "subtype": "Werewolf"
+        },
+        {
+          "name": "Fangshade Prowler",
+          "count": 2,
+          "subtype": "Beast"
+        },
+        {
+          "name": "Moonhowl Shaman",
+          "count": 2,
+          "subtype": "Lycan"
+        },
+        {
+          "name": "Swiftclaw Pup",
+          "count": 1,
+          "subtype": "Beastling"
+        }
+      ],
+      "Spells": [
+        {
+          "name": "Pack Rally",
+          "count": 2,
+          "subtype": "Rite"
+        },
+        {
+          "name": "Echo Howl",
+          "count": 1,
+          "subtype": "Rite"
+        },
+        {
+          "name": "Moonlit Ambush",
+          "count": 2,
+          "subtype": "Rite"
+        },
+        {
+          "name": "Packbound Vow",
+          "count": 1,
+          "subtype": "Rite"
+        },
+        {
+          "name": "Call of the Feral Moon",
+          "count": 1,
+          "subtype": "Rite"
+        },
+        {
+          "name": "Lunar Howl",
+          "count": 2,
+          "subtype": "Burst"
+        },
+        {
+          "name": "Veilstep",
+          "count": 1,
+          "subtype": "Burst"
+        },
+        {
+          "name": "Moon\u2019s Veil",
+          "count": 1,
+          "subtype": "Burst"
+        },
+        {
+          "name": "Silent Reversal",
+          "count": 1,
+          "subtype": "Dispel"
+        },
+        {
+          "name": "Duskfang Denial",
+          "count": 1,
+          "subtype": "Dispel"
+        },
+        {
+          "name": "Ambush Reversal",
+          "count": 1,
+          "subtype": "Dispel"
+        },
+        {
+          "name": "Howlbreak Trap",
+          "count": 1,
+          "subtype": "Dispel"
+        }
+      ],
+      "Conduits": [
+        {
+          "name": "Moonfang Grove",
+          "count": 5,
+          "subtype": "Conduit"
+        },
+        {
+          "name": "Lunar Cliffs",
+          "count": 5,
+          "subtype": "Conduit"
+        },
+        {
+          "name": "Fangshade Hollow",
+          "count": 3,
+          "subtype": "Conduit"
+        },
+        {
+          "name": "Silverblood Clearing",
+          "count": 4,
+          "subtype": "Conduit"
+        },
+        {
+          "name": "Packstone Altar",
+          "count": 2,
+          "subtype": "Conduit"
+        },
+        {
+          "name": "Fangshade Hollow",
+          "count": 1,
+          "subtype": "Conduit Shift"
+        },
+        {
+          "name": "Moonfang Grove",
+          "count": 1,
+          "subtype": "Conduit Shift"
+        },
+        {
+          "name": "Packstone Altar",
+          "count": 1,
+          "subtype": "Conduit Shift"
+        }
+      ],
+      "Tokens": [
+        {
+          "name": "Fangshade",
+          "count": 6,
+          "subtype": "Wolf Spirit"
+        }
+      ]
+    }
+  }
+}
