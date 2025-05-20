@@ -1,38 +1,58 @@
 .decklist-wrapper {
-  margin: 2rem 0;
-  padding: 1.5rem;
-  background-color: #1a1510;
-  border: 1px solid rgba(245, 216, 160, 0.1);
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(245, 216, 160, 0.05);
-  color: #e8dbc3;
+  margin: 2rem auto;
+  max-width: 960px;
+  background-color: rgba(255, 248, 240, 0.025);
+  border: 1px solid rgba(245, 216, 160, 0.08);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   font-family: 'Cinzel', serif;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
 }
 
-.decklist-title {
-  font-size: 1.6rem;
-  color: #f5d8a0;
-  margin-bottom: 1rem;
-  text-align: center;
+.decklist-toggle {
+  width: 100%;
+  padding: 1.15rem 1.25rem;
+  background: linear-gradient(to right, #2e2418, #1f1a13);
+  color: #f0cc9b;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+  border-bottom: 1px solid rgba(245, 216, 160, 0.1);
+  letter-spacing: 0.3px;
+}
+
+.decklist-toggle:hover {
+  background: linear-gradient(to right, #3b2f20, #2a2219);
+  color: #ffe6b3;
+}
+
+.decklist-section {
+  padding: 1.25rem 1.5rem;
 }
 
 .decklist-heading {
-  font-size: 1.2rem;
-  color: #f0cc9b;
-  margin: 1rem 0 0.5rem;
+  color: #f5d8a0;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
   border-left: 3px solid rgba(245, 216, 160, 0.25);
   padding-left: 0.5rem;
 }
 
 .decklist-items {
   list-style: none;
-  padding-left: 1.25rem;
+  padding-left: 1.5rem;
+  margin-top: 0.75rem;
 }
 
 .decklist-entry {
-  margin-bottom: 0.35rem;
-  font-size: 0.95rem;
-  color: #e6d7c2;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #e8dbc3;
 }
 
 .card-quantity {
@@ -46,11 +66,12 @@
 
 .card-subtype {
   font-style: italic;
-  color: #c6b6a2;
+  color: #cbb99f;
 }
 
 .card-rarity {
   font-weight: bold;
+  margin-left: 0.25rem;
 }
 
 .rarity-legendary {
