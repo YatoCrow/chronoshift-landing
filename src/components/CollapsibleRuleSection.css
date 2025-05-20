@@ -100,3 +100,50 @@
   text-align: center;
   margin: 0;
 }
+
+/* Timecharge Outcome Grid */
+.timecharge-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 1.75rem 0;
+}
+
+.timecharge-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 160px;
+  padding: 1rem;
+  background-color: #1a1a1a;
+  border: 1px solid #2c2c2c;
+  border-radius: 10px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timecharge-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px rgba(245, 216, 160, 0.25);
+}
+
+.timecharge-icon {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+  filter: drop-shadow(0 0 5px rgba(245, 216, 160, 0.2));
+}
+
+.timecharge-item p {
+  text-align: center;
+  margin: 0.4rem 0;
+  color: #f0e3cc;
+  font-size: 0.95rem;
+}
+
+.timecharge-desc {
+  font-size: 0.85rem;
+  color: #d9c4aa;
+}
