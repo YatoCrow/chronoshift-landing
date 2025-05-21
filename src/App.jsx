@@ -1,14 +1,16 @@
 import { Routes, Route } from "react-router-dom";
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import Home from "./pages/Home";
-import TermsOfUse from "./pages/TermsOfUse";
-import PrivacyPolicy from "./pages/PrivacyPolicy";
 import ScrollToTop from "./components/ScrollToTop";
+
+import Home from "./pages/Home";
 import Factions from "./pages/Factions";
 import StarterDecks from "./pages/StarterDecks";
 import Rules from "./pages/Rules";
-import KeywordGlossary from "./pages/KeywordGlossary"; // ✅ Added back
+import KeywordGlossary from "./pages/KeywordGlossary";
+import Tracker from "./pages/Tracker"; // ✅ New Tracker page
+import TermsOfUse from "./pages/TermsOfUse";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 function App() {
   return (
@@ -21,10 +23,12 @@ function App() {
         <Route path="/factions" element={<Factions />} />
         <Route path="/starter-decks" element={<StarterDecks />} />
         <Route path="/rules" element={<Rules />} />
-        <Route path="/keywords" element={<KeywordGlossary />} /> {/* ✅ Restored */}
+        <Route path="/keywords" element={<KeywordGlossary />} />
+        <Route path="/tracker" element={<Tracker />} /> {/* ✅ Fixed route added */}
         <Route path="/terms" element={<TermsOfUse />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
 
+        {/* Catch-all for invalid routes */}
         <Route
           path="*"
           element={
