@@ -144,3 +144,10 @@
   filter: grayscale(20%);
   opacity: 0.85;
 }
+
+.release-note {
+  font-size: 0.95rem;
+  color: #c8b497;
+  text-align: center;
+  margin-top: 0.5rem;
+}
