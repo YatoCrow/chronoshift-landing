@@ -10,7 +10,7 @@ export default function Tracker() {
       </p>
 
       <section className="tracker-section">
-        <h2>📱 iOS (iPhone & iPad)</h2>
+        <h2>iOS (iPhone & iPad)</h2>
         <ol>
           <li>Open <strong>Safari</strong> and visit <code>https://chronoshift-tracker.yatocrowgames.com</code></li>
           <li>Tap the <strong>Share</strong> icon (the square with an upward arrow)</li>
@@ -20,7 +20,7 @@ export default function Tracker() {
       </section>
 
       <section className="tracker-section">
-        <h2>🤖 Android (Phone & Tablet)</h2>
+        <h2>Android (Phone & Tablet)</h2>
         <ol>
           <li>Open <strong>Chrome</strong> and go to <code>https://chronoshift-tracker.yatocrowgames.com</code></li>
           <li>Tap the <strong>Menu</strong> icon (three dots in the top-right)</li>
@@ -30,7 +30,7 @@ export default function Tracker() {
       </section>
 
       <section className="tracker-section">
-        <h2>🔗 Quick Access</h2>
+        <h2>Quick Access</h2>
         <p>Scan the QR code below to open the Tracker directly on your mobile device:</p>
         <img
           src="/assets/qr-tracker.png"
