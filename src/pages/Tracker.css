@@ -2,74 +2,73 @@
   max-width: 960px;
   margin: 0 auto;
   padding: 4rem 2rem;
-  color: #e8dbc3;
   font-family: 'Cinzel', serif;
-  background-color: rgba(15, 12, 10, 0.2);
-  backdrop-filter: blur(2px);
+  color: #f2e5ca;
+  background-color: transparent;
 }
 
 .tracker-title {
   font-size: 2.25rem;
+  text-align: center;
   margin-bottom: 1.5rem;
   color: #f5d8a0;
-  text-align: center;
-  text-shadow: 0 0 8px rgba(245, 216, 160, 0.15);
+  text-shadow: 0 0 8px rgba(245, 216, 160, 0.2);
 }
 
 .tracker-intro {
-  font-size: 1.1rem;
-  color: #dec9aa;
   text-align: center;
+  font-size: 1.1rem;
+  color: #decdb0;
   margin-bottom: 3rem;
-  line-height: 1.65;
+  line-height: 1.6;
 }
 
 .tracker-section {
-  margin-bottom: 3rem;
-  background-color: rgba(255, 248, 240, 0.03);
-  padding: 1.5rem 2rem;
-  border-radius: 8px;
+  background-color: rgba(24, 20, 16, 0.85);
   border: 1px solid rgba(245, 216, 160, 0.08);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  padding: 1.75rem 2rem;
+  border-radius: 10px;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.35);
 }
 
 .tracker-section h2 {
-  color: #f0cc9b;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin-bottom: 1rem;
+  color: #f0cc9b;
   text-shadow: 0 0 5px rgba(245, 216, 160, 0.1);
 }
 
 .tracker-section ol {
   padding-left: 1.5rem;
-  color: #e6d7c2;
+  color: #e8dbc3;
   font-size: 1rem;
   line-height: 1.6;
 }
 
 .tracker-section li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.6rem;
 }
 
 .tracker-section code {
-  background-color: rgba(245, 216, 160, 0.07);
+  background-color: #2e2418;
   color: #f5d8a0;
-  padding: 0.2rem 0.4rem;
+  padding: 0.15rem 0.45rem;
+  font-size: 0.9rem;
   border-radius: 4px;
-  font-size: 0.95rem;
 }
 
 .qr-code-image {
   display: block;
   margin: 2rem auto 0;
-  width: 180px;
+  width: 200px;
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 0 14px rgba(245, 216, 160, 0.12);
-  transition: transform 0.2s ease;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(245, 216, 160, 0.15);
+  transition: transform 0.3s ease;
 }
 
 .qr-code-image:hover {
   transform: scale(1.03);
-  box-shadow: 0 0 20px rgba(245, 216, 160, 0.2);
+  box-shadow: 0 0 20px rgba(245, 216, 160, 0.25);
 }
