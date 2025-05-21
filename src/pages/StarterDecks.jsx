@@ -69,14 +69,15 @@ export default function StarterDecks() {
         deck={decks["bonds-of-night"]["The Moondrath"]}
       />
 
-      <div className="starter-purchase">
-        <p>Purchase link will be available soon at:</p>
-        <img
-          src="/assets/thegamecrafter-logo.webp"
-          alt="The Game Crafter"
-          className="starter-purchase-logo"
-        />
-      </div>
+<div className="starter-purchase">
+  <p>Purchase link will be available soon at:</p>
+  <img
+    src="/assets/thegamecrafter-logo.webp"
+    alt="The Game Crafter"
+    className="starter-purchase-logo"
+  />
+  <p className="release-note"><em>Expected release: July 2025</em></p>
+</div>
     </div>
   </div>
 )}
