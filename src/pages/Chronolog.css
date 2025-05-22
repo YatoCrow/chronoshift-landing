@@ -1,0 +1,56 @@
+/* src/pages/Chronolog.css */
+.chronolog-page {
+  padding: 3rem 1.5rem;
+  max-width: 960px;
+  margin: 0 auto;
+  font-family: 'Cinzel', serif;
+  color: #e8dbc3;
+}
+
+.chronolog-title {
+  text-align: center;
+  font-size: 2.75rem;
+  color: #f5d8a0;
+  margin-bottom: 0.5rem;
+}
+
+.chronolog-subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #bfae95;
+  margin-bottom: 2.5rem;
+}
+
+.chronolog-entry {
+  background-color: rgba(255, 248, 240, 0.025);
+  border: 1px solid rgba(245, 216, 160, 0.08);
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+.chronolog-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #c0b099;
+  margin-bottom: 0.75rem;
+}
+
+.chronolog-heading {
+  font-size: 1.5rem;
+  color: #f0cc9b;
+  margin-bottom: 1rem;
+}
+
+.chronolog-body p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.chronolog-body ul {
+  margin-left: 1.5rem;
+  list-style-type: disc;
+  margin-bottom: 1rem;
+}
