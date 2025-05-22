@@ -48,4 +48,4 @@
   },
 ];
 
-export default chronologEntries;
+export default loreEntries;
