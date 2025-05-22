@@ -8,7 +8,7 @@ function Navbar() {
   const [open, setOpen] = useState(false);
   const location = useLocation();
 
-  // Close menu on route change
+  // Auto-close burger menu on route change
   const handleClick = () => setOpen(false);
 
   return (
@@ -30,6 +30,7 @@ function Navbar() {
       </button>
 
       <div className={`navbar-links ${open ? "open" : ""}`}>
+        <Link to="/chronolog" onClick={handleClick}>Chronolog</Link> {/* ✅ Added here */}
         <Link to="/factions" onClick={handleClick}>Factions</Link>
         <Link to="/starter-decks" onClick={handleClick}>Starter Decks</Link>
         <Link to="/rules" onClick={handleClick}>Rules</Link>
