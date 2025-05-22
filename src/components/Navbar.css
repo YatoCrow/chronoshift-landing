@@ -1,5 +1,8 @@
 /* src/components/Navbar.css */
 
+/* ========================
+   Base Navbar Styling
+======================== */
 .navbar-wrapper {
   display: flex;
   justify-content: space-between;
@@ -17,9 +20,13 @@
   height: 44px;
 }
 
+/* ========================
+   Nav Links
+======================== */
 .navbar-links {
   display: flex;
   gap: 1.5rem;
+  align-items: center;
 }
 
 .navbar-links a {
@@ -34,7 +41,57 @@
   color: #ffe8b2;
 }
 
-/* Burger menu button */
+/* ========================
+   Chronolog Dropdown Menu
+======================== */
+.navbar-dropdown {
+  position: relative;
+  display: inline-block;
+  font-family: 'Cinzel', serif;
+}
+
+.navbar-link {
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  font-size: 1rem;
+  color: #f5d8a0;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #ffe8b2;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #1a1a1a;
+  border: 1px solid #2c2c2c;
+  border-radius: 6px;
+  padding: 0.5rem 0;
+  z-index: 999;
+  min-width: 160px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #f5d8a0;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-menu a:hover {
+  background-color: #2c2c2c;
+  color: #fff0d2;
+}
+
+/* ========================
+   Burger Menu Button
+======================== */
 .burger {
   display: none;
   flex-direction: column;
@@ -53,7 +110,9 @@
   transition: all 0.3s ease;
 }
 
-/* Mobile styles */
+/* ========================
+   Mobile Styles
+======================== */
 @media (max-width: 768px) {
   .burger {
     display: flex;
@@ -75,8 +134,21 @@
     display: flex;
   }
 
-  .navbar-links a {
+  .navbar-links a,
+  .navbar-link {
     font-size: 1.05rem;
     padding: 0.5rem 0;
+  }
+
+  .dropdown-menu {
+    position: static;
+    margin-top: 0.5rem;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+  }
+
+  .dropdown-menu a {
+    padding-left: 1rem;
   }
 }
