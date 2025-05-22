@@ -9,7 +9,6 @@ import StarterDecks from "./pages/StarterDecks";
 import Rules from "./pages/Rules";
 import KeywordGlossary from "./pages/KeywordGlossary";
 import Tracker from "./pages/Tracker";
-import Chronolog from "./pages/Chronolog"; // Base fallback or overview (optional)
 import ChronologNews from "./pages/ChronologNews"; // ✅ News page
 import ChronologLore from "./pages/ChronologLore"; // ✅ Lore page
 import TermsOfUse from "./pages/TermsOfUse";
@@ -28,7 +27,6 @@ function App() {
         <Route path="/rules" element={<Rules />} />
         <Route path="/keywords" element={<KeywordGlossary />} />
         <Route path="/tracker" element={<Tracker />} />
-        <Route path="/chronolog" element={<Chronolog />} />
         <Route path="/chronolog/news" element={<ChronologNews />} />  {/* ✅ News */}
         <Route path="/chronolog/lore" element={<ChronologLore />} />  {/* ✅ Lore */}
         <Route path="/terms" element={<TermsOfUse />} />
