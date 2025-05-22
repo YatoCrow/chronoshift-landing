@@ -6,7 +6,7 @@
   margin: 0 auto;
   padding: 3rem 1.5rem;
   font-family: 'Cinzel', serif;
-  color: #e8dbc3;
+  color: #f0e6d6;
 }
 
 /* Title */
@@ -65,10 +65,10 @@
 }
 
 .chronolog-entry {
-  background-color: rgba(26, 20, 15, 0.94);
+  background-color: #1c1814;
   border: 1px solid rgba(245, 216, 160, 0.1);
   border-radius: 10px;
-  padding: 1.75rem 1.5rem;
+  padding: 2rem;
   box-shadow: 0 0 14px rgba(0, 0, 0, 0.35);
   transition: box-shadow 0.3s ease;
 }
@@ -79,33 +79,34 @@
 
 /* Entry Content */
 .entry-title {
-  font-size: 1.35rem;
-  font-weight: 700;
-  color: #ffe8b2;
-  margin-bottom: 0.35rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #f5d8a0;
+  margin-bottom: 1rem;
 }
 
 .entry-date {
   font-size: 0.9rem;
-  color: #bfae98;
+  color: #c8b79d;
   margin-bottom: 1rem;
 }
 
 .entry-content p {
-  margin-bottom: 0.75rem;
-  line-height: 1.65;
-  color: #ddc5a5;
+  margin-bottom: 1rem;
+  line-height: 1.75;
+  font-size: 1.05rem;
+  color: #f0e6d6;
 }
 
 .entry-content strong {
-  color: #f7d89e;
+  color: #ffdf9c;
 }
 
 .entry-content ul {
   margin-left: 1.5rem;
   margin-bottom: 1rem;
   padding-left: 1rem;
-  color: #e3cdb4;
+  color: #f0e6d6;
 }
 
 .entry-content li {
