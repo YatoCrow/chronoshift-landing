@@ -8,7 +8,8 @@ import Factions from "./pages/Factions";
 import StarterDecks from "./pages/StarterDecks";
 import Rules from "./pages/Rules";
 import KeywordGlossary from "./pages/KeywordGlossary";
-import Tracker from "./pages/Tracker"; // ✅ New Tracker page
+import Tracker from "./pages/Tracker";
+import Chronolog from "./pages/Chronolog"; // ✅ Chronolog page
 import TermsOfUse from "./pages/TermsOfUse";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 
@@ -24,11 +25,11 @@ function App() {
         <Route path="/starter-decks" element={<StarterDecks />} />
         <Route path="/rules" element={<Rules />} />
         <Route path="/keywords" element={<KeywordGlossary />} />
-        <Route path="/tracker" element={<Tracker />} /> {/* ✅ Fixed route added */}
+        <Route path="/tracker" element={<Tracker />} />
+        <Route path="/chronolog" element={<Chronolog />} /> {/* ✅ Chronolog route */}
         <Route path="/terms" element={<TermsOfUse />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
 
-        {/* Catch-all for invalid routes */}
         <Route
           path="*"
           element={
