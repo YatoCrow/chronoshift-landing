@@ -3,7 +3,7 @@ const loreEntries = [
     chapter: 1,
     title: "The Birth of Time and the Sundering",
     series: "Chronoshift: Tales of the Shifting Hours",
-    date: "Thu May 22 2025",
+    date: "Thu 2025-05-22",
     type: "Lore",
     content: (
       <>
@@ -49,7 +49,7 @@ const loreEntries = [
   chapter: 2,
   title: "The Five Pillars and the Rise of Clans",
   series: "Chronoshift: Tales of the Shifting Hours",
-  date: "2025-05-23",
+  date: "Fri 2025-05-23",
   type: "Lore",
   content: (
     <>
