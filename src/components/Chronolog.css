@@ -1,0 +1,45 @@
+.chronolog-page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  font-family: 'Cinzel', serif;
+  color: #e8dbc3;
+}
+
+.chronolog-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #f5d8a0;
+  text-align: center;
+}
+
+.chronolog-entry {
+  background: rgba(255, 248, 240, 0.025);
+  border: 1px solid rgba(245, 216, 160, 0.08);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.entry-title {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #ffe8b2;
+}
+
+.entry-date {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: #aa9b84;
+}
+
+.entry-content p {
+  line-height: 1.65;
+  margin-bottom: 1rem;
+}
+
+.entry-content ul {
+  padding-left: 1.25rem;
+  margin-bottom: 1rem;
+}
