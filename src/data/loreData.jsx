@@ -45,6 +45,30 @@ const loreEntries = [
       </>
     ),
   },
+{
+    chapter: 2,
+    title: "The Five Pillars and the Rise of Clans",
+    series: "Chronoshift: Tales of the Shifting Hours",
+    date: "2025-05-23",
+    type: "Lore",
+    content: (
+      <>
+        <p>In the aftermath of the Sundering, the world was raw and wounded. Time's broken shards bled into every horizon, birthing lands and creatures twisted by the phase that touched them most.</p>
+        <p>Where Night reigned, forests of silver-barked trees loomed under skies of endless velvet, and the blood of those who lived there darkened to black. Where the Full Moon held sway, great beasts roamed in packs, their hearts thrumming with the call of the wild. Beneath the unforgiving Day, golden cities were hewn from mountains, every stone a monument to endurance and brilliance. Across the blasted plains of Scorch, rivers of fire cut jagged paths through blackened earth. And in the distant mists of Dusk, soft twilight blanketed valleys where few dared tread, save those who had forsaken the endless wars.</p>
+        <p>It was in this maelstrom of broken time that the Firstborn set down roots, gathering beings attuned to their shard’s calling.</p>
+        <p><strong>Cindaros</strong>, the Flame That Walks, forged the first of the flamekin tribes in the Scorch. These were creatures of molten stone and burning will. They would one day be remembered as the Scorchborne, the Titans of Flame.</p>
+        <p><strong>Nyxis</strong>, the Midnight Daughter, gathered wayward souls to her side. These were scholars of shadow, warriors of the blood-veil, and dreamers too frail for the harsh light. They shaped themselves into the line that would become House Noctvaris.</p>
+        <p><strong>Raelis</strong>, the Dawnforger, raised luminous citadels in the lands of Day. He called to the resilient and the daring, those who sought order amid the chaos. They would forge a lineage known as the Solari Ascendants.</p>
+        <p><strong>Faelrun</strong>, the Howling Breath, surged through the wild lands of the Full Moon. His descendants became the fierce and ever-changing hunters known as the Moondrath.</p>
+        <p>And <strong>Vulmir</strong>, the Pale Watcher, drew to him those who did not seek conquest. These wanderers built glades and sanctuaries, known as the Noctara Sanctum.</p>
+        <p>The Scorchborne turned their gaze toward the golden cities of the Solari. Clashes erupted where Day met Scorch. Meanwhile, Noctvaris and the Moondrath fell into conflict over ideology, memory, and instinct.</p>
+        <p>Through all of this, the Umbra’kin whispered. They corrupted from within, offering power for a price. Legends like <strong>Seredane of the Blazing Crest</strong> rose—and fell—becoming tragic echoes of betrayal.</p>
+        <p>More names followed: <strong>Caelen the Unyielding</strong>, <strong>Vyrnissa of the Silver Veil</strong>, <strong>Braegorn, Ashen King</strong>, <strong>Ithelar, the First Duskseer</strong>. Each carved a tale into the shifting lands, but no peace endured.</p>
+        <p>With time unraveling and conflict escalating, Chronoshift was no longer myth. It became the world's fractured heartbeat.</p>
+        <p><strong>The Age of Endless Shifting had begun.</strong></p>
+      </>
+    ),
+  },
 ];
 
 export default loreEntries;
