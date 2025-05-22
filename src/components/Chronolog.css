@@ -13,33 +13,45 @@
   text-align: center;
 }
 
+.chronolog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 .chronolog-entry {
-  background: rgba(255, 248, 240, 0.025);
+  background: rgba(26, 20, 15, 0.9);
   border: 1px solid rgba(245, 216, 160, 0.08);
   border-radius: 8px;
   padding: 1.5rem;
-  margin-bottom: 2rem;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .entry-title {
-  font-size: 1.3rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
   color: #ffe8b2;
+  margin-bottom: 0.25rem;
 }
 
 .entry-date {
   font-size: 0.9rem;
+  color: #bfae98;
   margin-bottom: 1rem;
-  color: #aa9b84;
 }
 
 .entry-content p {
-  line-height: 1.65;
-  margin-bottom: 1rem;
+  color: #ddc5a5;
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+}
+
+.entry-content strong {
+  color: #f7d89e;
 }
 
 .entry-content ul {
-  padding-left: 1.25rem;
+  margin-left: 1.5rem;
   margin-bottom: 1rem;
+  color: #e3cdb4;
 }
