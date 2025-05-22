@@ -1,6 +1,7 @@
 const loreEntries = [
   {
-    title: "Chapter 1: The Birth of Time and the Sundering",
+    chapter: 1,
+    title: "The Birth of Time and the Sundering",
     series: "Chronoshift: Tales of the Shifting Hours",
     date: "Thu May 22 2025",
     type: "Lore",
