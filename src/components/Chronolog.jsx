@@ -1,4 +1,4 @@
-import "./Chronolog.css";
+import "../pages/Chronolog.css";
 
 export default function Chronolog({ title, entries }) {
   return (
