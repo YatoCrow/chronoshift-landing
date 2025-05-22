@@ -1,12 +1,11 @@
  const loreEntries = [
   {
-    title: "Chapter 1: The Birth of Time and the Sundering",
+    title: "Chronoshift: Tales of the Shifting Hours",
     date: "2025-05-22",
     type: "Lore",
     content: (
 <>
-        <h3>Chronoshift: Tales of the Shifting Hours</h3>
-        <h4>Chapter 1: The Birth of Time and the Sundering</h4>
+        <h3>Chapter 1: The Birth of Time and the Sundering</h3>
 
         <p>In the beginning, there was only the Stillness.</p>
         <p>A silence older than sound, deeper than the void, and colder than the grave. Time did not move. Stars did not burn. No dreams stirred in the darkness.</p>
