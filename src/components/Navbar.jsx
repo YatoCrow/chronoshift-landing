@@ -6,9 +6,9 @@ import logo from "../assets/chronoshift-logo.png";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
+  const [chronologOpen, setChronologOpen] = useState(false);
   const location = useLocation();
 
-  // Auto-close burger menu on route change
   const handleClick = () => setOpen(false);
 
   return (
@@ -30,7 +30,20 @@ function Navbar() {
       </button>
 
       <div className={`navbar-links ${open ? "open" : ""}`}>
-        <Link to="/chronolog" onClick={handleClick}>Chronolog</Link> {/* ✅ Added here */}
+        <div
+          className="navbar-dropdown"
+          onMouseEnter={() => setChronologOpen(true)}
+          onMouseLeave={() => setChronologOpen(false)}
+        >
+          <span className="navbar-link">Chronolog ▾</span>
+          {chronologOpen && (
+            <div className="dropdown-menu">
+              <Link to="/chronolog/news" onClick={handleClick}>News & Updates</Link>
+              <Link to="/chronolog/lore" onClick={handleClick}>Lore</Link>
+            </div>
+          )}
+        </div>
+
         <Link to="/factions" onClick={handleClick}>Factions</Link>
         <Link to="/starter-decks" onClick={handleClick}>Starter Decks</Link>
         <Link to="/rules" onClick={handleClick}>Rules</Link>
