@@ -21,7 +21,7 @@ function Home() {
         <h2>What is Chronoshift: Eclipse Dawn?</h2>
         <p className="home-subtagline"><em>Where time is not just a setting. It is your strategy.</em></p>
         <p>
-          Chronoshift: Eclipse Dawn is a competitive strategy card game where time itself changes the battlefield. Each round can alter
+          Chronoshift: Eclipse Dawn is a competitive strategy trading card game where time itself changes the battlefield. Each round can alter
           the phase of time, influencing abilities, resources, and momentum. Players choose a faction attuned to a specific
           phase like Night, Day, Full Moon, Scorch, or Dusk, and build decks that thrive under those conditions.
         </p>
