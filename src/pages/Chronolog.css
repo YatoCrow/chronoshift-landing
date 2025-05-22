@@ -31,6 +31,12 @@
   display: block;
 }
 
+@media (max-width: 768px) {
+  .chronolog-search {
+    display: none;
+  }
+}
+
 /* Horizontal Chapter Selector */
 .chapter-scrollbar {
   display: flex;
