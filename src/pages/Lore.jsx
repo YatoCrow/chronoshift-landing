@@ -1,10 +1,8 @@
-function Lore() {
+import loreData from "../data/loreData";
+import ChronologSection from "../components/ChronologSection";
+
+export default function Lore() {
   return (
-    <section className="content-page">
-      <h1 className="section-title">Lore</h1>
-      <p>Content for the Lore page will appear here.</p>
-    </section>
+    <ChronologSection entries={loreData} title="Lore Archive" />
   );
 }
-
-export default Lore;
