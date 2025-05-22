@@ -46,27 +46,51 @@ const loreEntries = [
     ),
   },
 {
-    chapter: 2,
-    title: "The Five Pillars and the Rise of Clans",
-    series: "Chronoshift: Tales of the Shifting Hours",
-    date: "2025-05-23",
-    type: "Lore",
-    content: (
-      <>
-        <p>In the aftermath of the Sundering, the world was raw and wounded. Time's broken shards bled into every horizon, birthing lands and creatures twisted by the phase that touched them most.</p>
-        <p>Where Night reigned, forests of silver-barked trees loomed under skies of endless velvet, and the blood of those who lived there darkened to black. Where the Full Moon held sway, great beasts roamed in packs, their hearts thrumming with the call of the wild. Beneath the unforgiving Day, golden cities were hewn from mountains, every stone a monument to endurance and brilliance. Across the blasted plains of Scorch, rivers of fire cut jagged paths through blackened earth. And in the distant mists of Dusk, soft twilight blanketed valleys where few dared tread, save those who had forsaken the endless wars.</p>
-        <p>It was in this maelstrom of broken time that the Firstborn set down roots, gathering beings attuned to their shard’s calling.</p>
-        <p><strong>Cindaros</strong>, the Flame That Walks, forged the first of the flamekin tribes in the Scorch. These were creatures of molten stone and burning will. They would one day be remembered as the Scorchborne, the Titans of Flame.</p>
-        <p><strong>Nyxis</strong>, the Midnight Daughter, gathered wayward souls to her side. These were scholars of shadow, warriors of the blood-veil, and dreamers too frail for the harsh light. They shaped themselves into the line that would become House Noctvaris.</p>
-        <p><strong>Raelis</strong>, the Dawnforger, raised luminous citadels in the lands of Day. He called to the resilient and the daring, those who sought order amid the chaos. They would forge a lineage known as the Solari Ascendants.</p>
-        <p><strong>Faelrun</strong>, the Howling Breath, surged through the wild lands of the Full Moon. His descendants became the fierce and ever-changing hunters known as the Moondrath.</p>
-        <p>And <strong>Vulmir</strong>, the Pale Watcher, drew to him those who did not seek conquest. These wanderers built glades and sanctuaries, known as the Noctara Sanctum.</p>
-        <p>The Scorchborne turned their gaze toward the golden cities of the Solari. Clashes erupted where Day met Scorch. Meanwhile, Noctvaris and the Moondrath fell into conflict over ideology, memory, and instinct.</p>
-        <p>Through all of this, the Umbra’kin whispered. They corrupted from within, offering power for a price. Legends like <strong>Seredane of the Blazing Crest</strong> rose—and fell—becoming tragic echoes of betrayal.</p>
-        <p>More names followed: <strong>Caelen the Unyielding</strong>, <strong>Vyrnissa of the Silver Veil</strong>, <strong>Braegorn, Ashen King</strong>, <strong>Ithelar, the First Duskseer</strong>. Each carved a tale into the shifting lands, but no peace endured.</p>
-        <p>With time unraveling and conflict escalating, Chronoshift was no longer myth. It became the world's fractured heartbeat.</p>
-        <p><strong>The Age of Endless Shifting had begun.</strong></p>
-      </>
+  chapter: 2,
+  title: "The Five Pillars and the Rise of Clans",
+  series: "Chronoshift: Tales of the Shifting Hours",
+  date: "2025-05-23",
+  type: "Lore",
+  content: (
+    <>
+      <p>In the aftermath of the Sundering, the world was raw and wounded. Time's broken shards bled into every horizon, birthing lands and creatures twisted by the phase that touched them most.</p>
+      <p>Where Night reigned, forests of silver-barked trees loomed under skies of endless velvet, and the blood of those who lived there darkened to black. Where the Full Moon held sway, great beasts roamed in packs, their hearts thrumming with the call of the wild. Beneath the unforgiving Day, golden cities were hewn from mountains, every stone a monument to endurance and brilliance. Across the blasted plains of Scorch, rivers of fire cut jagged paths through blackened earth. And in the distant mists of Dusk, soft twilight blanketed valleys where few dared tread, save those who had forsaken the endless wars.</p>
+      <p>It was in this maelstrom of broken time that the Firstborn set down roots, gathering beings attuned to their shard’s calling.</p>
+      <p>Cindaros, the Flame That Walks, forged the first of the flamekin tribes in the Scorch. These were creatures of molten stone and burning will. They would one day be remembered as the Scorchborne, the Titans of Flame. Yet even among their fiery rites, strange whispers sometimes echoed through their ash-fields. Tales spread of flame that burned cold, and warriors who vanished between breaths.</p>
+      <p>Nyxis, the Midnight Daughter, gathered wayward souls to her side. These were scholars of shadow, warriors of the blood-veil, and dreamers too frail for the harsh light. They shaped themselves into the line that would become House Noctvaris. Occasionally, a mourner would report seeing something reflected in the blackened pools. It would be a figure with no face, weeping blood into the water.</p>
+      <p>Raelis, the Dawnforger, raised luminous citadels in the lands of Day. He called to the resilient and the daring, those who sought order amid the chaos. They would forge a lineage known as the Solari Ascendants. Yet even in their strongest bastions, strange signs emerged. Entire villages were consumed overnight by inexplicable shadow, as if the light had chosen to forget them.</p>
+      <p>Faelrun, the Howling Breath, surged through the wild lands of the Full Moon. His descendants became the fierce and ever-changing hunters known as the Moondrath. They needed no walls, no kings, no law beyond the call of the wild. But there were whispers among even them. Lone howlers were said to summon only emptiness. The land beneath their paws withered.</p>
+      <p>Far from all of this, Vulmir endured.</p>
+      <p>The Pale Watcher drew to him those who did not seek conquest. These were not warriors or priests, but wanderers. They built no empires, only glades and sanctuaries. Their numbers grew slowly. The world called them the Duskborne, and among them the first seeds of the Noctara Sanctum were planted.</p>
+      <p>As the clans solidified their cultures and carved territories from the fractured world, tensions inevitably rose.</p>
+      <p>The Scorchborne, ever hungry for dominion, turned their gaze toward the golden cities of the Solari Ascendants. Driven by the creed of conquest, they sought to prove their strength in flame. Clashes erupted at the borders where Day met Scorch. These were blazing fields where fire and light clashed endlessly. Smoke choked the valleys. In some places, strange figures danced just beyond sight, whispering venom into the ears of captains. Truces turned to ambush. Treaties shattered.</p>
+      <p>Between the forests of Noctvaris and the highlands of the Moondrath, another war brewed.</p>
+      <p>The Noctvaris viewed themselves as keepers of memory and blood. They saw the wild Moondrath as little more than beasts without history. In return, the Moondrath called the Noctvaris parasites clinging to dead relics. When blood was spilled beneath a shattered moon, it was not a war of kings, but of pride and instinct.</p>
+      <p>Yet in every conflict, something unseen worked behind the veil.</p>
+      <p>Banners inverted overnight, transformed into sigils of dread. Wells soured. Soldiers woke screaming of voices beneath the earth.</p>
+      <p>And always, in the shadows of camps and courts, came the whisperers. They made promises of victory and vengeance. All they asked in return was a name, a promise, a soul.</p>
+      <p>The Umbra'kin did not march with armies. They moved through fear and temptation.</p>
+      <p>Among the early champions of the Clans, none shone brighter than Seredane of the Blazing Crest. A Solari hero, she held the line at Solstice Hold for years, her blade said to be forged from the first light after the Sundering.</p>
+      <p>She vanished during the Burning Siege. Returned three nights later. Her armor had darkened. Her blade hummed with cold resonance. She opened the gates from within.</p>
+      <p>The Scorchborne poured through. Solstice Hold fell in flame.</p>
+      <p>Seredane stood still in the carnage. Witnesses said her eyes were empty. Her sword sang a dirge that had no words.</p>
+      <p>Among the Solari, her name became a curse. Among the Umbra'kin, a legend.</p>
+      <p>Others rose.</p>
+      <ul>
+        <li>Caelen the Unyielding, a Moondrath pack leader who repelled three invasions with feral cunning.</li>
+        <li>Vyrnissa of the Silver Veil, a Noctvaris priestess whose wards preserved sanity through generations.</li>
+        <li>Braegorn, Ashen King, who sought to crown himself over both Scorch and Day before vanishing into the Hollow Rift.</li>
+        <li>Ithelar, the First Duskseer, whose prophecies of destruction were heard but never heeded.</li>
+      </ul>
+      <p>With each broken oath and bloodstained dawn, the divisions between Clans became permanent.</p>
+      <p>No alliances were forged. No peace endured.</p>
+      <p>Only suspicion. Only hatred. Only chaos.</p>
+      <p>The Clans became fortresses not just against each other, but against the instability of Time itself. The Phases grew erratic. Seasons lost their meaning. Storms of fire, frost, and shadow ravaged the land in random pulses.</p>
+      <p>Chronoshift was no longer a warning. It was the heartbeat of a world out of rhythm.</p>
+      <p>And in the deepest fissures, the Umbra'kin watched and waited.</p>
+      <p>The first age after the Sundering ended not with triumph, but with tragedy.</p>
+      <p>The Age of Endless Shifting had begun.</p>
+    </>
     ),
   },
 ];
