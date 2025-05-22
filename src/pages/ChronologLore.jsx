@@ -10,13 +10,15 @@ function ChronologLore() {
   const filtered = loreEntries.filter(
     (entry) =>
       entry.title.toLowerCase().includes(search.toLowerCase()) ||
+      entry.series?.toLowerCase().includes(search.toLowerCase()) ||
       `chapter ${entry.chapter}`.includes(search.toLowerCase())
   );
 
   return (
     <div className="chronolog-page">
-      <h1 className="chronolog-title">Chronoshift: Tales of the Shifting Hours</h1>
+      <h1 className="chronolog-title">{selected.series}</h1>
 
+      {/* Search input visible only on desktop */}
       <input
         type="text"
         placeholder="Search chapters..."
@@ -25,20 +27,27 @@ function ChronologLore() {
         className="chronolog-search"
       />
 
-      <div className="chapter-selector">
+      {/* Horizontal Chapter Selector */}
+      <div className="chapter-scrollbar">
         {filtered.map((entry) => (
           <button
             key={entry.chapter}
-            className={`chapter-btn ${entry.chapter === selected.chapter ? "active" : ""}`}
+            className={`chapter-tab ${
+              entry.chapter === selected.chapter ? "active" : ""
+            }`}
             onClick={() => setSelected(entry)}
           >
-            {entry.title}
+            Ch. {entry.chapter}
           </button>
         ))}
       </div>
 
+      {/* Chapter Content */}
       <div className="chronolog-entry">
-        <h2 className="entry-title">{selected.title}</h2>
+        <h2 className="entry-title">
+          Chapter {selected.chapter}: {selected.title.replace(/^Chapter \d+:\s*/, "")}
+        </h2>
+        <p className="entry-date">{selected.date}</p>
         <div className="entry-content">{selected.content}</div>
       </div>
     </div>
