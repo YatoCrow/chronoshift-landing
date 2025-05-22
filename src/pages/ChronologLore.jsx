@@ -29,20 +29,16 @@ function ChronologLore() {
         {filtered.map((entry) => (
           <button
             key={entry.chapter}
-            className={`chapter-btn ${
-              entry.chapter === selected.chapter ? "active" : ""
-            }`}
+            className={`chapter-btn ${entry.chapter === selected.chapter ? "active" : ""}`}
             onClick={() => setSelected(entry)}
           >
-            Chapter {entry.chapter}: {entry.title}
+            {entry.title}
           </button>
         ))}
       </div>
 
       <div className="chronolog-entry">
-        <h2 className="entry-title">
-          Chapter {selected.chapter}: {selected.title}
-        </h2>
+        <h2 className="entry-title">{selected.title}</h2>
         <div className="entry-content">{selected.content}</div>
       </div>
     </div>
